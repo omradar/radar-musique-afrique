@@ -1,0 +1,141 @@
+# Sources du site. Issues du tri de la liste de Kalz (21 octobre 2026).
+#
+# Champs d'une source :
+#   id, name, homepage   : identité
+#   feed                 : URL du flux RSS (optionnel, sinon autodécouverte depuis la page d'accueil)
+#   lang                 : fr ou en (langue des articles)
+#   tier                 : 1 = coeur, 2 = généraliste filtré, 3 = à recouper
+#   kind                 : primary (communiqué, rapport, institution) ou secondary (presse qui relaie)
+#   verify               : true = un article venant de cette source seule est marqué "non confirmé"
+#   keywords             : true = l'article doit contenir un mot-clé musique pour être gardé
+#
+# Aucun flux n'a été vérifié à l'écriture de ce fichier. La page "Sources" du site
+# affiche l'état réel de chaque source après le premier passage du collecteur.
+
+settings:
+  max_age_days: 90          # fraîcheur maximale gardée sur le site
+  timeout: 15               # secondes par requête
+  workers: 8
+  # Éditeurs rencontrés via Google News ou Bing qui doivent être marqués "à recouper"
+  verify_publishers: [techlabari, senego, seneweb]
+
+sources:
+  # ---------- Niveau 1 : coeur ----------
+  - {id: musicinafrica, name: Music In Africa, homepage: "https://www.musicinafrica.net", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
+  - {id: afropop, name: Afropop Worldwide, homepage: "https://afropop.org", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
+  - {id: okayafrica, name: OkayAfrica, homepage: "https://www.okayafrica.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
+  - {id: mbw, name: Music Business Worldwide, homepage: "https://www.musicbusinessworldwide.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
+  - {id: ifpi, name: IFPI, homepage: "https://www.ifpi.org", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+  - {id: midia, name: MIDiA Research, homepage: "https://www.midiaresearch.com", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+  - {id: allafrica-fr, name: allAfrica (FR), homepage: "https://fr.allafrica.com", lang: fr, tier: 1, kind: secondary, verify: false, keywords: true}
+  - {id: allafrica-en, name: allAfrica (EN), homepage: "https://allafrica.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
+  - {id: financialafrik, name: Financial Afrik, homepage: "https://www.financialafrik.com", lang: fr, tier: 1, kind: secondary, verify: false, keywords: true}
+  - {id: wearetech, name: We Are Tech Africa, homepage: "https://www.wearetech.africa", lang: fr, tier: 1, kind: secondary, verify: false, keywords: true}
+  - {id: businessday, name: BusinessDay Nigeria, homepage: "https://businessday.ng", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
+  - {id: businesstoday-ke, name: Business Today Kenya, homepage: "https://businesstoday.co.ke", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
+  # Sources primaires d'entreprise (communiqués)
+  - {id: sonatel, name: Sonatel, homepage: "https://sonatel.sn", lang: fr, tier: 1, kind: primary, verify: false, keywords: true}
+  - {id: orange-newsroom, name: Orange Newsroom, homepage: "https://newsroom.orange.com", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
+  - {id: caf, name: CAF, homepage: "https://www.cafonline.com", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
+
+  # ---------- Niveau 2 : généralistes, filtrés par mots-clés ----------
+  - {id: techcrunch, name: TechCrunch, homepage: "https://techcrunch.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: variety, name: Variety, homepage: "https://variety.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: arise, name: Arise News, homepage: "https://www.arise.tv", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: citinewsroom, name: Citi Newsroom, homepage: "https://citinewsroom.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: telecomreview, name: Telecom Review Africa, homepage: "https://www.telecomreviewafrica.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: lesoleil, name: Le Soleil, homepage: "https://lesoleil.sn", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: sentv, name: SenTV, homepage: "https://www.sentv.info", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: xalima, name: Xalima, homepage: "https://xalimasn.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: seneplus, name: Seneplus, homepage: "https://www.seneplus.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: osiris, name: Osiris, homepage: "https://osiris.sn", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  # Suggérées par le document, à tester
+  - {id: jeuneafrique, name: Jeune Afrique, homepage: "https://www.jeuneafrique.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: rfi-afrique, name: RFI Afrique, homepage: "https://www.rfi.fr/fr/afrique", feed: "https://www.rfi.fr/fr/afrique/rss", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: africareport, name: The Africa Report, homepage: "https://www.theafricareport.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: billboard, name: Billboard, homepage: "https://www.billboard.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: audiomack, name: Audiomack, homepage: "https://audiomack.com", lang: en, tier: 2, kind: primary, verify: false, keywords: false}
+  - {id: boomplay, name: Boomplay, homepage: "https://www.boomplay.com", lang: en, tier: 2, kind: primary, verify: false, keywords: false}
+  - {id: mdundo, name: Mdundo, homepage: "https://mdundo.com", lang: en, tier: 2, kind: primary, verify: false, keywords: false}
+  - {id: ghanaweb, name: GhanaWeb, homepage: "https://www.ghanaweb.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+
+  # ---------- Niveau 3 : à recouper ----------
+  - {id: techlabari, name: TechLabari, homepage: "https://techlabari.com", lang: en, tier: 3, kind: secondary, verify: true, keywords: true}
+  - {id: senego, name: Senego, homepage: "https://senego.com", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true}
+  - {id: seneweb, name: Seneweb, homepage: "https://www.seneweb.com", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true}
+
+# Veille ponctuelle (publient peu, pas de flux fiable) : UNESCO, OMPI, ONU Afrique (CEA),
+# IFACCA, CAPASSO, Dakaractu. A consulter à la main une fois par mois.
+
+# ---------- Google Actualités (flux de recherche) : le filet pour tout ce qui n'a pas de flux ----------
+google_news:
+  - {id: gn-afrique-musique-fr, query: "musique africaine industrie", hl: fr, gl: SN, ceid: "SN:fr"}
+  - {id: gn-afrique-business-fr, query: "musique Afrique business streaming droits d'auteur", hl: fr, gl: FR, ceid: "FR:fr"}
+  - {id: gn-sn-fr, query: "musique Sénégal mbalax concert", hl: fr, gl: SN, ceid: "SN:fr"}
+  - {id: gn-ci-fr, query: "musique Côte d'Ivoire coupé-décalé industrie", hl: fr, gl: CI, ceid: "CI:fr"}
+  - {id: gn-cm-fr, query: "musique Cameroun Congo RDC rumba industrie", hl: fr, gl: CM, ceid: "CM:fr"}
+  - {id: gn-maghreb-fr, query: "musique Maroc Algérie Tunisie industrie", hl: fr, gl: MA, ceid: "MA:fr"}
+  - {id: gn-diaspora-fr, query: "afrobeats amapiano France concert festival", hl: fr, gl: FR, ceid: "FR:fr"}
+  - {id: gn-afrobeats-en, query: "Afrobeats music industry business", hl: en, gl: NG, ceid: "NG:en"}
+  - {id: gn-nigeria-en, query: "Nigeria music royalties streaming label", hl: en, gl: NG, ceid: "NG:en"}
+  - {id: gn-za-en, query: "amapiano South Africa music industry", hl: en, gl: ZA, ceid: "ZA:en"}
+  - {id: gn-ke-en, query: "Kenya Tanzania Uganda music industry streaming", hl: en, gl: KE, ceid: "KE:en"}
+  - {id: gn-gh-en, query: "Ghana music industry afrobeats highlife", hl: en, gl: GH, ceid: "GH:en"}
+  - {id: gn-sponsoring-en, query: "Africa music sponsorship partnership telecom", hl: en, gl: US, ceid: "US:en"}
+  - {id: gn-platforms-en, query: "Spotify Audiomack Boomplay Deezer Africa", hl: en, gl: US, ceid: "US:en"}
+
+# ---------- Bing Actualités (équivalent exploitable de MSN, qui n'a pas de flux officiel) ----------
+bing_news:
+  - {id: bing-afrique-fr, query: "musique africaine industrie business", lang: fr}
+  - {id: bing-africa-en, query: "African music industry business streaming", lang: en}
+
+# ---------- Mots-clés ----------
+# Un article d'une source avec keywords: true doit en contenir au moins un (titre ou extrait).
+music_keywords:
+  - musique
+  - music
+  - musical
+  - musicien
+  - artiste
+  - artist
+  - album
+  - single
+  - concert
+  - festival
+  - tournée
+  - label
+  - streaming
+  - spotify
+  - deezer
+  - audiomack
+  - boomplay
+  - mdundo
+  - apple music
+  - youtube music
+  - afrobeat
+  - amapiano
+  - mbalax
+  - coupé-décalé
+  - rumba
+  - hip-hop
+  - rappeur
+  - rapper
+  - chanteur
+  - chanteuse
+  - singer
+  - droits d'auteur
+  - copyright
+  - royalties
+  - sacem
+  - capasso
+  - sponsoring
+  - sponsorship
+  - billboard
+  - ifpi
+
+# ---------- Catégories (la première qui correspond gagne, sinon "actus") ----------
+categories:
+  droits: [droits d'auteur, copyright, royalties, sacem, capasso, coson, bsda, redevance, licence, licensing, piratage, piracy, collecte]
+  streaming: [streaming, spotify, deezer, audiomack, boomplay, mdundo, apple music, youtube music, playlist, tiktok, plateforme, platform]
+  live: [concert, festival, tournée, tour, billetterie, ticket, scène, stage, bercy, stadium, stade]
+  business: [revenu, revenue, chiffre d'affaires, investissement, investment, financement, funding, partenariat, partnership, sponsoring, sponsorship, acquisition, levée, contrat, deal, marché, market, label, résultats, results]

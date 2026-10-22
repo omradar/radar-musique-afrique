@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radar Musique Afrique</title>
+  <meta name="description" content="Actus, business et industrie de la musique africaine, mises à jour toutes les 6 heures.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <div>
+        <h1 id="title"></h1>
+        <p id="tagline" class="tagline"></p>
+      </div>
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="fr">FR</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+    <nav class="wrap tabs">
+      <button data-tab="news"></button>
+      <button data-tab="newsletters"></button>
+      <button data-tab="sources"></button>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="tab-news">
+      <div class="filters">
+        <input id="f-search" type="search">
+        <select id="f-category"></select>
+        <select id="f-lang"></select>
+        <select id="f-kind"></select>
+        <select id="f-period"></select>
+        <label class="check"><input id="f-hide" type="checkbox"> <span id="l-hide"></span></label>
+      </div>
+      <p id="count" class="muted"></p>
+      <div id="list"></div>
+      <button id="more" class="more" hidden></button>
+    </section>
+
+    <section id="tab-newsletters" hidden>
+      <div id="nl-list"></div>
+    </section>
+
+    <section id="tab-sources" hidden>
+      <p id="src-intro" class="muted"></p>
+      <div id="src-list"></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot" id="footer"></footer>
+  <script src="app.js"></script>
+</body>
+</html>
