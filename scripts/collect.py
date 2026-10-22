@@ -234,7 +234,7 @@ def run_job(job, cfg, cache, now):
         relay = google_site_url(job)
         parsed, err2 = fetch_feed(relay, s["timeout"])
         if parsed is not None:
-            job = {**job, "via_override": "Google News", "keywords": False}
+            job = {**job, "via_override": "Google News"}  # le filtre par mots-clés reste appliqué au titre
             result["feed"], result["fallback"] = relay, True
         else:
             err = f"{err} ; relais Google News : {err2}"

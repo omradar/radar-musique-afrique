@@ -36,7 +36,6 @@ sources:
   - {id: businesstoday-ke, name: Business Today Kenya, homepage: "https://businesstoday.co.ke", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
   # Sources primaires d'entreprise (communiqués)
   - {id: sonatel, name: Sonatel, homepage: "https://sonatel.sn", lang: fr, tier: 1, kind: primary, verify: false, keywords: true}
-  - {id: orange-newsroom, name: Orange Newsroom, homepage: "https://newsroom.orange.com", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
   - {id: caf, name: CAF, homepage: "https://www.cafonline.com", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
 
   # ---------- Niveau 2 : généralistes, filtrés par mots-clés ----------
@@ -85,7 +84,7 @@ google_news:
   - {id: gn-audiomack, query: "Audiomack (announces OR launches OR partnership OR Africa)", hl: en, gl: US, ceid: "US:en"}
   - {id: gn-boomplay, query: "Boomplay (announces OR launches OR partnership OR Africa)", hl: en, gl: US, ceid: "US:en"}
   - {id: gn-mdundo, query: "Mdundo (music OR artists OR payments)", hl: en, gl: KE, ceid: "KE:en"}
-  - {id: gn-operateurs-fr, query: "(Sonatel OR \"Max it\" OR \"Orange Digital Center\" OR \"Orange Afrique\") (musique OR sponsoring OR concert OR CAF)", hl: fr, gl: SN, ceid: "SN:fr"}
+  - {id: gn-operateurs-fr, query: "(Orange OR Sonatel OR \"Max it\") (musique OR sponsoring OR concert)", hl: fr, gl: SN, ceid: "SN:fr"}
   - {id: gn-platforms-en, query: "Spotify Audiomack Boomplay Deezer Africa", hl: en, gl: US, ceid: "US:en"}
 
 # ---------- Bing Actualités (équivalent exploitable de MSN, qui n'a pas de flux officiel) ----------
