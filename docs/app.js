@@ -24,7 +24,8 @@ const I18N = {
     never: "Pas encore de données : le premier passage du collecteur n'a pas eu lieu.",
     noNewsletters: "Aucune newsletter publiée pour le moment. La première sort un jeudi à 18h (Paris).",
     readNl: "Lire",
-    srcIntro: "État de chaque source au dernier passage. Une source en erreur n'a pas de flux exploitable.",
+    srcIntro: "État de chaque source au dernier passage. Le premier chiffre est le nombre d'articles gardés, le second le nombre d'articles lus dans le flux (le reste est écarté : hors sujet, sans date ou trop ancien).",
+    relay: "relais Google News",
     items: "articles",
     ok: "OK",
     ko: "Erreur",
@@ -53,7 +54,8 @@ const I18N = {
     never: "No data yet: the collector has not run for the first time.",
     noNewsletters: "No newsletter published yet. The first one goes out on a Thursday at 6pm (Paris).",
     readNl: "Read",
-    srcIntro: "Status of each source at the last run. A source in error has no usable feed.",
+    srcIntro: "Status of each source at the last run. The first number is the articles kept, the second the articles read from the feed (the rest is dropped: off topic, undated or too old).",
+    relay: "Google News relay",
     items: "articles",
     ok: "OK",
     ko: "Error",
@@ -190,7 +192,7 @@ function renderSources() {
     el("div", { cls: "card" }, [
       el("div", { cls: "row" }, [
         el("strong", { text: s.name }),
-        el("span", { cls: s.ok ? "status-ok" : "status-ko", text: s.ok ? `${L.ok} · ${s.items} ${L.items}` : `${L.ko} · ${s.error || ""}` }),
+        el("span", { cls: s.ok ? "status-ok" : "status-ko", text: s.ok ? `${L.ok} · ${s.items}/${s.fetched === undefined ? "?" : s.fetched} ${L.items}${s.fallback ? " · " + L.relay : ""}` : `${L.ko} · ${s.error || ""}` }),
       ]),
     ])
   ));

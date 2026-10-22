@@ -156,13 +156,15 @@ def make_article(entry, job, now, max_age, keywords, categories, verify_publishe
 
     source_name, source_id, verify = job["name"], job["id"], job["verify"]
     summary = ""
-    if job["aggregator"]:
-        publisher = (entry.get("source") or {}).get("title") or job["aggregator"]
+    via = job.get("via_override") or job["aggregator"]
+    if via:
+        publisher = (entry.get("source") or {}).get("title") or via
         suffix = " - " + publisher
         if title.endswith(suffix):
             title = title[: -len(suffix)].strip()
-        source_name, source_id = publisher, slug(publisher) or job["id"]
-        verify = slug(publisher) in verify_publishers or any(v in slug(publisher) for v in verify_publishers)
+        if job["aggregator"]:  # recherche libre : l'éditeur est celui indiqué par Google ou Bing
+            source_name, source_id = publisher, slug(publisher) or job["id"]
+            verify = slug(publisher) in verify_publishers or any(v in slug(publisher) for v in verify_publishers)
     else:
         summary = shorten(clean_text(entry.get("summary", "")), SUMMARY_MAX)
 
@@ -183,7 +185,7 @@ def make_article(entry, job, now, max_age, keywords, categories, verify_publishe
         "summary": summary,
         "source": source_name,
         "source_id": source_id,
-        "via": job["aggregator"],
+        "via": via,
         "lang": job["lang"],
         "kind": job["kind"] if not job["aggregator"] else "secondary",
         "tier": job["tier"],
@@ -193,24 +195,50 @@ def make_article(entry, job, now, max_age, keywords, categories, verify_publishe
     }
 
 
-def run_job(job, cfg, cache, now):
-    s = cfg["settings"]
-    result = {"id": job["id"], "name": job["name"], "ok": False, "items": 0, "feed": job.get("feed"), "error": None}
-    feed_url = job.get("feed")
-    if not feed_url:
-        feed_url = discover_feed(job["homepage"], s["timeout"], cache)
-        result["feed"] = feed_url
-    if not feed_url:
-        result["error"] = "aucun flux trouvé"
-        return result, []
-    data, err = http_get(feed_url, s["timeout"])
+def fetch_feed(url, timeout):
+    data, err = http_get(url, timeout)
     if err:
-        result["error"] = err
-        return result, []
+        return None, err
     parsed = feedparser.parse(data)
     if not parsed.entries:
-        result["error"] = "flux vide ou illisible"
+        return None, "flux vide ou illisible"
+    return parsed, None
+
+
+def google_site_url(job):
+    """Relais pour les sites sans flux ou qui bloquent GitHub : Google Actualités restreint au domaine."""
+    domain = urlparse(job["homepage"]).netloc.replace("www.", "")
+    gl = "US" if job["lang"] == "en" else "FR"
+    return "https://news.google.com/rss/search?" + urlencode(
+        {"q": f"site:{domain} when:30d", "hl": job["lang"], "gl": gl, "ceid": f"{gl}:{job['lang']}"}
+    )
+
+
+def run_job(job, cfg, cache, now):
+    s = cfg["settings"]
+    result = {
+        "id": job["id"], "name": job["name"], "ok": False, "items": 0, "fetched": 0,
+        "feed": job.get("feed"), "fallback": False, "error": None,
+    }
+    feed_url = job.get("feed")
+    if not feed_url and job.get("homepage"):
+        feed_url = discover_feed(job["homepage"], s["timeout"], cache)
+    result["feed"] = feed_url
+    parsed, err = None, "aucun flux trouvé (site sans RSS ou qui bloque GitHub)"
+    if feed_url:
+        parsed, err = fetch_feed(feed_url, s["timeout"])
+    if parsed is None and job.get("homepage") and not job["aggregator"]:
+        relay = google_site_url(job)
+        parsed, err2 = fetch_feed(relay, s["timeout"])
+        if parsed is not None:
+            job = {**job, "via_override": "Google News"}
+            result["feed"], result["fallback"] = relay, True
+        else:
+            err = f"{err} ; relais Google News : {err2}"
+    if parsed is None:
+        result["error"] = err
         return result, []
+    result["fetched"] = len(parsed.entries)
     keywords = [k.lower() for k in cfg["music_keywords"]]
     categories = {c: [w.lower() for w in ws] for c, ws in cfg["categories"].items()}
     verify_publishers = [v.lower() for v in s.get("verify_publishers", [])]

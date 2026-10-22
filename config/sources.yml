@@ -70,18 +70,18 @@ sources:
 # ---------- Google Actualités (flux de recherche) : le filet pour tout ce qui n'a pas de flux ----------
 google_news:
   - {id: gn-afrique-musique-fr, query: "musique africaine industrie", hl: fr, gl: SN, ceid: "SN:fr"}
-  - {id: gn-afrique-business-fr, query: "musique Afrique business streaming droits d'auteur", hl: fr, gl: FR, ceid: "FR:fr"}
+  - {id: gn-afrique-business-fr, query: "musique africaine (streaming OR business OR \"droits d'auteur\")", hl: fr, gl: FR, ceid: "FR:fr"}
   - {id: gn-sn-fr, query: "musique Sénégal mbalax concert", hl: fr, gl: SN, ceid: "SN:fr"}
-  - {id: gn-ci-fr, query: "musique Côte d'Ivoire coupé-décalé industrie", hl: fr, gl: CI, ceid: "CI:fr"}
-  - {id: gn-cm-fr, query: "musique Cameroun Congo RDC rumba industrie", hl: fr, gl: CM, ceid: "CM:fr"}
-  - {id: gn-maghreb-fr, query: "musique Maroc Algérie Tunisie industrie", hl: fr, gl: MA, ceid: "MA:fr"}
-  - {id: gn-diaspora-fr, query: "afrobeats amapiano France concert festival", hl: fr, gl: FR, ceid: "FR:fr"}
+  - {id: gn-ci-fr, query: "musique (\"Côte d'Ivoire\" OR coupé-décalé)", hl: fr, gl: CI, ceid: "CI:fr"}
+  - {id: gn-cm-fr, query: "musique (Cameroun OR Congo OR RDC OR Gabon)", hl: fr, gl: CM, ceid: "CM:fr"}
+  - {id: gn-maghreb-fr, query: "musique (Maroc OR Algérie OR Tunisie)", hl: fr, gl: MA, ceid: "MA:fr"}
+  - {id: gn-diaspora-fr, query: "(afrobeats OR amapiano) (concert OR festival)", hl: fr, gl: FR, ceid: "FR:fr"}
   - {id: gn-afrobeats-en, query: "Afrobeats music industry business", hl: en, gl: NG, ceid: "NG:en"}
   - {id: gn-nigeria-en, query: "Nigeria music royalties streaming label", hl: en, gl: NG, ceid: "NG:en"}
   - {id: gn-za-en, query: "amapiano South Africa music industry", hl: en, gl: ZA, ceid: "ZA:en"}
   - {id: gn-ke-en, query: "Kenya Tanzania Uganda music industry streaming", hl: en, gl: KE, ceid: "KE:en"}
   - {id: gn-gh-en, query: "Ghana music industry afrobeats highlife", hl: en, gl: GH, ceid: "GH:en"}
-  - {id: gn-sponsoring-en, query: "Africa music sponsorship partnership telecom", hl: en, gl: US, ceid: "US:en"}
+  - {id: gn-sponsoring-en, query: "African music (sponsorship OR partnership)", hl: en, gl: US, ceid: "US:en"}
   - {id: gn-platforms-en, query: "Spotify Audiomack Boomplay Deezer Africa", hl: en, gl: US, ceid: "US:en"}
 
 # ---------- Bing Actualités (équivalent exploitable de MSN, qui n'a pas de flux officiel) ----------
