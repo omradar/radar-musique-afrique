@@ -148,7 +148,7 @@ def call_gemini(system, user):
     body = {
         "systemInstruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": user}]}],
-        "generationConfig": {"maxOutputTokens": 6000, "temperature": 0.4},
+        "generationConfig": {"maxOutputTokens": 24000, "temperature": 0.4},  # large : la réflexion interne consomme aussi des jetons
     }
     errors = []
     models = gemini_candidates(headers)
@@ -170,10 +170,13 @@ def call_gemini(system, user):
                     errors.append(f"{model}: {r.status_code} " + re.sub(r"\s+", " ", r.text)[:120])
                 continue
             try:
-                parts = r.json()["candidates"][0]["content"]["parts"]
-                text = "".join(p.get("text", "") for p in parts).strip()
+                cand = r.json()["candidates"][0]
+                text = "".join(p.get("text", "") for p in cand["content"]["parts"]).strip()
             except (KeyError, IndexError, ValueError):
                 errors.append(f"{model}: réponse inattendue")
+                continue
+            if cand.get("finishReason") not in (None, "STOP"):
+                errors.append(f"{model}: texte interrompu ({cand.get('finishReason')})")
                 continue
             if text:
                 print(f"Gemini : modèle utilisé = {model} (tour {round_no + 1})")
@@ -230,6 +233,12 @@ def compile_newsletter(items, lang, date_label):
     return "\n".join(out)
 
 
+def looks_complete(text):
+    """Une newsletter entière finit sur une phrase terminée ou un lien, pas au milieu d'un mot."""
+    last = text.rstrip().splitlines()[-1].rstrip()
+    return last.endswith((".", "!", "?", ")", ":", "»", '"', "*")) and text.count("```") % 2 == 0
+
+
 def write_with_fallbacks(system, user, items, lang, date_label):
     """Claude, puis Gemini (gratuit), puis compilation sans IA. Ne laisse jamais la semaine sans newsletter."""
     attempts = []
@@ -240,10 +249,10 @@ def write_with_fallbacks(system, user, items, lang, date_label):
     for name, fn in attempts:
         try:
             text = fn(system, user)
-            if len(text) > 400:
+            if len(text) > 400 and looks_complete(text):
                 print(f"[{lang}] rédigée par {name}")
                 return text
-            print(f"::warning title=Newsletter::{name} a renvoyé un texte trop court, on passe à la suite")
+            print(f"::warning title=Newsletter::{name} a renvoyé un texte trop court ou coupé, on passe à la suite")
         except ProviderError as e:
             print("::warning title=Newsletter::" + re.sub(r"\s+", " ", str(e))[:600])
     print(f"[{lang}] compilation automatique sans IA")
