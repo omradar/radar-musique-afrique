@@ -13,6 +13,7 @@
 # affiche l'état réel de chaque source après le premier passage du collecteur.
 
 settings:
+  max_items_per_feed: 40    # articles lus par flux
   max_age_days: 90          # fraîcheur maximale gardée sur le site
   timeout: 15               # secondes par requête
   workers: 8
@@ -25,7 +26,7 @@ sources:
   - {id: afropop, name: Afropop Worldwide, homepage: "https://afropop.org", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
   - {id: okayafrica, name: OkayAfrica, homepage: "https://www.okayafrica.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
   - {id: mbw, name: Music Business Worldwide, homepage: "https://www.musicbusinessworldwide.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
-  - {id: ifpi, name: IFPI, homepage: "https://www.ifpi.org", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+  - {id: ifpi, name: IFPI, homepage: "https://www.ifpi.org", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
   - {id: midia, name: MIDiA Research, homepage: "https://www.midiaresearch.com", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
   - {id: allafrica-fr, name: allAfrica (FR), homepage: "https://fr.allafrica.com", lang: fr, tier: 1, kind: secondary, verify: false, keywords: true}
   - {id: allafrica-en, name: allAfrica (EN), homepage: "https://allafrica.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
@@ -50,13 +51,12 @@ sources:
   - {id: seneplus, name: Seneplus, homepage: "https://www.seneplus.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
   - {id: osiris, name: Osiris, homepage: "https://osiris.sn", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
   # Suggérées par le document, à tester
+  # (Audiomack, Boomplay et Mdundo sont suivis par recherche Google Actualités plus bas : leur site
+  #  ne contient que des pages de morceaux, pas d'actualités)
   - {id: jeuneafrique, name: Jeune Afrique, homepage: "https://www.jeuneafrique.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
   - {id: rfi-afrique, name: RFI Afrique, homepage: "https://www.rfi.fr/fr/afrique", feed: "https://www.rfi.fr/fr/afrique/rss", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
   - {id: africareport, name: The Africa Report, homepage: "https://www.theafricareport.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
   - {id: billboard, name: Billboard, homepage: "https://www.billboard.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: audiomack, name: Audiomack, homepage: "https://audiomack.com", lang: en, tier: 2, kind: primary, verify: false, keywords: false}
-  - {id: boomplay, name: Boomplay, homepage: "https://www.boomplay.com", lang: en, tier: 2, kind: primary, verify: false, keywords: false}
-  - {id: mdundo, name: Mdundo, homepage: "https://mdundo.com", lang: en, tier: 2, kind: primary, verify: false, keywords: false}
   - {id: ghanaweb, name: GhanaWeb, homepage: "https://www.ghanaweb.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
 
   # ---------- Niveau 3 : à recouper ----------
@@ -82,6 +82,10 @@ google_news:
   - {id: gn-ke-en, query: "Kenya Tanzania Uganda music industry streaming", hl: en, gl: KE, ceid: "KE:en"}
   - {id: gn-gh-en, query: "Ghana music industry afrobeats highlife", hl: en, gl: GH, ceid: "GH:en"}
   - {id: gn-sponsoring-en, query: "African music (sponsorship OR partnership)", hl: en, gl: US, ceid: "US:en"}
+  - {id: gn-audiomack, query: "Audiomack (announces OR launches OR partnership OR Africa)", hl: en, gl: US, ceid: "US:en"}
+  - {id: gn-boomplay, query: "Boomplay (announces OR launches OR partnership OR Africa)", hl: en, gl: US, ceid: "US:en"}
+  - {id: gn-mdundo, query: "Mdundo (music OR artists OR payments)", hl: en, gl: KE, ceid: "KE:en"}
+  - {id: gn-operateurs-fr, query: "(Orange OR Sonatel OR \"Max it\") (musique OR sponsoring OR concert)", hl: fr, gl: SN, ceid: "SN:fr"}
   - {id: gn-platforms-en, query: "Spotify Audiomack Boomplay Deezer Africa", hl: en, gl: US, ceid: "US:en"}
 
 # ---------- Bing Actualités (équivalent exploitable de MSN, qui n'a pas de flux officiel) ----------
@@ -132,6 +136,15 @@ music_keywords:
   - sponsorship
   - billboard
   - ifpi
+  - chanson
+  - morceau
+  - orchestre
+  - spectacle
+  - mbalakh
+  - clip
+  - youssou
+  - baaba maal
+  - wally seck
 
 # ---------- Catégories (la première qui correspond gagne, sinon "actus") ----------
 categories:

@@ -32,6 +32,7 @@ DATA_DIR = ROOT / "docs" / "data"
 CACHE_PATH = ROOT / "data" / "feed_cache.json"
 UA = "Mozilla/5.0 (compatible; RadarMusiqueAfrique/1.0)"
 SUMMARY_MAX = 280  # extrait court : on renvoie vers la source, on ne republie pas l'article
+RELAY_TERMS = ["music", "musique", "concert", "festival", "streaming", "artiste", "artist"]
 COMMON_PATHS = ["/feed", "/feed/", "/rss", "/rss.xml", "/feed.xml", "/atom.xml", "/index.xml"]
 TRACKING_PREFIXES = ("utm_", "mc_")
 TRACKING_KEYS = {"fbclid", "gclid", "ref"}
@@ -209,8 +210,10 @@ def google_site_url(job):
     """Relais pour les sites sans flux ou qui bloquent GitHub : Google Actualités restreint au domaine."""
     domain = urlparse(job["homepage"]).netloc.replace("www.", "")
     gl = "US" if job["lang"] == "en" else "FR"
+    # Pour les sites généralistes, Google fait le tri musique à notre place (le titre seul ne suffit pas)
+    terms = " (" + " OR ".join(RELAY_TERMS) + ")" if job.get("keywords") else ""
     return "https://news.google.com/rss/search?" + urlencode(
-        {"q": f"site:{domain} when:30d", "hl": job["lang"], "gl": gl, "ceid": f"{gl}:{job['lang']}"}
+        {"q": f"site:{domain}{terms} when:30d", "hl": job["lang"], "gl": gl, "ceid": f"{gl}:{job['lang']}"}
     )
 
 
@@ -231,7 +234,7 @@ def run_job(job, cfg, cache, now):
         relay = google_site_url(job)
         parsed, err2 = fetch_feed(relay, s["timeout"])
         if parsed is not None:
-            job = {**job, "via_override": "Google News"}
+            job = {**job, "via_override": "Google News", "keywords": False}
             result["feed"], result["fallback"] = relay, True
         else:
             err = f"{err} ; relais Google News : {err2}"
