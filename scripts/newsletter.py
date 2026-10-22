@@ -27,6 +27,7 @@ MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-5-5")
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 LANGS = {"fr": "français", "en": "English"}
 MAX_ARTICLES = 70
+INTERNATIONAL_SOURCES = {"Music Business Worldwide", "Billboard", "TechCrunch", "Variety", "MIDiA Research", "IFPI"}
 
 EN_HEADINGS = (
     "Section titles must be in English: Editorial, Top stories, Business and sponsorship, "
@@ -59,6 +60,7 @@ def pick_articles(articles, now_utc, days=7):
     recent = [a for a in articles if datetime.fromisoformat(a["published"]) >= cutoff]
     recent.sort(key=lambda a: (
         a.get("status") == "unconfirmed",
+        a["source"] in INTERNATIONAL_SOURCES,  # les sources internationales passent après les africaines
         a["kind"] != "primary",
         a["tier"],
         -datetime.fromisoformat(a["published"]).timestamp(),
