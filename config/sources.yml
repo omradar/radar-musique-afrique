@@ -85,7 +85,7 @@ google_news:
   - {id: gn-audiomack, query: "Audiomack (announces OR launches OR partnership OR Africa)", hl: en, gl: US, ceid: "US:en"}
   - {id: gn-boomplay, query: "Boomplay (announces OR launches OR partnership OR Africa)", hl: en, gl: US, ceid: "US:en"}
   - {id: gn-mdundo, query: "Mdundo (music OR artists OR payments)", hl: en, gl: KE, ceid: "KE:en"}
-  - {id: gn-operateurs-fr, query: "(Orange OR Sonatel OR \"Max it\") (musique OR sponsoring OR concert)", hl: fr, gl: SN, ceid: "SN:fr"}
+  - {id: gn-operateurs-fr, query: "(Sonatel OR \"Max it\" OR \"Orange Digital Center\" OR \"Orange Afrique\") (musique OR sponsoring OR concert OR CAF)", hl: fr, gl: SN, ceid: "SN:fr"}
   - {id: gn-platforms-en, query: "Spotify Audiomack Boomplay Deezer Africa", hl: en, gl: US, ceid: "US:en"}
 
 # ---------- Bing Actualités (équivalent exploitable de MSN, qui n'a pas de flux officiel) ----------
