@@ -23,6 +23,7 @@ OUT_DIR = ROOT / "docs" / "newsletters"
 BRIEF_PATH = ROOT / "config" / "newsletter_brief.md"
 PARIS = ZoneInfo("Europe/Paris")
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-5-5")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 LANGS = {"fr": "français", "en": "English"}
 MAX_ARTICLES = 70
 
@@ -86,11 +87,13 @@ def build_prompts(brief, items, lang, week_label):
     return system, user
 
 
+class ProviderError(Exception):
+    pass
+
+
 def call_claude(system, user):
     import anthropic
 
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        sys.exit("ANTHROPIC_API_KEY manquante (secret GitHub à créer, voir le README).")
     client = anthropic.Anthropic()
     try:
         msg = client.messages.create(
@@ -98,20 +101,95 @@ def call_claude(system, user):
             messages=[{"role": "user", "content": user}],
         )
     except anthropic.APIStatusError as e:
-        hints = {
-            401: "clé API refusée : vérifie le secret ANTHROPIC_API_KEY (recopie la clé en entier, sans espace).",
-            402: "paiement requis : ajoute du crédit sur ton compte de la Console Anthropic.",
-            403: "accès refusé pour cette clé ou ce modèle.",
-            404: f"modèle introuvable : {MODEL}. Change la variable CLAUDE_MODEL ou la constante MODEL.",
-            429: "limite de débit ou de crédit atteinte.",
-        }
-        msg_txt = f"ERREUR API CLAUDE {e.status_code} : {hints.get(e.status_code, 'voir le message')} | {e.message}"
-        print("::error title=API Claude::" + msg_txt.replace("\n", " "))  # visible dans les annotations du run
-        sys.exit(msg_txt)
+        raise ProviderError(f"Claude {e.status_code} : {e.message}") from e
     except anthropic.APIConnectionError as e:
-        print(f"::error title=API Claude::erreur réseau : {e}")
-        sys.exit(f"ERREUR RÉSEAU vers l'API Claude : {e}")
+        raise ProviderError(f"Claude, erreur réseau : {e}") from e
     return "".join(b.text for b in msg.content if b.type == "text").strip()
+
+
+def call_gemini(system, user):
+    import requests
+
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
+    body = {
+        "systemInstruction": {"parts": [{"text": system}]},
+        "contents": [{"role": "user", "parts": [{"text": user}]}],
+        "generationConfig": {"maxOutputTokens": 6000, "temperature": 0.4},
+    }
+    try:
+        r = requests.post(url, json=body, timeout=120, headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]})
+    except requests.RequestException as e:
+        raise ProviderError(f"Gemini, erreur réseau : {e}") from e
+    if r.status_code != 200:
+        raise ProviderError(f"Gemini {r.status_code} : {r.text[:300]}")
+    try:
+        parts = r.json()["candidates"][0]["content"]["parts"]
+        return "".join(p.get("text", "") for p in parts).strip()
+    except (KeyError, IndexError, ValueError) as e:
+        raise ProviderError(f"Gemini, réponse inattendue : {r.text[:300]}") from e
+
+
+COMPILE_TEXT = {
+    "fr": {
+        "title": "Newsletter du {d} : l'essentiel de la musique africaine",
+        "intro": "Voici la sélection automatique de la semaine ({n} articles retenus). Chaque titre renvoie vers la source d'origine.",
+        "sections": {"business": "Business et sponsoring", "streaming": "Streaming et plateformes",
+                     "live": "Live et festivals", "droits": "Droits d'auteur et régulation", "actus": "Autres actus"},
+        "verify": "À recouper",
+        "verify_note": "Ces articles viennent de sources à recouper et ne sont pas confirmés.",
+        "primary": "annonce de la source",
+    },
+    "en": {
+        "title": "Newsletter of {d}: African music in brief",
+        "intro": "This week's automatic selection ({n} articles). Each headline links to the original source.",
+        "sections": {"business": "Business and sponsorship", "streaming": "Streaming and platforms",
+                     "live": "Live and festivals", "droits": "Rights and regulation", "actus": "Other news"},
+        "verify": "To be verified",
+        "verify_note": "These articles come from sources that need cross-checking and are not confirmed.",
+        "primary": "source announcement",
+    },
+}
+
+
+def compile_newsletter(items, lang, date_label):
+    """Version sans IA : classement par rubrique, titres et liens uniquement."""
+    T = COMPILE_TEXT[lang]
+    ordered = sorted(items, key=lambda i: (i["lang"] != lang, i["kind"] != "primary", i["date"]), reverse=False)
+    solid = [i for i in ordered if i["status"] != "unconfirmed"]
+    unconfirmed = [i for i in ordered if i["status"] == "unconfirmed"]
+
+    def line(i):
+        tag = f" ({T['primary']})" if i["kind"] == "primary" else ""
+        return f"- [{i['title']}]({i['url']}) : {i['source']}, {i['date']}{tag}"
+
+    out = [f"# {T['title'].format(d=date_label)}", "", T["intro"].format(n=len(items)), ""]
+    for cat, label in T["sections"].items():
+        rows = [i for i in solid if i["category"] == cat][:12]
+        if rows:
+            out += [f"## {label}", ""] + [line(i) for i in rows] + [""]
+    if unconfirmed:
+        out += [f"## {T['verify']}", "", T["verify_note"], ""] + [line(i) for i in unconfirmed[:8]] + [""]
+    return "\n".join(out)
+
+
+def write_with_fallbacks(system, user, items, lang, date_label):
+    """Claude, puis Gemini (gratuit), puis compilation sans IA. Ne laisse jamais la semaine sans newsletter."""
+    attempts = []
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        attempts.append(("Claude", call_claude))
+    if os.environ.get("GEMINI_API_KEY"):
+        attempts.append(("Gemini", call_gemini))
+    for name, fn in attempts:
+        try:
+            text = fn(system, user)
+            if len(text) > 400:
+                print(f"[{lang}] rédigée par {name}")
+                return text
+            print(f"::warning title=Newsletter::{name} a renvoyé un texte trop court, on passe à la suite")
+        except ProviderError as e:
+            print(f"::warning title=Newsletter::{e}"[:400])
+    print(f"[{lang}] compilation automatique sans IA")
+    return compile_newsletter(items, lang, date_label)
 
 
 def polish(text):
@@ -161,7 +239,7 @@ def main():
         if args.dry_run:
             print(f"===== {lang} : système =====\n{system}\n===== utilisateur ({len(items)} articles) =====\n{user[:1500]}...")
             continue
-        text = polish(call_claude(system, user))
+        text = polish(write_with_fallbacks(system, user, items, lang, now_paris.strftime("%d/%m/%Y")))
         footer = "Radar Musique Afrique" if lang == "fr" else "Africa Music Radar"
         title, html_doc = render_html(text, lang, footer)
         (OUT_DIR / f"{date_str}-{lang}.md").write_text(text, encoding="utf-8")
