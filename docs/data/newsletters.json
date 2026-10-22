@@ -1,1 +1,18 @@
-{"items": []}
+{
+ "items": [
+  {
+   "date": "2026-10-22",
+   "lang": "fr",
+   "title": "Newsletter du 22/10/2026 : l'essentiel de la musique africaine",
+   "html": "newsletters/2026-10-22-fr.html",
+   "md": "newsletters/2026-10-22-fr.md"
+  },
+  {
+   "date": "2026-10-22",
+   "lang": "en",
+   "title": "Newsletter of 22/10/2026: African music in brief",
+   "html": "newsletters/2026-10-22-en.html",
+   "md": "newsletters/2026-10-22-en.md"
+  }
+ ]
+}
