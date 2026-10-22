@@ -92,10 +92,25 @@ def call_claude(system, user):
     if not os.environ.get("ANTHROPIC_API_KEY"):
         sys.exit("ANTHROPIC_API_KEY manquante (secret GitHub à créer, voir le README).")
     client = anthropic.Anthropic()
-    msg = client.messages.create(
-        model=MODEL, max_tokens=4500, system=system,
-        messages=[{"role": "user", "content": user}],
-    )
+    try:
+        msg = client.messages.create(
+            model=MODEL, max_tokens=4500, system=system,
+            messages=[{"role": "user", "content": user}],
+        )
+    except anthropic.APIStatusError as e:
+        hints = {
+            401: "clé API refusée : vérifie le secret ANTHROPIC_API_KEY (recopie la clé en entier, sans espace).",
+            402: "paiement requis : ajoute du crédit sur ton compte de la Console Anthropic.",
+            403: "accès refusé pour cette clé ou ce modèle.",
+            404: f"modèle introuvable : {MODEL}. Change la variable CLAUDE_MODEL ou la constante MODEL.",
+            429: "limite de débit ou de crédit atteinte.",
+        }
+        msg_txt = f"ERREUR API CLAUDE {e.status_code} : {hints.get(e.status_code, 'voir le message')} | {e.message}"
+        print("::error title=API Claude::" + msg_txt.replace("\n", " "))  # visible dans les annotations du run
+        sys.exit(msg_txt)
+    except anthropic.APIConnectionError as e:
+        print(f"::error title=API Claude::erreur réseau : {e}")
+        sys.exit(f"ERREUR RÉSEAU vers l'API Claude : {e}")
     return "".join(b.text for b in msg.content if b.type == "text").strip()
 
 
