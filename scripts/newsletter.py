@@ -8,6 +8,7 @@ Usage :
 """
 import argparse
 import json
+import time
 import os
 import re
 import sys
@@ -107,6 +108,7 @@ def call_claude(system, user):
     return "".join(b.text for b in msg.content if b.type == "text").strip()
 
 
+GEMINI_PAUSE = int(os.environ.get("GEMINI_PAUSE", "45"))
 GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
 
 
@@ -135,7 +137,7 @@ def gemini_candidates(headers):
     except Exception as e:  # noqa: BLE001
         print(f"::warning title=Gemini::liste des modèles indisponible : {e}"[:300])
     found.sort()
-    names = [f[3] for f in found][:4]
+    names = [f[3] for f in found][:8]  # large choix : les modèles récents saturent souvent
     return names or [GEMINI_MODEL]
 
 
@@ -149,25 +151,39 @@ def call_gemini(system, user):
         "generationConfig": {"maxOutputTokens": 6000, "temperature": 0.4},
     }
     errors = []
-    for model in gemini_candidates(headers):
-        try:
-            r = requests.post(f"{GEMINI_BASE}/models/{model}:generateContent", json=body, headers=headers, timeout=120)
-        except requests.RequestException as e:
-            errors.append(f"{model}: réseau {e}")
-            continue
-        if r.status_code != 200:
-            errors.append(f"{model}: {r.status_code} " + re.sub(r"\s+", " ", r.text)[:160])
-            continue
-        try:
-            parts = r.json()["candidates"][0]["content"]["parts"]
-            text = "".join(p.get("text", "") for p in parts).strip()
-        except (KeyError, IndexError, ValueError):
-            errors.append(f"{model}: réponse inattendue")
-            continue
-        if text:
-            print(f"Gemini : modèle utilisé = {model}")
-            return text
-        errors.append(f"{model}: réponse vide")
+    models = gemini_candidates(headers)
+    for round_no in range(3):                 # 3 tours complets, pause entre chaque
+        overloaded = False
+        for model in models:
+            try:
+                r = requests.post(f"{GEMINI_BASE}/models/{model}:generateContent", json=body, headers=headers, timeout=120)
+            except requests.RequestException as e:
+                errors.append(f"{model}: réseau {e}")
+                continue
+            if r.status_code in (429, 500, 503, 504):
+                overloaded = True
+                if round_no == 2:
+                    errors.append(f"{model}: {r.status_code} saturé")
+                continue
+            if r.status_code != 200:
+                if round_no == 0:
+                    errors.append(f"{model}: {r.status_code} " + re.sub(r"\s+", " ", r.text)[:120])
+                continue
+            try:
+                parts = r.json()["candidates"][0]["content"]["parts"]
+                text = "".join(p.get("text", "") for p in parts).strip()
+            except (KeyError, IndexError, ValueError):
+                errors.append(f"{model}: réponse inattendue")
+                continue
+            if text:
+                print(f"Gemini : modèle utilisé = {model} (tour {round_no + 1})")
+                return text
+            errors.append(f"{model}: réponse vide")
+        if not overloaded:
+            break
+        if round_no < 2:
+            print(f"Gemini saturé, nouvelle tentative dans {GEMINI_PAUSE}s")
+            time.sleep(GEMINI_PAUSE)
     raise ProviderError("Gemini | " + " ; ".join(errors))
 
 
