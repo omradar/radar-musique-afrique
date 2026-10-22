@@ -1,1 +1,421 @@
-{"updated": null, "sources": []}
+{
+ "updated": "2026-10-22T11:53:45.356259+00:00",
+ "sources": [
+  {
+   "id": "musicinafrica",
+   "name": "Music In Africa",
+   "ok": true,
+   "items": 10,
+   "feed": "https://musicinafrica.net/feed/",
+   "error": null
+  },
+  {
+   "id": "afropop",
+   "name": "Afropop Worldwide",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "okayafrica",
+   "name": "OkayAfrica",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "mbw",
+   "name": "Music Business Worldwide",
+   "ok": true,
+   "items": 8,
+   "feed": "https://www.musicbusinessworldwide.com/feed/",
+   "error": null
+  },
+  {
+   "id": "ifpi",
+   "name": "IFPI",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "midia",
+   "name": "MIDiA Research",
+   "ok": true,
+   "items": 42,
+   "feed": "https://www.midiaresearch.com/rss/blog.xml",
+   "error": null
+  },
+  {
+   "id": "allafrica-fr",
+   "name": "allAfrica (FR)",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "allafrica-en",
+   "name": "allAfrica (EN)",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "financialafrik",
+   "name": "Financial Afrik",
+   "ok": true,
+   "items": 1,
+   "feed": "https://www.financialafrik.com/feed/",
+   "error": null
+  },
+  {
+   "id": "wearetech",
+   "name": "We Are Tech Africa",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "businessday",
+   "name": "BusinessDay Nigeria",
+   "ok": true,
+   "items": 0,
+   "feed": "https://businessday.ng/feed",
+   "error": null
+  },
+  {
+   "id": "businesstoday-ke",
+   "name": "Business Today Kenya",
+   "ok": true,
+   "items": 3,
+   "feed": "https://businesstoday.co.ke/feed/",
+   "error": null
+  },
+  {
+   "id": "sonatel",
+   "name": "Sonatel",
+   "ok": true,
+   "items": 1,
+   "feed": "https://sonatel.sn/feed/",
+   "error": null
+  },
+  {
+   "id": "orange-newsroom",
+   "name": "Orange Newsroom",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "caf",
+   "name": "CAF",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "techcrunch",
+   "name": "TechCrunch",
+   "ok": true,
+   "items": 0,
+   "feed": "https://techcrunch.com/feed/",
+   "error": null
+  },
+  {
+   "id": "variety",
+   "name": "Variety",
+   "ok": true,
+   "items": 3,
+   "feed": "https://variety.com/feed/rss/",
+   "error": null
+  },
+  {
+   "id": "arise",
+   "name": "Arise News",
+   "ok": true,
+   "items": 0,
+   "feed": "https://www.arise.tv/feed",
+   "error": null
+  },
+  {
+   "id": "citinewsroom",
+   "name": "Citi Newsroom",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "telecomreview",
+   "name": "Telecom Review Africa",
+   "ok": true,
+   "items": 0,
+   "feed": "https://www.telecomreviewafrica.com/feed/",
+   "error": null
+  },
+  {
+   "id": "lesoleil",
+   "name": "Le Soleil",
+   "ok": true,
+   "items": 0,
+   "feed": "https://lesoleil.sn/feed/",
+   "error": null
+  },
+  {
+   "id": "sentv",
+   "name": "SenTV",
+   "ok": true,
+   "items": 0,
+   "feed": "https://www.sentv.info/feed/",
+   "error": null
+  },
+  {
+   "id": "xalima",
+   "name": "Xalima",
+   "ok": true,
+   "items": 1,
+   "feed": "https://xalimasn.com/feed/",
+   "error": null
+  },
+  {
+   "id": "seneplus",
+   "name": "Seneplus",
+   "ok": true,
+   "items": 1,
+   "feed": "https://www.seneplus.com/rss.xml",
+   "error": null
+  },
+  {
+   "id": "osiris",
+   "name": "Osiris",
+   "ok": true,
+   "items": 1,
+   "feed": "https://osiris.sn/spip.php?page=backend",
+   "error": null
+  },
+  {
+   "id": "jeuneafrique",
+   "name": "Jeune Afrique",
+   "ok": true,
+   "items": 0,
+   "feed": "https://www.jeuneafrique.com/feed",
+   "error": null
+  },
+  {
+   "id": "rfi-afrique",
+   "name": "RFI Afrique",
+   "ok": true,
+   "items": 0,
+   "feed": "https://www.rfi.fr/fr/afrique/rss",
+   "error": null
+  },
+  {
+   "id": "africareport",
+   "name": "The Africa Report",
+   "ok": true,
+   "items": 1,
+   "feed": "https://www.theafricareport.com/feed",
+   "error": null
+  },
+  {
+   "id": "billboard",
+   "name": "Billboard",
+   "ok": true,
+   "items": 8,
+   "feed": "https://www.billboard.com/feed/rss/",
+   "error": null
+  },
+  {
+   "id": "audiomack",
+   "name": "Audiomack",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "boomplay",
+   "name": "Boomplay",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "mdundo",
+   "name": "Mdundo",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "ghanaweb",
+   "name": "GhanaWeb",
+   "ok": false,
+   "items": 0,
+   "feed": null,
+   "error": "aucun flux trouvé"
+  },
+  {
+   "id": "techlabari",
+   "name": "TechLabari",
+   "ok": true,
+   "items": 1,
+   "feed": "https://techlabari.com/feed/",
+   "error": null
+  },
+  {
+   "id": "senego",
+   "name": "Senego",
+   "ok": true,
+   "items": 0,
+   "feed": "https://senego.com/feed",
+   "error": null
+  },
+  {
+   "id": "seneweb",
+   "name": "Seneweb",
+   "ok": true,
+   "items": 2,
+   "feed": "https://www.seneweb.com/feed",
+   "error": null
+  },
+  {
+   "id": "gn-afrique-musique-fr",
+   "name": "Google Actualités: musique africaine industrie",
+   "ok": true,
+   "items": 13,
+   "feed": "https://news.google.com/rss/search?q=musique+africaine+industrie+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
+   "error": null
+  },
+  {
+   "id": "gn-afrique-business-fr",
+   "name": "Google Actualités: musique Afrique business streaming droits d'auteur",
+   "ok": true,
+   "items": 1,
+   "feed": "https://news.google.com/rss/search?q=musique+Afrique+business+streaming+droits+d%27auteur+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
+   "error": null
+  },
+  {
+   "id": "gn-sn-fr",
+   "name": "Google Actualités: musique Sénégal mbalax concert",
+   "ok": true,
+   "items": 8,
+   "feed": "https://news.google.com/rss/search?q=musique+S%C3%A9n%C3%A9gal+mbalax+concert+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
+   "error": null
+  },
+  {
+   "id": "gn-ci-fr",
+   "name": "Google Actualités: musique Côte d'Ivoire coupé-décalé industrie",
+   "ok": true,
+   "items": 1,
+   "feed": "https://news.google.com/rss/search?q=musique+C%C3%B4te+d%27Ivoire+coup%C3%A9-d%C3%A9cal%C3%A9+industrie+when%3A7d&hl=fr&gl=CI&ceid=CI%3Afr",
+   "error": null
+  },
+  {
+   "id": "gn-cm-fr",
+   "name": "Google Actualités: musique Cameroun Congo RDC rumba industrie",
+   "ok": false,
+   "items": 0,
+   "feed": "https://news.google.com/rss/search?q=musique+Cameroun+Congo+RDC+rumba+industrie+when%3A7d&hl=fr&gl=CM&ceid=CM%3Afr",
+   "error": "flux vide ou illisible"
+  },
+  {
+   "id": "gn-maghreb-fr",
+   "name": "Google Actualités: musique Maroc Algérie Tunisie industrie",
+   "ok": false,
+   "items": 0,
+   "feed": "https://news.google.com/rss/search?q=musique+Maroc+Alg%C3%A9rie+Tunisie+industrie+when%3A7d&hl=fr&gl=MA&ceid=MA%3Afr",
+   "error": "flux vide ou illisible"
+  },
+  {
+   "id": "gn-diaspora-fr",
+   "name": "Google Actualités: afrobeats amapiano France concert festival",
+   "ok": false,
+   "items": 0,
+   "feed": "https://news.google.com/rss/search?q=afrobeats+amapiano+France+concert+festival+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
+   "error": "flux vide ou illisible"
+  },
+  {
+   "id": "gn-afrobeats-en",
+   "name": "Google Actualités: Afrobeats music industry business",
+   "ok": true,
+   "items": 25,
+   "feed": "https://news.google.com/rss/search?q=Afrobeats+music+industry+business+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
+   "error": null
+  },
+  {
+   "id": "gn-nigeria-en",
+   "name": "Google Actualités: Nigeria music royalties streaming label",
+   "ok": true,
+   "items": 3,
+   "feed": "https://news.google.com/rss/search?q=Nigeria+music+royalties+streaming+label+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
+   "error": null
+  },
+  {
+   "id": "gn-za-en",
+   "name": "Google Actualités: amapiano South Africa music industry",
+   "ok": true,
+   "items": 44,
+   "feed": "https://news.google.com/rss/search?q=amapiano+South+Africa+music+industry+when%3A7d&hl=en&gl=ZA&ceid=ZA%3Aen",
+   "error": null
+  },
+  {
+   "id": "gn-ke-en",
+   "name": "Google Actualités: Kenya Tanzania Uganda music industry streaming",
+   "ok": true,
+   "items": 2,
+   "feed": "https://news.google.com/rss/search?q=Kenya+Tanzania+Uganda+music+industry+streaming+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen",
+   "error": null
+  },
+  {
+   "id": "gn-gh-en",
+   "name": "Google Actualités: Ghana music industry afrobeats highlife",
+   "ok": true,
+   "items": 20,
+   "feed": "https://news.google.com/rss/search?q=Ghana+music+industry+afrobeats+highlife+when%3A7d&hl=en&gl=GH&ceid=GH%3Aen",
+   "error": null
+  },
+  {
+   "id": "gn-sponsoring-en",
+   "name": "Google Actualités: Africa music sponsorship partnership telecom",
+   "ok": false,
+   "items": 0,
+   "feed": "https://news.google.com/rss/search?q=Africa+music+sponsorship+partnership+telecom+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "error": "flux vide ou illisible"
+  },
+  {
+   "id": "gn-platforms-en",
+   "name": "Google Actualités: Spotify Audiomack Boomplay Deezer Africa",
+   "ok": true,
+   "items": 2,
+   "feed": "https://news.google.com/rss/search?q=Spotify+Audiomack+Boomplay+Deezer+Africa+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "error": null
+  },
+  {
+   "id": "bing-afrique-fr",
+   "name": "Bing Actualités: musique africaine industrie business",
+   "ok": true,
+   "items": 2,
+   "feed": "https://www.bing.com/news/search?q=musique+africaine+industrie+business&format=rss&setlang=fr",
+   "error": null
+  },
+  {
+   "id": "bing-africa-en",
+   "name": "Bing Actualités: African music industry business streaming",
+   "ok": true,
+   "items": 1,
+   "feed": "https://www.bing.com/news/search?q=African+music+industry+business+streaming&format=rss&setlang=en",
+   "error": null
+  }
+ ]
+}
