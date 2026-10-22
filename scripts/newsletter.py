@@ -107,26 +107,68 @@ def call_claude(system, user):
     return "".join(b.text for b in msg.content if b.type == "text").strip()
 
 
+GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
+
+
+def gemini_candidates(headers):
+    """Modèles Gemini utilisables avec cette clé, du plus récent au plus ancien (gamme flash d'abord)."""
+    import requests
+
+    forced = os.environ.get("GEMINI_MODEL")
+    if forced:
+        return [forced]
+    found = []
+    try:
+        r = requests.get(f"{GEMINI_BASE}/models", params={"pageSize": 200}, headers=headers, timeout=30)
+        if r.status_code == 200:
+            for m in r.json().get("models", []):
+                name = m.get("name", "").replace("models/", "")
+                if "generateContent" not in m.get("supportedGenerationMethods", []):
+                    continue
+                low = name.lower()
+                if not low.startswith("gemini") or any(x in low for x in ("image", "tts", "live", "audio", "embedding", "robotics", "computer", "thinking-exp")):
+                    continue
+                version = re.search(r"gemini-(\d+(?:\.\d+)?)", low)
+                tier = 0 if "flash" in low and "lite" not in low else 1 if "flash" in low else 2 if "pro" in low else 3
+                preview = 1 if ("preview" in low or "exp" in low) else 0
+                found.append((tier, -float(version.group(1)) if version else 0, preview, name))
+    except Exception as e:  # noqa: BLE001
+        print(f"::warning title=Gemini::liste des modèles indisponible : {e}"[:300])
+    found.sort()
+    names = [f[3] for f in found][:4]
+    return names or [GEMINI_MODEL]
+
+
 def call_gemini(system, user):
     import requests
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
+    headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"]}
     body = {
         "systemInstruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": user}]}],
         "generationConfig": {"maxOutputTokens": 6000, "temperature": 0.4},
     }
-    try:
-        r = requests.post(url, json=body, timeout=120, headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]})
-    except requests.RequestException as e:
-        raise ProviderError(f"Gemini, erreur réseau : {e}") from e
-    if r.status_code != 200:
-        raise ProviderError(f"Gemini {r.status_code} : {r.text[:300]}")
-    try:
-        parts = r.json()["candidates"][0]["content"]["parts"]
-        return "".join(p.get("text", "") for p in parts).strip()
-    except (KeyError, IndexError, ValueError) as e:
-        raise ProviderError(f"Gemini, réponse inattendue : {r.text[:300]}") from e
+    errors = []
+    for model in gemini_candidates(headers):
+        try:
+            r = requests.post(f"{GEMINI_BASE}/models/{model}:generateContent", json=body, headers=headers, timeout=120)
+        except requests.RequestException as e:
+            errors.append(f"{model}: réseau {e}")
+            continue
+        if r.status_code != 200:
+            errors.append(f"{model}: {r.status_code} " + re.sub(r"\s+", " ", r.text)[:160])
+            continue
+        try:
+            parts = r.json()["candidates"][0]["content"]["parts"]
+            text = "".join(p.get("text", "") for p in parts).strip()
+        except (KeyError, IndexError, ValueError):
+            errors.append(f"{model}: réponse inattendue")
+            continue
+        if text:
+            print(f"Gemini : modèle utilisé = {model}")
+            return text
+        errors.append(f"{model}: réponse vide")
+    raise ProviderError("Gemini | " + " ; ".join(errors))
 
 
 COMPILE_TEXT = {
@@ -187,7 +229,7 @@ def write_with_fallbacks(system, user, items, lang, date_label):
                 return text
             print(f"::warning title=Newsletter::{name} a renvoyé un texte trop court, on passe à la suite")
         except ProviderError as e:
-            print(f"::warning title=Newsletter::{e}"[:400])
+            print("::warning title=Newsletter::" + re.sub(r"\s+", " ", str(e))[:600])
     print(f"[{lang}] compilation automatique sans IA")
     return compile_newsletter(items, lang, date_label)
 
