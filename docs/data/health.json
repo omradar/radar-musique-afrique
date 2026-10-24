@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T00:14:40.445832+00:00",
+ "updated": "2026-10-24T06:16:06.521931+00:00",
  "sources": [
   {
    "id": "musicinafrica",
@@ -14,22 +14,22 @@
   {
    "id": "afropop",
    "name": "Afropop Worldwide",
-   "ok": true,
-   "items": 19,
-   "fetched": 20,
-   "feed": "https://news.google.com/rss/search?q=site%3Aafropop.org+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=site%3Aafropop.org+when%3A30d&hl=en&gl=US&ceid=US%3Aen"
   },
   {
    "id": "okayafrica",
    "name": "OkayAfrica",
-   "ok": true,
-   "items": 40,
-   "fetched": 51,
-   "feed": "https://news.google.com/rss/search?q=site%3Aokayafrica.com+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=site%3Aokayafrica.com+when%3A30d&hl=en&gl=US&ceid=US%3Aen"
   },
   {
    "id": "mbw",
@@ -44,12 +44,12 @@
   {
    "id": "ifpi",
    "name": "IFPI",
-   "ok": true,
-   "items": 1,
-   "fetched": 2,
-   "feed": "https://news.google.com/rss/search?q=site%3Aifpi.org+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=site%3Aifpi.org+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30"
   },
   {
    "id": "midia",
@@ -64,22 +64,22 @@
   {
    "id": "allafrica-fr",
    "name": "allAfrica (FR)",
-   "ok": true,
-   "items": 35,
-   "fetched": 100,
-   "feed": "https://news.google.com/rss/search?q=site%3Afr.allafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
-   "fallback": true,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=site%3Afr.allafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+w"
   },
   {
    "id": "allafrica-en",
    "name": "allAfrica (EN)",
-   "ok": true,
-   "items": 19,
-   "fetched": 100,
-   "feed": "https://news.google.com/rss/search?q=site%3Aallafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=site%3Aallafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when"
   },
   {
    "id": "financialafrik",
@@ -94,12 +94,12 @@
   {
    "id": "wearetech",
    "name": "We Are Tech Africa",
-   "ok": true,
-   "items": 1,
-   "fetched": 4,
-   "feed": "https://news.google.com/rss/search?q=site%3Awearetech.africa+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
-   "fallback": true,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=site%3Awearetech.africa+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+w"
   },
   {
    "id": "businessday",
@@ -134,12 +134,12 @@
   {
    "id": "caf",
    "name": "CAF",
-   "ok": true,
+   "ok": false,
    "items": 0,
-   "fetched": 14,
-   "feed": "https://news.google.com/rss/search?q=site%3Acafonline.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=site%3Acafonline.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when"
   },
   {
    "id": "techcrunch",
@@ -155,7 +155,7 @@
    "id": "variety",
    "name": "Variety",
    "ok": true,
-   "items": 2,
+   "items": 1,
    "fetched": 10,
    "feed": "https://variety.com/feed/rss/",
    "fallback": false,
@@ -165,7 +165,7 @@
    "id": "arise",
    "name": "Arise News",
    "ok": true,
-   "items": 0,
+   "items": 1,
    "fetched": 20,
    "feed": "https://www.arise.tv/feed",
    "fallback": false,
@@ -174,12 +174,12 @@
   {
    "id": "citinewsroom",
    "name": "Citi Newsroom",
-   "ok": true,
-   "items": 11,
-   "fetched": 100,
-   "feed": "https://news.google.com/rss/search?q=site%3Acitinewsroom.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=site%3Acitinewsroom.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+w"
   },
   {
    "id": "telecomreview",
@@ -215,7 +215,7 @@
    "id": "xalima",
    "name": "Xalima",
    "ok": true,
-   "items": 3,
+   "items": 2,
    "fetched": 10,
    "feed": "https://xalimasn.com/feed/",
    "fallback": false,
@@ -256,7 +256,7 @@
    "name": "RFI Afrique",
    "ok": true,
    "items": 2,
-   "fetched": 24,
+   "fetched": 23,
    "feed": "https://www.rfi.fr/fr/afrique/rss",
    "fallback": false,
    "error": null
@@ -284,12 +284,12 @@
   {
    "id": "ghanaweb",
    "name": "GhanaWeb",
-   "ok": true,
-   "items": 24,
-   "fetched": 100,
-   "feed": "https://news.google.com/rss/search?q=site%3Aghanaweb.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=site%3Aghanaweb.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%"
   },
   {
    "id": "techlabari",
@@ -324,182 +324,182 @@
   {
    "id": "gn-afrique-musique-fr",
    "name": "Google Actualités: musique africaine industrie",
-   "ok": true,
-   "items": 21,
-   "fetched": 21,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=musique+africaine+industrie+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=musique+africaine+industrie+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr"
   },
   {
    "id": "gn-afrique-business-fr",
    "name": "Google Actualités: musique africaine (streaming OR business OR \"droits d'auteur\")",
-   "ok": true,
-   "items": 8,
-   "fetched": 8,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=musique+africaine+%28streaming+OR+business+OR+%22droits+d%27auteur%22%29+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=musique+africaine+%28streaming+OR+business+OR+%22droits+d%27auteur%22%29+when%3A7d&hl=fr&gl=FR&ceid=FR%3A"
   },
   {
    "id": "gn-sn-fr",
    "name": "Google Actualités: musique Sénégal mbalax concert",
-   "ok": true,
-   "items": 8,
-   "fetched": 8,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=musique+S%C3%A9n%C3%A9gal+mbalax+concert+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=musique+S%C3%A9n%C3%A9gal+mbalax+concert+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr"
   },
   {
    "id": "gn-ci-fr",
    "name": "Google Actualités: musique (\"Côte d'Ivoire\" OR coupé-décalé)",
-   "ok": true,
-   "items": 28,
-   "fetched": 28,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=musique+%28%22C%C3%B4te+d%27Ivoire%22+OR+coup%C3%A9-d%C3%A9cal%C3%A9%29+when%3A7d&hl=fr&gl=CI&ceid=CI%3Afr",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=musique+%28%22C%C3%B4te+d%27Ivoire%22+OR+coup%C3%A9-d%C3%A9cal%C3%A9%29+when%3A7d&hl=fr&gl=CI&ceid=CI%3Af"
   },
   {
    "id": "gn-cm-fr",
    "name": "Google Actualités: musique (Cameroun OR Congo OR RDC OR Gabon)",
-   "ok": true,
-   "items": 40,
-   "fetched": 61,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=musique+%28Cameroun+OR+Congo+OR+RDC+OR+Gabon%29+when%3A7d&hl=fr&gl=CM&ceid=CM%3Afr",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=musique+%28Cameroun+OR+Congo+OR+RDC+OR+Gabon%29+when%3A7d&hl=fr&gl=CM&ceid=CM%3Afr"
   },
   {
    "id": "gn-maghreb-fr",
    "name": "Google Actualités: musique (Maroc OR Algérie OR Tunisie)",
-   "ok": true,
-   "items": 40,
-   "fetched": 56,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=musique+%28Maroc+OR+Alg%C3%A9rie+OR+Tunisie%29+when%3A7d&hl=fr&gl=MA&ceid=MA%3Afr",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=musique+%28Maroc+OR+Alg%C3%A9rie+OR+Tunisie%29+when%3A7d&hl=fr&gl=MA&ceid=MA%3Afr"
   },
   {
    "id": "gn-diaspora-fr",
    "name": "Google Actualités: (afrobeats OR amapiano) (concert OR festival)",
-   "ok": true,
-   "items": 3,
-   "fetched": 3,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=%28afrobeats+OR+amapiano%29+%28concert+OR+festival%29+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%28afrobeats+OR+amapiano%29+%28concert+OR+festival%29+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr"
   },
   {
    "id": "gn-afrobeats-en",
    "name": "Google Actualités: Afrobeats music industry business",
-   "ok": true,
-   "items": 33,
-   "fetched": 33,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=Afrobeats+music+industry+business+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Afrobeats+music+industry+business+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen"
   },
   {
    "id": "gn-nigeria-en",
    "name": "Google Actualités: Nigeria music royalties streaming label",
-   "ok": true,
-   "items": 2,
-   "fetched": 2,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=Nigeria+music+royalties+streaming+label+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Nigeria+music+royalties+streaming+label+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen"
   },
   {
    "id": "gn-za-en",
    "name": "Google Actualités: amapiano South Africa music industry",
-   "ok": true,
-   "items": 40,
-   "fetched": 47,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=amapiano+South+Africa+music+industry+when%3A7d&hl=en&gl=ZA&ceid=ZA%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=amapiano+South+Africa+music+industry+when%3A7d&hl=en&gl=ZA&ceid=ZA%3Aen"
   },
   {
    "id": "gn-ke-en",
    "name": "Google Actualités: Kenya Tanzania Uganda music industry streaming",
-   "ok": true,
-   "items": 3,
-   "fetched": 3,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=Kenya+Tanzania+Uganda+music+industry+streaming+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Kenya+Tanzania+Uganda+music+industry+streaming+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen"
   },
   {
    "id": "gn-gh-en",
    "name": "Google Actualités: Ghana music industry afrobeats highlife",
-   "ok": true,
-   "items": 27,
-   "fetched": 27,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=Ghana+music+industry+afrobeats+highlife+when%3A7d&hl=en&gl=GH&ceid=GH%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Ghana+music+industry+afrobeats+highlife+when%3A7d&hl=en&gl=GH&ceid=GH%3Aen"
   },
   {
    "id": "gn-sponsoring-en",
    "name": "Google Actualités: African music (sponsorship OR partnership)",
-   "ok": true,
-   "items": 40,
-   "fetched": 54,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=African+music+%28sponsorship+OR+partnership%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=African+music+%28sponsorship+OR+partnership%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen"
   },
   {
    "id": "gn-audiomack",
    "name": "Google Actualités: Audiomack (announces OR launches OR partnership OR Africa)",
-   "ok": true,
-   "items": 10,
-   "fetched": 10,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=Audiomack+%28announces+OR+launches+OR+partnership+OR+Africa%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Audiomack+%28announces+OR+launches+OR+partnership+OR+Africa%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen"
   },
   {
    "id": "gn-boomplay",
    "name": "Google Actualités: Boomplay (announces OR launches OR partnership OR Africa)",
-   "ok": true,
-   "items": 1,
-   "fetched": 1,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=Boomplay+%28announces+OR+launches+OR+partnership+OR+Africa%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Boomplay+%28announces+OR+launches+OR+partnership+OR+Africa%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen"
   },
   {
    "id": "gn-mdundo",
    "name": "Google Actualités: Mdundo (music OR artists OR payments)",
-   "ok": true,
-   "items": 7,
-   "fetched": 7,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=Mdundo+%28music+OR+artists+OR+payments%29+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Mdundo+%28music+OR+artists+OR+payments%29+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen"
   },
   {
    "id": "gn-operateurs-fr",
    "name": "Google Actualités: (Orange OR Sonatel OR \"Max it\") (musique OR sponsoring OR concert)",
-   "ok": true,
-   "items": 40,
-   "fetched": 63,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=%28Orange+OR+Sonatel+OR+%22Max+it%22%29+%28musique+OR+sponsoring+OR+concert%29+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%28Orange+OR+Sonatel+OR+%22Max+it%22%29+%28musique+OR+sponsoring+OR+concert%29+when%3A7d&hl=fr&gl=SN&ceid"
   },
   {
    "id": "gn-platforms-en",
    "name": "Google Actualités: Spotify Audiomack Boomplay Deezer Africa",
-   "ok": true,
-   "items": 4,
-   "fetched": 4,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=Spotify+Audiomack+Boomplay+Deezer+Africa+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Spotify+Audiomack+Boomplay+Deezer+Africa+when%3A7d&hl=en&gl=US&ceid=US%3Aen"
   },
   {
    "id": "bing-afrique-fr",
