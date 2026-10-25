@@ -1,0 +1,131 @@
+/* Africa Music Radar : design tokens
+   Police : Newsreader (titres), Public Sans (texte), IBM Plex Mono (étiquettes, heures, chiffres)
+   @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+*/
+
+:root {
+  /* Palette brute */
+  --red-50: #FFF1EF;  --red-100: #FFDDD9; --red-200: #FFB9B2; --red-300: #FF8E84;
+  --red-400: #FF4B3E; --red-500: #E5322B; --red-600: #C8201A; --red-700: #9E1913;
+  --red-800: #73120E; --red-900: #4A0C09;
+
+  --paper-50: #FAF8F4;  --paper-100: #F5F2EC; --paper-200: #E8E3DA; --paper-300: #D3CCC0;
+  --paper-400: #A8A094; --paper-500: #7C766B; --paper-600: #5A554C; --paper-700: #3B3832;
+  --paper-800: #23211E; --paper-900: #131211; --paper-950: #0B0B0C;
+
+  --amber-400: #F2A71B;
+
+  /* Sémantique : mode clair (par défaut) */
+  --surface:        var(--paper-100);
+  --surface-raised: #FFFFFF;
+  --surface-sunken: var(--paper-200);
+  --text:           var(--paper-900);
+  --text-muted:     var(--paper-600);   /* jamais paper-500 pour du texte : 4,0:1 */
+  --border:         var(--paper-300);
+  --border-strong:  var(--paper-900);
+  --accent:         var(--red-600);     /* texte rouge, liens, étiquettes */
+  --accent-fill:    var(--red-600);     /* boutons : texte blanc dessus, 5,7:1 */
+  --on-accent:      #FFFFFF;
+  --ping:           var(--red-500);
+  --highlight:      var(--amber-400);   /* chiffre de la semaine, repères de données */
+  --on-highlight:   var(--paper-900);
+  --focus-ring:     var(--paper-900);
+
+  /* Typographie */
+  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-body:    'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* Échelle modulaire 1,25 sur base 16 px */
+  --text-xs: 0.75rem;   /* 12 : étiquettes mono */
+  --text-sm: 0.875rem;  /* 14 : méta, heures */
+  --text-base: 1rem;    /* 16 : interface */
+  --text-md: 1.0625rem; /* 17 : corps d'article */
+  --text-lg: 1.25rem;   /* 20 : chapô */
+  --text-xl: 1.5625rem; /* 25 : titre de carte */
+  --text-2xl: 1.9375rem;/* 31 : titre de section */
+  --text-3xl: 2.4375rem;/* 39 : titre d'article */
+  --text-4xl: 3.0625rem;/* 49 */
+  --text-5xl: 3.8125rem;/* 61 : une */
+  --text-6xl: 4.75rem;  /* 76 : héros, chiffre de la semaine */
+
+  --leading-tight: 1.08;   /* titres display */
+  --leading-snug: 1.25;    /* titres de carte */
+  --leading-body: 1.6;     /* corps de texte */
+  --tracking-display: -0.015em;
+  --tracking-label: 0.08em; /* étiquettes mono en capitales */
+
+  /* Espacement : base 4 px */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+  --space-9: 96px; --space-10: 128px;
+
+  /* Mise en page */
+  --container: 1200px;
+  --measure: 66ch;          /* largeur de lecture maximale */
+  --grid-gap: 24px;
+  --bp-sm: 640px; --bp-md: 960px; --bp-lg: 1200px;
+
+  /* Rayons et bordures : éditorial, peu arrondi */
+  --radius-none: 0;
+  --radius-sm: 2px;         /* cartes, champs */
+  --radius-md: 6px;         /* boutons */
+  --radius-full: 999px;     /* étiquettes de rubrique, bascule FR/EN */
+  --rule: 1px solid var(--border);
+  --rule-strong: 2px solid var(--border-strong);   /* filets de section */
+
+  /* Élévation : aucune ombre, la hiérarchie vient des filets */
+  --shadow-none: none;
+  --shadow-overlay: 0 8px 24px rgba(11, 11, 12, 0.18);  /* menus et modales seulement */
+
+  /* Mouvement */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 150ms;        /* survols */
+  --dur-base: 240ms;        /* ouverture, transitions */
+  --dur-slow: 480ms;        /* apparition au scroll, une fois */
+  --dur-ping: 2400ms;       /* pulsation du repère "nouveau" */
+}
+
+/* Mode sombre */
+:root[data-theme='dark'],
+.dark {
+  --surface:        var(--paper-950);
+  --surface-raised: var(--paper-800);
+  --surface-sunken: var(--paper-900);
+  --text:           var(--paper-100);
+  --text-muted:     var(--paper-400);
+  --border:         var(--paper-700);
+  --border-strong:  var(--paper-100);
+  --accent:         var(--red-400);     /* 5,9:1 sur noir */
+  --accent-fill:    var(--red-600);
+  --on-accent:      #FFFFFF;
+  --ping:           var(--red-400);
+  --focus-ring:     var(--paper-100);
+  --shadow-overlay: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --surface: var(--paper-950); --surface-raised: var(--paper-800); --surface-sunken: var(--paper-900);
+    --text: var(--paper-100); --text-muted: var(--paper-400); --border: var(--paper-700);
+    --border-strong: var(--paper-100); --accent: var(--red-400); --ping: var(--red-400);
+    --focus-ring: var(--paper-100);
+  }
+}
+
+/* Focus visible partout */
+:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
+
+/* Repère "nouveau" : s'affiche pour tout contenu publié il y a moins de 6 h */
+.ping { position: relative; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--ping); }
+.ping::after {
+  content: ''; position: absolute; inset: 0; border-radius: 50%; background: var(--ping);
+  animation: ping var(--dur-ping) var(--ease-out) infinite;
+}
+@keyframes ping { 0% { transform: scale(1); opacity: .6; } 80%, 100% { transform: scale(3.2); opacity: 0; } }
+
+/* Réduction des animations : la pulsation et les apparitions deviennent statiques */
+@media (prefers-reduced-motion: reduce) {
+  .ping::after { animation: none; opacity: 0; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
