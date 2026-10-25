@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T12:14:22.991367+00:00",
+ "updated": "2026-10-25T18:12:37.170679+00:00",
  "sources": [
   {
    "id": "musicinafrica",
@@ -26,7 +26,7 @@
    "name": "OkayAfrica",
    "ok": true,
    "items": 40,
-   "fetched": 53,
+   "fetched": 51,
    "feed": "https://news.google.com/rss/search?q=site%3Aokayafrica.com+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -65,7 +65,7 @@
    "id": "allafrica-fr",
    "name": "allAfrica (FR)",
    "ok": true,
-   "items": 29,
+   "items": 27,
    "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Afr.allafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": true,
@@ -75,8 +75,8 @@
    "id": "allafrica-en",
    "name": "allAfrica (EN)",
    "ok": true,
-   "items": 18,
-   "fetched": 100,
+   "items": 27,
+   "fetched": 50,
    "feed": "https://news.google.com/rss/search?q=site%3Aallafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -136,7 +136,7 @@
    "name": "CAF",
    "ok": true,
    "items": 0,
-   "fetched": 10,
+   "fetched": 11,
    "feed": "https://news.google.com/rss/search?q=site%3Acafonline.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -195,7 +195,7 @@
    "id": "lesoleil",
    "name": "Le Soleil",
    "ok": true,
-   "items": 2,
+   "items": 5,
    "fetched": 24,
    "feed": "https://lesoleil.sn/feed/",
    "fallback": false,
@@ -225,10 +225,10 @@
    "id": "seneplus",
    "name": "Seneplus",
    "ok": true,
-   "items": 1,
-   "fetched": 10,
-   "feed": "https://www.seneplus.com/rss.xml",
-   "fallback": false,
+   "items": 5,
+   "fetched": 25,
+   "feed": "https://news.google.com/rss/search?q=site%3Aseneplus.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
+   "fallback": true,
    "error": null
   },
   {
@@ -236,7 +236,7 @@
    "name": "Osiris",
    "ok": true,
    "items": 0,
-   "fetched": 18,
+   "fetched": 14,
    "feed": "https://osiris.sn/spip.php?page=backend",
    "fallback": false,
    "error": null
@@ -256,7 +256,7 @@
    "name": "RFI Afrique",
    "ok": true,
    "items": 3,
-   "fetched": 24,
+   "fetched": 28,
    "feed": "https://www.rfi.fr/fr/afrique/rss",
    "fallback": false,
    "error": null
@@ -285,7 +285,7 @@
    "id": "ghanaweb",
    "name": "GhanaWeb",
    "ok": true,
-   "items": 20,
+   "items": 21,
    "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Aghanaweb.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
@@ -305,7 +305,7 @@
    "id": "senego",
    "name": "Senego",
    "ok": true,
-   "items": 2,
+   "items": 1,
    "fetched": 40,
    "feed": "https://senego.com/feed",
    "fallback": false,
@@ -345,8 +345,8 @@
    "id": "gn-sn-fr",
    "name": "Google Actualités: musique Sénégal mbalax concert",
    "ok": true,
-   "items": 5,
-   "fetched": 5,
+   "items": 4,
+   "fetched": 4,
    "feed": "https://news.google.com/rss/search?q=musique+S%C3%A9n%C3%A9gal+mbalax+concert+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
    "error": null
@@ -366,7 +366,7 @@
    "name": "Google Actualités: musique (Cameroun OR Congo OR RDC OR Gabon)",
    "ok": true,
    "items": 40,
-   "fetched": 60,
+   "fetched": 61,
    "feed": "https://news.google.com/rss/search?q=musique+%28Cameroun+OR+Congo+OR+RDC+OR+Gabon%29+when%3A7d&hl=fr&gl=CM&ceid=CM%3Afr",
    "fallback": false,
    "error": null
@@ -375,8 +375,8 @@
    "id": "gn-maghreb-fr",
    "name": "Google Actualités: musique (Maroc OR Algérie OR Tunisie)",
    "ok": true,
-   "items": 40,
-   "fetched": 58,
+   "items": 29,
+   "fetched": 29,
    "feed": "https://news.google.com/rss/search?q=musique+%28Maroc+OR+Alg%C3%A9rie+OR+Tunisie%29+when%3A7d&hl=fr&gl=MA&ceid=MA%3Afr",
    "fallback": false,
    "error": null
@@ -395,8 +395,8 @@
    "id": "gn-afrobeats-en",
    "name": "Google Actualités: Afrobeats music industry business",
    "ok": true,
-   "items": 33,
-   "fetched": 33,
+   "items": 15,
+   "fetched": 15,
    "feed": "https://news.google.com/rss/search?q=Afrobeats+music+industry+business+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
    "fallback": false,
    "error": null
@@ -425,8 +425,8 @@
    "id": "gn-ke-en",
    "name": "Google Actualités: Kenya Tanzania Uganda music industry streaming",
    "ok": true,
-   "items": 2,
-   "fetched": 2,
+   "items": 1,
+   "fetched": 1,
    "feed": "https://news.google.com/rss/search?q=Kenya+Tanzania+Uganda+music+industry+streaming+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen",
    "fallback": false,
    "error": null
@@ -435,8 +435,8 @@
    "id": "gn-gh-en",
    "name": "Google Actualités: Ghana music industry afrobeats highlife",
    "ok": true,
-   "items": 29,
-   "fetched": 29,
+   "items": 27,
+   "fetched": 27,
    "feed": "https://news.google.com/rss/search?q=Ghana+music+industry+afrobeats+highlife+when%3A7d&hl=en&gl=GH&ceid=GH%3Aen",
    "fallback": false,
    "error": null
@@ -446,7 +446,7 @@
    "name": "Google Actualités: African music (sponsorship OR partnership)",
    "ok": true,
    "items": 40,
-   "fetched": 50,
+   "fetched": 51,
    "feed": "https://news.google.com/rss/search?q=African+music+%28sponsorship+OR+partnership%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
    "error": null
@@ -475,8 +475,8 @@
    "id": "gn-mdundo",
    "name": "Google Actualités: Mdundo (music OR artists OR payments)",
    "ok": true,
-   "items": 7,
-   "fetched": 7,
+   "items": 6,
+   "fetched": 6,
    "feed": "https://news.google.com/rss/search?q=Mdundo+%28music+OR+artists+OR+payments%29+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen",
    "fallback": false,
    "error": null
@@ -486,7 +486,7 @@
    "name": "Google Actualités: (Orange OR Sonatel OR \"Max it\") (musique OR sponsoring OR concert)",
    "ok": true,
    "items": 40,
-   "fetched": 69,
+   "fetched": 67,
    "feed": "https://news.google.com/rss/search?q=%28Orange+OR+Sonatel+OR+%22Max+it%22%29+%28musique+OR+sponsoring+OR+concert%29+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
    "error": null
