@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Radar Musique Afrique</title>
   <meta name="description" content="Actus, business et industrie de la musique africaine, mises à jour toutes les 6 heures.">
+  <meta name="theme-color" content="#F5F2EC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0B0C" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,6 +31,13 @@
       <button data-tab="sources"></button>
     </nav>
   </header>
+
+  <div id="ticker" class="ticker" hidden>
+    <div class="wrap ticker-in">
+      <span class="ticker-label"><span class="ping" aria-hidden="true"></span><span id="ticker-label"></span></span>
+      <ul id="ticker-list"></ul>
+    </div>
+  </div>
 
   <main class="wrap">
     <section id="tab-news">

@@ -5,6 +5,8 @@ const I18N = {
     title: "Radar Musique Afrique",
     tagline: "Actus, business et industrie de la musique africaine. Mise à jour toutes les 6 heures.",
     tabs: { news: "Actus", newsletters: "Newsletters", sources: "Sources" },
+    fresh: "Nouveau",
+    ticker: "Dernières 6 h",
     search: "Rechercher un titre, un artiste, une source...",
     allCategories: "Toutes les catégories",
     allLangs: "Toutes les langues",
@@ -35,6 +37,8 @@ const I18N = {
     title: "Africa Music Radar",
     tagline: "News, business and industry of African music. Updated every 6 hours.",
     tabs: { news: "News", newsletters: "Newsletters", sources: "Sources" },
+    fresh: "New",
+    ticker: "Last 6 h",
     search: "Search a title, an artist, a source...",
     allCategories: "All categories",
     allLangs: "All languages",
@@ -80,6 +84,23 @@ function el(tag, opts = {}, children = []) {
   return node;
 }
 
+const FRESH_MS = 6 * 36e5;
+
+function isFresh(a) {
+  const age = Date.now() - new Date(a.published).getTime();
+  return age >= 0 && age < FRESH_MS;
+}
+
+// Le mot « Radar » du nom du site passe en rouge (charte graphique)
+function wordmark(text) {
+  const nodes = [];
+  text.split(" ").forEach((word, i) => {
+    if (i) nodes.push(document.createTextNode(" "));
+    nodes.push(word.toLowerCase() === "radar" ? el("span", { cls: "accent", text: word }) : document.createTextNode(word));
+  });
+  return nodes;
+}
+
 function fmtDate(iso) {
   return new Intl.DateTimeFormat(state.lang, { day: "numeric", month: "short", year: "numeric" }).format(new Date(iso));
 }
@@ -103,8 +124,9 @@ function applyLabels() {
   const L = t();
   document.documentElement.lang = state.lang;
   document.title = L.title;
-  $("title").textContent = L.title;
+  $("title").replaceChildren(...wordmark(L.title));
   $("tagline").textContent = L.tagline;
+  $("ticker-label").textContent = L.ticker;
   $("footer").textContent = L.footer;
   $("f-search").placeholder = L.search;
   $("l-hide").textContent = L.hide;
@@ -137,7 +159,14 @@ function filtered() {
 
 function card(a) {
   const L = t();
+  let fresh = null;
+  if (isFresh(a)) {
+    const dot = el("span", { cls: "ping" });
+    dot.setAttribute("aria-hidden", "true");
+    fresh = el("span", { cls: "fresh" }, [dot, el("span", { text: L.fresh })]);
+  }
   const meta = el("div", { cls: "meta" }, [
+    fresh,
     el("span", { text: a.source }),
     el("span", { text: fmtDate(a.published) }),
     el("span", { cls: "badge", text: L.categories[a.category] || a.category }),
@@ -163,6 +192,18 @@ function renderNews() {
     : L.never;
   $("list").replaceChildren(...visible.map(card));
   $("more").hidden = list.length <= state.shown;
+}
+
+// Bandeau « Dernières 6 h » : les titres les plus récents, masqué s'il n'y en a pas
+function renderTicker() {
+  const latest = state.articles
+    .filter(isFresh)
+    .sort((x, y) => new Date(y.published) - new Date(x.published))
+    .slice(0, 4);
+  $("ticker").hidden = latest.length === 0;
+  $("ticker-list").replaceChildren(...latest.map((a) =>
+    el("li", {}, [el("a", { text: a.title, href: a.url })])
+  ));
 }
 
 function renderNewsletters() {
@@ -204,7 +245,7 @@ function showTab(tab) {
   document.querySelectorAll(".tabs button").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === tab));
 }
 
-function renderAll() { applyLabels(); renderNews(); renderNewsletters(); renderSources(); }
+function renderAll() { applyLabels(); renderTicker(); renderNews(); renderNewsletters(); renderSources(); }
 
 async function init() {
   try { const saved = localStorage.getItem("lang"); if (saved === "fr" || saved === "en") state.lang = saved; else if (navigator.language.startsWith("en")) state.lang = "en"; } catch (e) {}
