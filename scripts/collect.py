@@ -209,7 +209,7 @@ def fetch_feed(url, timeout):
 def google_site_url(job):
     """Relais pour les sites sans flux ou qui bloquent GitHub : Google Actualités restreint au domaine."""
     domain = urlparse(job["homepage"]).netloc.replace("www.", "")
-    gl = "US" if job["lang"] == "en" else "FR"
+    gl = {"en": "US", "pt": "PT", "sw": "KE"}.get(job["lang"], "FR")
     # Pour les sites généralistes, Google fait le tri musique à notre place (le titre seul ne suffit pas)
     terms = " (" + " OR ".join(RELAY_TERMS) + ")" if job.get("keywords") else ""
     return "https://news.google.com/rss/search?" + urlencode(

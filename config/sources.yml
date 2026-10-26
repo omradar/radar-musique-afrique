@@ -63,6 +63,69 @@ sources:
   - {id: senego, name: Senego, homepage: "https://senego.com", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true}
   - {id: seneweb, name: Seneweb, homepage: "https://www.seneweb.com", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true}
 
+  # ---------- Ajout 26 oct. : droits, données, institutions (niveau 1) ----------
+  # Flux non testés depuis ici : l'autodécouverte puis le relais Google News s'en chargent, la page Sources dit ce qui marche.
+  - {id: samro, name: SAMRO, homepage: "https://www.samro.org.za", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+  - {id: cosoma, name: COSOMA, homepage: "https://blog.cosoma.mw", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+  - {id: oapi, name: OAPI, homepage: "https://oapi.int/en", lang: fr, tier: 1, kind: primary, verify: false, keywords: true}
+  - {id: aripo, name: ARIPO, homepage: "https://www.aripo.org", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
+  - {id: cisac, name: CISAC, homepage: "https://www.cisac.org", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
+  - {id: loudandclear, name: Spotify Loud & Clear, homepage: "https://loudandclear.byspotify.com", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+  - {id: pwc-africa-eum, name: PwC Africa Entertainment & Media Outlook, homepage: "https://www.pwc.com/ng/en/publications/entertainment-and-media-outlook.html", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+  - {id: ifacca, name: IFACCA, homepage: "https://ifacca.org/news", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
+  - {id: adams-africa, name: Adams & Adams IP Africa, homepage: "https://www.adams.africa", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: interspace, name: The InterSpace Daily, homepage: "https://interspacemusic.com/blog", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
+  - {id: downtown-africa, name: Downtown Music Africa, homepage: "https://downtownmusic.africa", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
+  - {id: mdundo-ir, name: Mdundo (communiqués investisseurs), homepage: "https://mfn.se/all/a/mdundo-com", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+
+  # ---------- Ajout 26 oct. : startups, live, plateformes ----------
+  - {id: techcabal, name: TechCabal, homepage: "https://techcabal.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: techpoint, name: Techpoint Africa, homepage: "https://techpoint.africa", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: disrupt-africa, name: Disrupt Africa, homepage: "https://disrupt-africa.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: techeconomy, name: Techeconomy, homepage: "https://techeconomy.ng", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: pollstar, name: Pollstar, homepage: "https://news.pollstar.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: iq-mag, name: IQ Magazine, homepage: "https://www.iq-mag.net", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: festival-insights, name: Festival Insights, homepage: "https://festivalinsights.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: ticketing-business, name: The Ticketing Business, homepage: "https://www.theticketingbusiness.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: hypebot, name: Hypebot, homepage: "https://www.hypebot.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: audiomack-creators, name: Audiomack Creators, homepage: "https://creators.audiomack.com", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+
+  # ---------- Ajout 26 oct. : couverture géographique ----------
+  # Lusophonie
+  - {id: expresso-ilhas, name: Expresso das Ilhas, homepage: "https://expressodasilhas.cv", lang: pt, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: ver-angola, name: Ver Angola, homepage: "https://www.verangola.net", lang: pt, tier: 2, kind: secondary, verify: false, keywords: true}
+  # Afrique de l'Est
+  - {id: citizen-tz, name: The Citizen Tanzania, homepage: "https://www.thecitizen.co.tz", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: daily-news-tz, name: Daily News Tanzania, homepage: "https://dailynews.co.tz", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: chanzo, name: The Chanzo, homepage: "https://thechanzo.com", lang: sw, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: monitor-ug, name: Daily Monitor Uganda, homepage: "https://www.monitor.co.ug", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: pulse-ug, name: Pulse Uganda, homepage: "https://www.pulse.ug", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: standard-ke, name: The Standard Kenya, homepage: "https://www.standardmedia.co.ke", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: citizen-digital, name: Citizen Digital, homepage: "https://citizen.digital", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: hapakenya, name: HapaKenya, homepage: "https://hapakenya.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: newtimes-rw, name: The New Times Rwanda, homepage: "https://www.newtimes.co.rw", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  # Afrique du Nord
+  - {id: tsa-algerie, name: TSA Algérie, homepage: "https://www.tsa-algerie.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: lapresse-tn, name: La Presse de Tunisie, homepage: "https://www.lapresse.tn", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: hespress-fr, name: Hespress FR, homepage: "https://fr.hespress.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: yabiladi, name: Yabiladi, homepage: "https://en.yabiladi.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: lematin-ma, name: Le Matin Maroc, homepage: "https://lematin.ma", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: egyptian-streets, name: Egyptian Streets, homepage: "https://egyptianstreets.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  # Afrique australe
+  - {id: music-exchange, name: Music Exchange (MEX), homepage: "https://www.musicexchange.org.za", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
+  - {id: sundayworld, name: Sunday World, homepage: "https://sundayworld.co.za", lang: en, tier: 3, kind: secondary, verify: true, keywords: true}
+  - {id: lusakatimes, name: Lusaka Times, homepage: "https://www.lusakatimes.com", lang: en, tier: 3, kind: secondary, verify: true, keywords: true}
+  - {id: zambiamonitor, name: Zambia Monitor, homepage: "https://www.zambiamonitor.com", lang: en, tier: 3, kind: secondary, verify: true, keywords: true}
+  - {id: namibian, name: The Namibian, homepage: "https://www.namibian.com.na", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: nbc-na, name: NBC News Namibie, homepage: "https://nbcnews.na", lang: en, tier: 3, kind: secondary, verify: true, keywords: true}
+  - {id: standard-zw, name: The Standard Zimbabwe, homepage: "https://thestandard.co.zw", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  # Afrique de l'Ouest et Centre
+  - {id: premiumtimes, name: Premium Times, homepage: "https://www.premiumtimesng.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: journaldumali, name: Journal du Mali, homepage: "https://journaldumali.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: burkina24, name: Burkina24, homepage: "https://burkina24.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: sidwaya, name: Sidwaya, homepage: "https://www.sidwaya.info", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: guineenews, name: Guinéenews, homepage: "https://guineenews.org", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true}
+
 # Veille ponctuelle (publient peu, pas de flux fiable) : UNESCO, OMPI, ONU Afrique (CEA),
 # IFACCA, CAPASSO, Dakaractu. A consulter à la main une fois par mois.
 
@@ -141,13 +204,34 @@ music_keywords:
   - spectacle
   - mbalakh
   - clip
+  - muziki
+  - wimbo
+  - tamasha
+  - msanii
+  - música
+  - musica
+  - cantor
+  - cantora
+  - concerto
+  - espetáculo
+  - kuduro
+  - kizomba
+  - semba
+  - funaná
+  - bongo flava
+  - gengetone
+  - mahraganat
+  - raï
+  - zimdancehall
+  - gospel
+  - dancehall
   - youssou
   - baaba maal
   - wally seck
 
 # ---------- Catégories (la première qui correspond gagne, sinon "actus") ----------
 categories:
-  droits: [droits d'auteur, copyright, royalties, sacem, capasso, coson, bsda, redevance, licence, licensing, piratage, piracy, collecte]
-  streaming: [streaming, spotify, deezer, audiomack, boomplay, mdundo, apple music, youtube music, playlist, tiktok, plateforme, platform]
-  live: [concert, festival, tournée, tour, billetterie, ticket, scène, stage, bercy, stadium, stade]
-  business: [revenu, revenue, chiffre d'affaires, investissement, investment, financement, funding, partenariat, partnership, sponsoring, sponsorship, acquisition, levée, contrat, deal, marché, market, label, résultats, results]
+  droits: [droits d'auteur, burida, sodav, cosoma, samro, mcsk, cisac, oapi, aripo, direitos de autor, gestion collective, collective management,  copyright, royalties, sacem, capasso, coson, bsda, redevance, licence, licensing, piratage, piracy, collecte]
+  streaming: [streaming, trace, boomplay, mdundo, spotify, deezer, audiomack, boomplay, mdundo, apple music, youtube music, playlist, tiktok, plateforme, platform]
+  live: [concerto, festival, pollstar, promoter, promoteur, concert, festival, tournée, tour, billetterie, ticket, scène, stage, bercy, stadium, stade]
+  business: [valuation, valorisation, raises, levée de fonds, series a, seed round, startup, ipo, investimento, revenu, revenue, chiffre d'affaires, investissement, investment, financement, funding, partenariat, partnership, sponsoring, sponsorship, acquisition, levée, contrat, deal, marché, market, label, résultats, results]
