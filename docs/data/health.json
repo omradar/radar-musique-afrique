@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T00:13:08.605184+00:00",
+ "updated": "2026-10-26T06:23:56.094976+00:00",
  "sources": [
   {
    "id": "musicinafrica",
@@ -26,7 +26,7 @@
    "name": "OkayAfrica",
    "ok": true,
    "items": 40,
-   "fetched": 50,
+   "fetched": 53,
    "feed": "https://news.google.com/rss/search?q=site%3Aokayafrica.com+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -75,7 +75,7 @@
    "id": "allafrica-en",
    "name": "allAfrica (EN)",
    "ok": true,
-   "items": 18,
+   "items": 19,
    "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Aallafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
@@ -136,7 +136,7 @@
    "name": "CAF",
    "ok": true,
    "items": 0,
-   "fetched": 10,
+   "fetched": 9,
    "feed": "https://news.google.com/rss/search?q=site%3Acafonline.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -165,7 +165,7 @@
    "id": "arise",
    "name": "Arise News",
    "ok": true,
-   "items": 0,
+   "items": 1,
    "fetched": 20,
    "feed": "https://www.arise.tv/feed",
    "fallback": false,
@@ -185,10 +185,10 @@
    "id": "telecomreview",
    "name": "Telecom Review Africa",
    "ok": true,
-   "items": 0,
-   "fetched": 1,
-   "feed": "https://news.google.com/rss/search?q=site%3Atelecomreviewafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
+   "items": 1,
+   "fetched": 10,
+   "feed": "https://www.telecomreviewafrica.com/feed/",
+   "fallback": false,
    "error": null
   },
   {
@@ -255,8 +255,8 @@
    "id": "rfi-afrique",
    "name": "RFI Afrique",
    "ok": true,
-   "items": 4,
-   "fetched": 29,
+   "items": 1,
+   "fetched": 24,
    "feed": "https://www.rfi.fr/fr/afrique/rss",
    "fallback": false,
    "error": null
@@ -285,7 +285,7 @@
    "id": "ghanaweb",
    "name": "GhanaWeb",
    "ok": true,
-   "items": 20,
+   "items": 21,
    "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Aghanaweb.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
@@ -325,8 +325,8 @@
    "id": "gn-afrique-musique-fr",
    "name": "Google Actualités: musique africaine industrie",
    "ok": true,
-   "items": 11,
-   "fetched": 11,
+   "items": 13,
+   "fetched": 13,
    "feed": "https://news.google.com/rss/search?q=musique+africaine+industrie+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
    "error": null
@@ -335,8 +335,8 @@
    "id": "gn-afrique-business-fr",
    "name": "Google Actualités: musique africaine (streaming OR business OR \"droits d'auteur\")",
    "ok": true,
-   "items": 7,
-   "fetched": 7,
+   "items": 9,
+   "fetched": 9,
    "feed": "https://news.google.com/rss/search?q=musique+africaine+%28streaming+OR+business+OR+%22droits+d%27auteur%22%29+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": false,
    "error": null
@@ -355,8 +355,8 @@
    "id": "gn-ci-fr",
    "name": "Google Actualités: musique (\"Côte d'Ivoire\" OR coupé-décalé)",
    "ok": true,
-   "items": 26,
-   "fetched": 26,
+   "items": 24,
+   "fetched": 24,
    "feed": "https://news.google.com/rss/search?q=musique+%28%22C%C3%B4te+d%27Ivoire%22+OR+coup%C3%A9-d%C3%A9cal%C3%A9%29+when%3A7d&hl=fr&gl=CI&ceid=CI%3Afr",
    "fallback": false,
    "error": null
@@ -366,7 +366,7 @@
    "name": "Google Actualités: musique (Cameroun OR Congo OR RDC OR Gabon)",
    "ok": true,
    "items": 40,
-   "fetched": 60,
+   "fetched": 64,
    "feed": "https://news.google.com/rss/search?q=musique+%28Cameroun+OR+Congo+OR+RDC+OR+Gabon%29+when%3A7d&hl=fr&gl=CM&ceid=CM%3Afr",
    "fallback": false,
    "error": null
@@ -395,8 +395,8 @@
    "id": "gn-afrobeats-en",
    "name": "Google Actualités: Afrobeats music industry business",
    "ok": true,
-   "items": 29,
-   "fetched": 29,
+   "items": 27,
+   "fetched": 27,
    "feed": "https://news.google.com/rss/search?q=Afrobeats+music+industry+business+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
    "fallback": false,
    "error": null
@@ -416,7 +416,7 @@
    "name": "Google Actualités: amapiano South Africa music industry",
    "ok": true,
    "items": 40,
-   "fetched": 43,
+   "fetched": 42,
    "feed": "https://news.google.com/rss/search?q=amapiano+South+Africa+music+industry+when%3A7d&hl=en&gl=ZA&ceid=ZA%3Aen",
    "fallback": false,
    "error": null
@@ -435,8 +435,8 @@
    "id": "gn-gh-en",
    "name": "Google Actualités: Ghana music industry afrobeats highlife",
    "ok": true,
-   "items": 25,
-   "fetched": 25,
+   "items": 10,
+   "fetched": 10,
    "feed": "https://news.google.com/rss/search?q=Ghana+music+industry+afrobeats+highlife+when%3A7d&hl=en&gl=GH&ceid=GH%3Aen",
    "fallback": false,
    "error": null
@@ -455,8 +455,8 @@
    "id": "gn-audiomack",
    "name": "Google Actualités: Audiomack (announces OR launches OR partnership OR Africa)",
    "ok": true,
-   "items": 8,
-   "fetched": 8,
+   "items": 9,
+   "fetched": 9,
    "feed": "https://news.google.com/rss/search?q=Audiomack+%28announces+OR+launches+OR+partnership+OR+Africa%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
    "error": null
@@ -486,7 +486,7 @@
    "name": "Google Actualités: (Orange OR Sonatel OR \"Max it\") (musique OR sponsoring OR concert)",
    "ok": true,
    "items": 40,
-   "fetched": 66,
+   "fetched": 70,
    "feed": "https://news.google.com/rss/search?q=%28Orange+OR+Sonatel+OR+%22Max+it%22%29+%28musique+OR+sponsoring+OR+concert%29+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
    "error": null
