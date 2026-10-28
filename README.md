@@ -38,6 +38,18 @@ Site de veille sur la musique africaine et son industrie (business, streaming, l
 
 Après le premier passage, cherche dans le site les cinq sujets déjà traités (financement de la culture, filtre IA de Deezer, Audiomack Night Plan, 286 M$ non collectés, Youssou Ndour à Bercy). Les anciens articles peuvent avoir dépassé la fenêtre des flux RSS, qui ne contiennent en général que les dernières publications. Un test plus pertinent : vérifier que les nouveaux articles de ces mêmes sources arrivent bien.
 
+## Filtre : actualités africaines et musicales uniquement
+
+Chaque article passe trois portes dans `scripts/collect.py` (réglages dans la section `filters` de `config/sources.yml`) :
+
+1. **Pas de spam** : titres trop courts, pages de commentaires, motifs de `blocked_title_patterns`.
+2. **Musique** : un mot de `music_keywords` ou un artiste de `african_artists`. Les mots ambigus (festival, label, artiste...) ne suffisent que sans signal sport, cinéma, théâtre ou politique (`non_music_terms`).
+3. **Afrique** : un terme de `africa_terms` (pays, ville, genre, plateforme, institution) ou un artiste de `african_artists`. Les médias africains en sont dispensés : sources marquées `africa: true`, et éditeurs de `african_publishers` quand ils arrivent par Google ou Bing.
+
+Les mots sont cherchés en mots entiers (plus de "clip" dans "éclipse"). Les agrégateurs Google et Bing sont toujours filtrés sur les deux critères. Une nouvelle source ajoutée sans `africa: true` est filtrée par défaut. À chaque passage, les mêmes règles sont appliquées à l'historique : un article qui ne passe plus est retiré.
+
+Pour régler : ouvre `data/rejected.json` (compteurs et 400 titres rejetés au dernier passage). Un bon article rejeté à tort ? Ajoute son pays, sa ville, son artiste ou son éditeur à la liste adaptée. Limite connue : un média africain qui parle d'un artiste international (Chris Brown, Jay-Z) reste affiché, car la porte Afrique ne s'applique pas à lui.
+
 ## Ajouter ou retirer une source
 
 Édite `config/sources.yml`. Si une source n'a pas d'URL `feed`, le collecteur cherche le flux tout seul. Si rien n'est trouvé, la source apparaît en erreur dans l'onglet "Sources" : renseigne alors l'URL du flux à la main, ou passe par un flux Google Actualités.

@@ -8,6 +8,10 @@
 #   kind                 : primary (communiqué, rapport, institution) ou secondary (presse qui relaie)
 #   verify               : true = un article venant de cette source seule est marqué "non confirmé"
 #   keywords             : true = l'article doit contenir un mot-clé musique pour être gardé
+#   africa               : true = média africain, ses articles n'ont pas besoin de citer l'Afrique.
+#                          Sans ce champ (sources mondiales, Google, Bing), l'article doit citer un terme
+#                          de la liste filters.africa_terms (pays, ville, genre, artiste, plateforme africaine).
+#                          Une nouvelle source SANS africa: true est donc filtrée par défaut.
 #
 # Aucun flux n'a été vérifié à l'écriture de ce fichier. La page "Sources" du site
 # affiche l'état réel de chaque source après le premier passage du collecteur.
@@ -22,109 +26,109 @@ settings:
 
 sources:
   # ---------- Niveau 1 : coeur ----------
-  - {id: musicinafrica, name: Music In Africa, homepage: "https://www.musicinafrica.net", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
-  - {id: afropop, name: Afropop Worldwide, homepage: "https://afropop.org", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
-  - {id: okayafrica, name: OkayAfrica, homepage: "https://www.okayafrica.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
+  - {id: musicinafrica, name: Music In Africa, homepage: "https://www.musicinafrica.net", lang: en, tier: 1, kind: secondary, verify: false, keywords: false, africa: true}
+  - {id: afropop, name: Afropop Worldwide, homepage: "https://afropop.org", lang: en, tier: 1, kind: secondary, verify: false, keywords: false, africa: true}
+  - {id: okayafrica, name: OkayAfrica, homepage: "https://www.okayafrica.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: false, africa: true}
   - {id: mbw, name: Music Business Worldwide, homepage: "https://www.musicbusinessworldwide.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
   - {id: ifpi, name: IFPI, homepage: "https://www.ifpi.org", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
   - {id: midia, name: MIDiA Research, homepage: "https://www.midiaresearch.com", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
-  - {id: allafrica-fr, name: allAfrica (FR), homepage: "https://fr.allafrica.com", lang: fr, tier: 1, kind: secondary, verify: false, keywords: true}
-  - {id: allafrica-en, name: allAfrica (EN), homepage: "https://allafrica.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
-  - {id: financialafrik, name: Financial Afrik, homepage: "https://www.financialafrik.com", lang: fr, tier: 1, kind: secondary, verify: false, keywords: true}
-  - {id: wearetech, name: We Are Tech Africa, homepage: "https://www.wearetech.africa", lang: fr, tier: 1, kind: secondary, verify: false, keywords: true}
-  - {id: businessday, name: BusinessDay Nigeria, homepage: "https://businessday.ng", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
-  - {id: businesstoday-ke, name: Business Today Kenya, homepage: "https://businesstoday.co.ke", lang: en, tier: 1, kind: secondary, verify: false, keywords: true}
+  - {id: allafrica-fr, name: allAfrica (FR), homepage: "https://fr.allafrica.com", lang: fr, tier: 1, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: allafrica-en, name: allAfrica (EN), homepage: "https://allafrica.com", lang: en, tier: 1, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: financialafrik, name: Financial Afrik, homepage: "https://www.financialafrik.com", lang: fr, tier: 1, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: wearetech, name: We Are Tech Africa, homepage: "https://www.wearetech.africa", lang: fr, tier: 1, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: businessday, name: BusinessDay Nigeria, homepage: "https://businessday.ng", lang: en, tier: 1, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: businesstoday-ke, name: Business Today Kenya, homepage: "https://businesstoday.co.ke", lang: en, tier: 1, kind: secondary, verify: false, keywords: true, africa: true}
   # Sources primaires d'entreprise (communiqués)
-  - {id: sonatel, name: Sonatel, homepage: "https://sonatel.sn", lang: fr, tier: 1, kind: primary, verify: false, keywords: true}
-  - {id: caf, name: CAF, homepage: "https://www.cafonline.com", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
+  - {id: sonatel, name: Sonatel, homepage: "https://sonatel.sn", lang: fr, tier: 1, kind: primary, verify: false, keywords: true, africa: true}
+  - {id: caf, name: CAF, homepage: "https://www.cafonline.com", lang: en, tier: 1, kind: primary, verify: false, keywords: true, africa: true}
 
   # ---------- Niveau 2 : généralistes, filtrés par mots-clés ----------
   - {id: techcrunch, name: TechCrunch, homepage: "https://techcrunch.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
   - {id: variety, name: Variety, homepage: "https://variety.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: arise, name: Arise News, homepage: "https://www.arise.tv", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: citinewsroom, name: Citi Newsroom, homepage: "https://citinewsroom.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: telecomreview, name: Telecom Review Africa, homepage: "https://www.telecomreviewafrica.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: lesoleil, name: Le Soleil, homepage: "https://lesoleil.sn", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: sentv, name: SenTV, homepage: "https://www.sentv.info", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: xalima, name: Xalima, homepage: "https://xalimasn.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: seneplus, name: Seneplus, homepage: "https://www.seneplus.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: osiris, name: Osiris, homepage: "https://osiris.sn", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: arise, name: Arise News, homepage: "https://www.arise.tv", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: citinewsroom, name: Citi Newsroom, homepage: "https://citinewsroom.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: telecomreview, name: Telecom Review Africa, homepage: "https://www.telecomreviewafrica.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: lesoleil, name: Le Soleil, homepage: "https://lesoleil.sn", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: sentv, name: SenTV, homepage: "https://www.sentv.info", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: xalima, name: Xalima, homepage: "https://xalimasn.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: seneplus, name: Seneplus, homepage: "https://www.seneplus.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: osiris, name: Osiris, homepage: "https://osiris.sn", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
   # Suggérées par le document, à tester
   # (Audiomack, Boomplay et Mdundo sont suivis par recherche Google Actualités plus bas : leur site
   #  ne contient que des pages de morceaux, pas d'actualités)
-  - {id: jeuneafrique, name: Jeune Afrique, homepage: "https://www.jeuneafrique.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: rfi-afrique, name: RFI Afrique, homepage: "https://www.rfi.fr/fr/afrique", feed: "https://www.rfi.fr/fr/afrique/rss", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: africareport, name: The Africa Report, homepage: "https://www.theafricareport.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: jeuneafrique, name: Jeune Afrique, homepage: "https://www.jeuneafrique.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: rfi-afrique, name: RFI Afrique, homepage: "https://www.rfi.fr/fr/afrique", feed: "https://www.rfi.fr/fr/afrique/rss", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: africareport, name: The Africa Report, homepage: "https://www.theafricareport.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
   - {id: billboard, name: Billboard, homepage: "https://www.billboard.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: ghanaweb, name: GhanaWeb, homepage: "https://www.ghanaweb.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: ghanaweb, name: GhanaWeb, homepage: "https://www.ghanaweb.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
 
   # ---------- Niveau 3 : à recouper ----------
-  - {id: techlabari, name: TechLabari, homepage: "https://techlabari.com", lang: en, tier: 3, kind: secondary, verify: true, keywords: true}
-  - {id: senego, name: Senego, homepage: "https://senego.com", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true}
-  - {id: seneweb, name: Seneweb, homepage: "https://www.seneweb.com", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true}
+  - {id: techlabari, name: TechLabari, homepage: "https://techlabari.com", lang: en, tier: 3, kind: secondary, verify: true, keywords: true, africa: true}
+  - {id: senego, name: Senego, homepage: "https://senego.com", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true, africa: true}
+  - {id: seneweb, name: Seneweb, homepage: "https://www.seneweb.com", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true, africa: true}
 
   # ---------- Ajout 26 oct. : droits, données, institutions (niveau 1) ----------
   # Flux non testés depuis ici : l'autodécouverte puis le relais Google News s'en chargent, la page Sources dit ce qui marche.
-  - {id: samro, name: SAMRO, homepage: "https://www.samro.org.za", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
-  - {id: cosoma, name: COSOMA, homepage: "https://blog.cosoma.mw", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
-  - {id: oapi, name: OAPI, homepage: "https://oapi.int/en", lang: fr, tier: 1, kind: primary, verify: false, keywords: true}
-  - {id: aripo, name: ARIPO, homepage: "https://www.aripo.org", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
+  - {id: samro, name: SAMRO, homepage: "https://www.samro.org.za", lang: en, tier: 1, kind: primary, verify: false, keywords: false, africa: true}
+  - {id: cosoma, name: COSOMA, homepage: "https://blog.cosoma.mw", lang: en, tier: 1, kind: primary, verify: false, keywords: false, africa: true}
+  - {id: oapi, name: OAPI, homepage: "https://oapi.int/en", lang: fr, tier: 1, kind: primary, verify: false, keywords: true, africa: true}
+  - {id: aripo, name: ARIPO, homepage: "https://www.aripo.org", lang: en, tier: 1, kind: primary, verify: false, keywords: true, africa: true}
   - {id: cisac, name: CISAC, homepage: "https://www.cisac.org", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
   - {id: loudandclear, name: Spotify Loud & Clear, homepage: "https://loudandclear.byspotify.com", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
-  - {id: pwc-africa-eum, name: PwC Africa Entertainment & Media Outlook, homepage: "https://www.pwc.com/ng/en/publications/entertainment-and-media-outlook.html", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+  - {id: pwc-africa-eum, name: PwC Africa Entertainment & Media Outlook, homepage: "https://www.pwc.com/ng/en/publications/entertainment-and-media-outlook.html", lang: en, tier: 1, kind: primary, verify: false, keywords: true, africa: true}
   - {id: ifacca, name: IFACCA, homepage: "https://ifacca.org/news", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
-  - {id: adams-africa, name: Adams & Adams IP Africa, homepage: "https://www.adams.africa", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: adams-africa, name: Adams & Adams IP Africa, homepage: "https://www.adams.africa", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
   - {id: interspace, name: The InterSpace Daily, homepage: "https://interspacemusic.com/blog", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
-  - {id: downtown-africa, name: Downtown Music Africa, homepage: "https://downtownmusic.africa", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
-  - {id: mdundo-ir, name: Mdundo (communiqués investisseurs), homepage: "https://mfn.se/all/a/mdundo-com", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+  - {id: downtown-africa, name: Downtown Music Africa, homepage: "https://downtownmusic.africa", lang: en, tier: 1, kind: secondary, verify: false, keywords: false, africa: true}
+  - {id: mdundo-ir, name: Mdundo (communiqués investisseurs), homepage: "https://mfn.se/all/a/mdundo-com", lang: en, tier: 1, kind: primary, verify: false, keywords: true}
 
   # ---------- Ajout 26 oct. : startups, live, plateformes ----------
-  - {id: techcabal, name: TechCabal, homepage: "https://techcabal.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: techpoint, name: Techpoint Africa, homepage: "https://techpoint.africa", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: disrupt-africa, name: Disrupt Africa, homepage: "https://disrupt-africa.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: techeconomy, name: Techeconomy, homepage: "https://techeconomy.ng", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: techcabal, name: TechCabal, homepage: "https://techcabal.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: techpoint, name: Techpoint Africa, homepage: "https://techpoint.africa", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: disrupt-africa, name: Disrupt Africa, homepage: "https://disrupt-africa.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: techeconomy, name: Techeconomy, homepage: "https://techeconomy.ng", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
   - {id: pollstar, name: Pollstar, homepage: "https://news.pollstar.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
   - {id: iq-mag, name: IQ Magazine, homepage: "https://www.iq-mag.net", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
   - {id: festival-insights, name: Festival Insights, homepage: "https://festivalinsights.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
   - {id: ticketing-business, name: The Ticketing Business, homepage: "https://www.theticketingbusiness.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
   - {id: hypebot, name: Hypebot, homepage: "https://www.hypebot.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: audiomack-creators, name: Audiomack Creators, homepage: "https://creators.audiomack.com", lang: en, tier: 1, kind: primary, verify: false, keywords: false}
+  - {id: audiomack-creators, name: Audiomack Creators, homepage: "https://creators.audiomack.com", lang: en, tier: 1, kind: primary, verify: false, keywords: false, africa: true}
 
   # ---------- Ajout 26 oct. : couverture géographique ----------
   # Lusophonie
-  - {id: expresso-ilhas, name: Expresso das Ilhas, homepage: "https://expressodasilhas.cv", lang: pt, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: ver-angola, name: Ver Angola, homepage: "https://www.verangola.net", lang: pt, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: expresso-ilhas, name: Expresso das Ilhas, homepage: "https://expressodasilhas.cv", lang: pt, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: ver-angola, name: Ver Angola, homepage: "https://www.verangola.net", lang: pt, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
   # Afrique de l'Est
-  - {id: citizen-tz, name: The Citizen Tanzania, homepage: "https://www.thecitizen.co.tz", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: daily-news-tz, name: Daily News Tanzania, homepage: "https://dailynews.co.tz", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: chanzo, name: The Chanzo, homepage: "https://thechanzo.com", lang: sw, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: monitor-ug, name: Daily Monitor Uganda, homepage: "https://www.monitor.co.ug", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: pulse-ug, name: Pulse Uganda, homepage: "https://www.pulse.ug", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: standard-ke, name: The Standard Kenya, homepage: "https://www.standardmedia.co.ke", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: citizen-digital, name: Citizen Digital, homepage: "https://citizen.digital", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: hapakenya, name: HapaKenya, homepage: "https://hapakenya.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: newtimes-rw, name: The New Times Rwanda, homepage: "https://www.newtimes.co.rw", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: citizen-tz, name: The Citizen Tanzania, homepage: "https://www.thecitizen.co.tz", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: daily-news-tz, name: Daily News Tanzania, homepage: "https://dailynews.co.tz", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: chanzo, name: The Chanzo, homepage: "https://thechanzo.com", lang: sw, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: monitor-ug, name: Daily Monitor Uganda, homepage: "https://www.monitor.co.ug", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: pulse-ug, name: Pulse Uganda, homepage: "https://www.pulse.ug", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: standard-ke, name: The Standard Kenya, homepage: "https://www.standardmedia.co.ke", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: citizen-digital, name: Citizen Digital, homepage: "https://citizen.digital", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: hapakenya, name: HapaKenya, homepage: "https://hapakenya.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: newtimes-rw, name: The New Times Rwanda, homepage: "https://www.newtimes.co.rw", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
   # Afrique du Nord
-  - {id: tsa-algerie, name: TSA Algérie, homepage: "https://www.tsa-algerie.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: lapresse-tn, name: La Presse de Tunisie, homepage: "https://www.lapresse.tn", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: hespress-fr, name: Hespress FR, homepage: "https://fr.hespress.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: yabiladi, name: Yabiladi, homepage: "https://en.yabiladi.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: lematin-ma, name: Le Matin Maroc, homepage: "https://lematin.ma", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: egyptian-streets, name: Egyptian Streets, homepage: "https://egyptianstreets.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: tsa-algerie, name: TSA Algérie, homepage: "https://www.tsa-algerie.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: lapresse-tn, name: La Presse de Tunisie, homepage: "https://www.lapresse.tn", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: hespress-fr, name: Hespress FR, homepage: "https://fr.hespress.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: yabiladi, name: Yabiladi, homepage: "https://en.yabiladi.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: lematin-ma, name: Le Matin Maroc, homepage: "https://lematin.ma", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: egyptian-streets, name: Egyptian Streets, homepage: "https://egyptianstreets.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
   # Afrique australe
-  - {id: music-exchange, name: Music Exchange (MEX), homepage: "https://www.musicexchange.org.za", lang: en, tier: 1, kind: secondary, verify: false, keywords: false}
-  - {id: sundayworld, name: Sunday World, homepage: "https://sundayworld.co.za", lang: en, tier: 3, kind: secondary, verify: true, keywords: true}
-  - {id: lusakatimes, name: Lusaka Times, homepage: "https://www.lusakatimes.com", lang: en, tier: 3, kind: secondary, verify: true, keywords: true}
-  - {id: zambiamonitor, name: Zambia Monitor, homepage: "https://www.zambiamonitor.com", lang: en, tier: 3, kind: secondary, verify: true, keywords: true}
-  - {id: namibian, name: The Namibian, homepage: "https://www.namibian.com.na", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: nbc-na, name: NBC News Namibie, homepage: "https://nbcnews.na", lang: en, tier: 3, kind: secondary, verify: true, keywords: true}
-  - {id: standard-zw, name: The Standard Zimbabwe, homepage: "https://thestandard.co.zw", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
+  - {id: music-exchange, name: Music Exchange (MEX), homepage: "https://www.musicexchange.org.za", lang: en, tier: 1, kind: secondary, verify: false, keywords: false, africa: true}
+  - {id: sundayworld, name: Sunday World, homepage: "https://sundayworld.co.za", lang: en, tier: 3, kind: secondary, verify: true, keywords: true, africa: true}
+  - {id: lusakatimes, name: Lusaka Times, homepage: "https://www.lusakatimes.com", lang: en, tier: 3, kind: secondary, verify: true, keywords: true, africa: true}
+  - {id: zambiamonitor, name: Zambia Monitor, homepage: "https://www.zambiamonitor.com", lang: en, tier: 3, kind: secondary, verify: true, keywords: true, africa: true}
+  - {id: namibian, name: The Namibian, homepage: "https://www.namibian.com.na", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: nbc-na, name: NBC News Namibie, homepage: "https://nbcnews.na", lang: en, tier: 3, kind: secondary, verify: true, keywords: true, africa: true}
+  - {id: standard-zw, name: The Standard Zimbabwe, homepage: "https://thestandard.co.zw", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
   # Afrique de l'Ouest et Centre
-  - {id: premiumtimes, name: Premium Times, homepage: "https://www.premiumtimesng.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: journaldumali, name: Journal du Mali, homepage: "https://journaldumali.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: burkina24, name: Burkina24, homepage: "https://burkina24.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: sidwaya, name: Sidwaya, homepage: "https://www.sidwaya.info", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true}
-  - {id: guineenews, name: Guinéenews, homepage: "https://guineenews.org", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true}
+  - {id: premiumtimes, name: Premium Times, homepage: "https://www.premiumtimesng.com", lang: en, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: journaldumali, name: Journal du Mali, homepage: "https://journaldumali.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: burkina24, name: Burkina24, homepage: "https://burkina24.com", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: sidwaya, name: Sidwaya, homepage: "https://www.sidwaya.info", lang: fr, tier: 2, kind: secondary, verify: false, keywords: true, africa: true}
+  - {id: guineenews, name: Guinéenews, homepage: "https://guineenews.org", lang: fr, tier: 3, kind: secondary, verify: true, keywords: true, africa: true}
 
 # Veille ponctuelle (publient peu, pas de flux fiable) : UNESCO, OMPI, ONU Afrique (CEA),
 # IFACCA, CAPASSO, Dakaractu. A consulter à la main une fois par mois.
@@ -158,19 +162,13 @@ bing_news:
 # ---------- Mots-clés ----------
 # Un article d'une source avec keywords: true doit en contenir au moins un (titre ou extrait).
 music_keywords:
+  - afro nation
   - musique
   - music
   - musical
   - musicien
-  - artiste
-  - artist
   - album
-  - single
   - concert
-  - festival
-  - tournée
-  - label
-  - streaming
   - spotify
   - deezer
   - audiomack
@@ -194,26 +192,19 @@ music_keywords:
   - royalties
   - sacem
   - capasso
-  - sponsoring
-  - sponsorship
-  - billboard
   - ifpi
+  - billboard africa
   - chanson
   - morceau
   - orchestre
-  - spectacle
   - mbalakh
-  - clip
   - muziki
   - wimbo
-  - tamasha
-  - msanii
   - música
   - musica
   - cantor
   - cantora
   - concerto
-  - espetáculo
   - kuduro
   - kizomba
   - semba
@@ -228,6 +219,545 @@ music_keywords:
   - youssou
   - baaba maal
   - wally seck
+
+# ---------- Filtres : ne garder que les actualités africaines et musicales ----------
+# Trois portes dans scripts/collect.py, appliquées à chaque article (et à l'historique à chaque passage) :
+#   1. pas de spam : titres trop courts, pages de commentaires, motifs de blocked_title_patterns
+#   2. musique : un mot de music_keywords, ou un mot ambigu (festival, label...) sans signal non musical
+#   3. Afrique : un terme de africa_terms, sauf pour les sources marquées africa: true
+# Les mots sont cherchés en mots entiers (pluriel en s ou x accepté), sans accent obligatoire : écris les deux formes.
+# Le dernier passage écrit data/rejected.json (compteurs et titres rejetés) pour régler ces listes.
+filters:
+  min_title_chars: 15
+  blocked_title_patterns:
+    - '^comment on '
+    - '^re: '
+    - ' - audiomack$'          # pages de profil d'artistes, pas des actualités
+    - '^\s*[-–|]'              # titre vide ou réduit au nom du site ("- Afropop Worldwide")
+  ambiguous_music_keywords:
+    - artiste
+    - artist
+    - festival
+    - label
+    - sponsoring
+    - sponsorship
+    - clip
+    - tamasha
+    - msanii
+    - espetáculo
+  non_music_terms:             # annulent un mot ambigu (jamais un mot musical fort)
+    - fifa
+    - world cup
+    - coupe du monde
+    - football
+    - soccer
+    - basketball
+    - tennis
+    - rugby
+    - cricket
+    - olympic
+    - olympique
+    - olympiques
+    - joj
+    - film
+    - films
+    - cinéma
+    - cinema
+    - movie
+    - nollywood
+    - alimentaire
+    - alimenterre
+    - food
+    - agricole
+    - agriculture
+    - élection
+    - election
+    - ebola
+    - théâtre
+    - theatre
+    - theater
+    - politique
+    - political
+    - politics
+    - démocratie
+    - sport
+    - sports
+    - sportif
+    - sportive
+    - parliament
+    - parliamentary
+    - parlement
+    - polls
+  african_publishers:          # éditeurs africains vus via Google ou Bing : ils n'ont pas besoin de citer un pays
+    - Tooxclusive
+    - Camer.be
+    - Afrique sur 7
+    - Voxtrendy
+    - ACP | Agence Congolaise de Presse
+    - Kapitalis
+    - Congoquotidien.com
+    - TrendyHipHop
+    - Abidjan.net
+    - Les Echos du Congo Brazzaville
+    - afromag.com.ng
+    - MyJoyOnline
+    - Aujourd'hui le Maroc
+    - Linfodrome
+    - L'observateur
+    - Ghana Music
+    - LesEco.ma
+    - Bona Magazine
+    - New Telegraph
+    - Glamour South Africa
+    - Vistanaij
+    - FratMat
+    - Modern Ghana
+    - thenational.co.za
+    - BENIN WEB TV
+    - Bénin Web TV
+    - Medi1 News
+    - IOL
+    - CitiMuzik
+    - Six9ja
+    - Le Desk
+    - The Guardian Nigeria
+    - TechAfrica News
+    - Legit News
+    - L'Union Sonapress
+    - AGENCE ECOFIN
+    - Gabon Media Time
+    - L'Economiste
+    - Le360
+    - afrik soir
+    - Tunesloaded
+    - Africa24 TV
+    - Koaci
+    - Femmes du Maroc
+    - Herald.co.zw
+    - Ouragan.cd
+    - LeSiteinfo.com
+    - Briefly News
+    - webdo
+    - Vanguard News
+    - Business & Financial Times
+    - Afrimag
+    - Mondafrique
+    - Maroc Hebdo
+    - SlikourOnLife
+    - Senego.com
+    - Cameroun Actuel
+    - Quid.ma
+    - Val9ja
+    - Voice of Nigeria
+    - WETALKSOUND
+    - APS - Agence de Presse Sénégalaise
+    - Lebrief
+    - Businessday NG
+    - Asaase Radio
+    - KenyanVibe
+    - Pulse Uganda
+    - Le Courrier de l'Atlas
+    - Le Matin.ma
+    - GBC Ghana
+    - CesoirTV
+    - Yabiladi
+    - Midi Madagasikara
+    - Mbote
+    - Leral.net
+    - AIP - Agence Ivoirienne de Presse
+    - Nessma TV
+    - The Voice of Africa
+    - Le Courrier d'Algérie
+    - Presse Agence
+    - InBound SA
+    - Eswatini Positive News
+    - Chronicle NG
+    - defenceWeb
+    - Tuko News
+    - QED.NG
+    - lecri.media
+    - La Presse de Tunisie
+    - Le Matin d'Algérie
+    - Ripples Nigeria
+    - Cameroon-Tribune
+    - Cameroun Tribune
+    - Music In Africa
+    - Nollywire
+    - Pulse Nigeria
+    - Pulse Ghana
+    - Pulse Kenya
+    - Punch
+    - Premium Times
+    - TheCable
+    - BellaNaija
+    - Notjustok
+    - The Native
+    - Nairametrics
+    - Daily Nation
+    - Capital FM Kenya
+    - Citizen Digital
+    - Graphic Online
+    - 3News
+    - Seneweb
+    - Senego
+    - Dakaractu
+    - Senenews
+    - Le Soleil
+    - Sud Quotidien
+    - Jeune Afrique
+    - RFI Afrique
+    - Afropop
+    - OkayAfrica
+  african_artists:            # noms d'artistes africains très présents : comptent comme signal musique ET Afrique (liste à compléter)
+    - burna boy
+    - wizkid
+    - davido
+    - tems
+    - rema
+    - asake
+    - tyla
+    - ayra starr
+    - fireboy
+    - omah lay
+    - seyi vibez
+    - fola
+    - olamide
+    - black sherif
+    - sarkodie
+    - stonebwoy
+    - shatta wale
+    - diamond platnumz
+    - harmonize
+    - youssou ndour
+    - baaba maal
+    - wally seck
+    - fally ipupa
+    - angélique kidjo
+    - angelique kidjo
+    - mr eazi
+    - moliy
+    - ckay
+    - kizz daniel
+    - kabza de small
+    - dj maphorisa
+    - uncle waffles
+    - master kg
+    - black coffee
+    - nasty c
+    - jamdong
+    - king promise
+    - don jazzy
+    - kelvyn boy
+    - adekunle gold
+    - tiwa savage
+    - joeboy
+    - ruger
+    - victony
+    - mavins
+    - ycee
+    - yemi alade
+    - patoranking
+    - focalistic
+    - young stunna
+    - blxckie
+    - sho madjozi
+    - oumou sangaré
+    - salif keita
+    - tiken jah fakoly
+    - ferre gola
+    - gaz mawete
+    - dadju
+    - innoss'b
+    - didi b
+    - magic system
+    - alpha blondy
+    - koffi olomidé
+    - koffi olomide
+    - werrason
+    - aya nakamura
+    - amadeus
+    - aïda samb
+    - aida samb
+    - viviane chidid
+    - ismaïla lô
+    - pape diouf
+    - orchestra baobab
+    - elzo jamdong
+    - dip doundou guiss
+    - sidiki diabaté
+    - sidiki diabate
+  africa_terms:
+    # continent et régions
+    - africa
+    - africain
+    - africaine
+    - african
+    - afrique
+    - afro
+    - subsaharien
+    - sub-saharan
+    - sahel
+    - maghreb
+    - mzansi
+    - naija
+    - west africa
+    - east africa
+    - southern africa
+    - afrique de l'ouest
+    - afrique centrale
+    - afrique de l'est
+    - afrique du nord
+    # pays (noms et adjectifs, français, anglais, portugais)
+    - nigeria
+    - nigéria
+    - nigerian
+    - nigérian
+    - nigérians
+    - ghana
+    - ghanaian
+    - ghanéen
+    - kenya
+    - kenyan
+    - kényan
+    - tanzania
+    - tanzanie
+    - tanzanian
+    - uganda
+    - ugandan
+    - ouganda
+    - rwanda
+    - rwandan
+    - burundi
+    - ethiopia
+    - éthiopie
+    - ethiopian
+    - somalia
+    - somalie
+    - sudan
+    - soudan
+    - egypt
+    - egyptian
+    - égypte
+    - égyptien
+    - libya
+    - libye
+    - tunisia
+    - tunisie
+    - tunisien
+    - algeria
+    - algérie
+    - algérien
+    - morocco
+    - moroccan
+    - maroc
+    - marocain
+    - mauritania
+    - mauritanie
+    - senegal
+    - sénégal
+    - senegalese
+    - sénégalais
+    - gambia
+    - gambie
+    - guinea
+    - guinée
+    - guinéen
+    - mali
+    - malian
+    - malien
+    - burkina
+    - burkinabè
+    - burkinabé
+    - niger
+    - nigérien
+    - côte d'ivoire
+    - cote d'ivoire
+    - ivory coast
+    - ivoirien
+    - ivorian
+    - liberia
+    - libéria
+    - sierra leone
+    - togo
+    - togolais
+    - benin
+    - bénin
+    - béninois
+    - cameroon
+    - cameroun
+    - camerounais
+    - cameroonian
+    - gabon
+    - gabonais
+    - congo
+    - congolais
+    - congolese
+    - rdc
+    - tchad
+    - centrafrique
+    - angola
+    - angolan
+    - angolais
+    - mozambique
+    - mozambican
+    - zambia
+    - zambie
+    - zambian
+    - zimbabwe
+    - zimbabwean
+    - malawi
+    - botswana
+    - namibia
+    - namibie
+    - lesotho
+    - eswatini
+    - madagascar
+    - mauritius
+    - île maurice
+    - seychelles
+    - comores
+    - cabo verde
+    - cape verde
+    - cap-vert
+    - cap vert
+    - são tomé
+    - sao tome
+    - djibouti
+    - érythrée
+    - eritrea
+    - south africa
+    - south african
+    - afrique du sud
+    - sud-africain
+    - sud-africaine
+    # villes
+    - lagos
+    - abuja
+    - accra
+    - kumasi
+    - nairobi
+    - mombasa
+    - kampala
+    - dar es salaam
+    - kigali
+    - addis
+    - dakar
+    - saly
+    - thiès
+    - saint-louis du sénégal
+    - abidjan
+    - bamako
+    - ouagadougou
+    - conakry
+    - lomé
+    - cotonou
+    - douala
+    - yaoundé
+    - libreville
+    - kinshasa
+    - brazzaville
+    - luanda
+    - maputo
+    - lusaka
+    - harare
+    - johannesburg
+    - joburg
+    - soweto
+    - cape town
+    - durban
+    - pretoria
+    - windhoek
+    - gaborone
+    - casablanca
+    - rabat
+    - marrakech
+    - tunis
+    - alger
+    - cairo
+    - le caire
+    - alexandria
+    - khartoum
+    - mogadishu
+    - antananarivo
+    # genres africains
+    - kabyle
+    - amazigh
+    - chaabi
+    - gnawa
+    - bikutsi
+    - makossa
+    - soukous
+    - ndombolo
+    - mapouka
+    - rumba congolaise
+    - afro-pop
+    - afrobeat
+    - afrobeats
+    - afropop
+    - afrofusion
+    - afro-house
+    - afrohouse
+    - afroswing
+    - amapiano
+    - gqom
+    - kwaito
+    - mbalax
+    - mbalakh
+    - coupé-décalé
+    - coupe decale
+    - zouglou
+    - kuduro
+    - kizomba
+    - semba
+    - funaná
+    - bongo flava
+    - gengetone
+    - mahraganat
+    - raï
+    - zimdancehall
+    - highlife
+    - alté
+    - azonto
+    # plateformes, institutions, événements du secteur en Afrique
+    - sauti za busara
+    - afropunk
+    - felabration
+    - femua
+    - bayimba
+    - nyege nyege
+    - rocking the daisies
+    - oppikoppi
+    - afrochella
+    - detty december
+    - visa for music
+    - jazz à saint-louis
+    - festival sur le niger
+    - festival au désert
+    - sakifo
+    - mawazine
+    - timitar
+    - gnaoua
+    - festival de carthage
+    - jazz à carthage
+    - audiomack
+    - boomplay
+    - mdundo
+    - turntable
+    - afrima
+    - all africa music awards
+    - music in africa
+    - samro
+    - capasso
+    - cosoma
+    - burida
+    - sodav
+    - mcsk
+    - coson
+    - bsda
+    - oapi
+    - aripo
+    - sonatel
+    - kisangani
 
 # ---------- Catégories (la première qui correspond gagne, sinon "actus") ----------
 categories:

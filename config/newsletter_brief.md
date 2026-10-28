@@ -15,7 +15,7 @@ Règles de rigueur (non négociables) :
 
 Priorité à l'Afrique (règle de sélection) :
 - Les sujets qui concernent directement des artistes, des labels, des événements, des médias ou des marchés africains passent avant les sujets internationaux. Vise au moins les deux tiers de sujets africains.
-- Un article d'une source internationale (plateformes mondiales comme Spotify, majors, presse anglo-saxonne) n'entre dans "À la une" que si son titre ou son extrait établit un lien direct et explicite avec l'Afrique. Sinon, il va au mieux dans une courte rubrique "Hors d'Afrique", ou il est écarté.
+- Le collecteur ne garde que des articles liés à l'Afrique (voir la section filters de sources.yml). Si un article de la liste ne montre pas de lien direct et explicite avec l'Afrique dans son titre ou son extrait, écarte-le : il n'y a plus de rubrique "Hors d'Afrique".
 - Ne qualifie jamais une personne ou une entreprise d'africaine, ni de "figure du continent", si l'article ne le dit pas.
 - Les points de "À retenir" ne contiennent ni prédiction ni conséquence absente des articles. Formule-les comme des conseils prudents, avec "peut" ou "à surveiller".
 

@@ -98,6 +98,75 @@ def parse_iso(value):
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
 
 
+# ---------- filtres : actualités africaines et musicales uniquement ----------
+
+def term_regex(terms):
+    """Regex de mots entiers (pluriel en s ou x accepté). 'clip' ne matche donc plus 'éclipse'."""
+    parts = sorted({re.escape(t.lower().replace("’", "'")) for t in terms}, key=len, reverse=True)
+    if not parts:
+        return None
+    return re.compile(r"(?<!\w)(?:" + "|".join(parts) + r")(?:s|x)?(?!\w)")
+
+
+def prep(text):
+    return text.lower().replace("’", "'")
+
+
+class Gates:
+    """Trois portes : pas de spam, de la musique, de l'Afrique (sauf pour les médias africains)."""
+
+    def __init__(self, cfg):
+        f = cfg.get("filters", {})
+        self.music_strong = term_regex(cfg["music_keywords"])
+        self.music_weak = term_regex(f.get("ambiguous_music_keywords", []))
+        self.non_music = term_regex(f.get("non_music_terms", []))
+        self.africa = term_regex(f.get("africa_terms", []))
+        self.artists = term_regex(f.get("african_artists", []))
+        self.african_publishers = term_regex(f.get("african_publishers", []))
+        self.blocked = [re.compile(p, re.I) for p in f.get("blocked_title_patterns", [])]
+        self.min_title = f.get("min_title_chars", 15)
+        self.rejected = []  # (raison, source, titre) pour régler les filtres
+        self.counts = {}
+
+    def reject(self, reason, source, title):
+        self.counts[reason] = self.counts.get(reason, 0) + 1
+        if len(self.rejected) < 400:
+            self.rejected.append({"reason": reason, "source": source, "title": title[:140]})
+        return reason
+
+    def is_junk(self, title, url):
+        if len(title.strip(" -|")) < self.min_title or "#comment-" in url or "/comment-page" in url:
+            return True
+        return any(p.search(title) for p in self.blocked)
+
+    def music_ok(self, text):
+        if self.music_strong and self.music_strong.search(text):
+            return True
+        if self.artists and self.artists.search(text):  # un artiste africain connu vaut signal musical
+            return True
+        # mot ambigu (festival, label, streaming...) : accepté seulement sans signal sport, cinéma, etc.
+        return bool(self.music_weak and self.music_weak.search(text)) and not (
+            self.non_music and self.non_music.search(text)
+        )
+
+    def africa_ok(self, text):
+        if self.africa and self.africa.search(text):
+            return True
+        return bool(self.artists and self.artists.search(text))
+
+    def check(self, title, summary, url, source, needs_music, africa_exempt):
+        """Renvoie None si l'article passe, sinon la raison du rejet."""
+        if self.is_junk(title, url):
+            return self.reject("spam", source, title)
+        text = prep(title + " " + summary)
+        if needs_music and not self.music_ok(text):
+            return self.reject("pas musique", source, title)
+        publisher_ok = bool(self.african_publishers and self.african_publishers.search(prep(source)))
+        if not (africa_exempt or publisher_ok) and not self.africa_ok(text):
+            return self.reject("pas Afrique", source, title)
+        return None
+
+
 # ---------- flux ----------
 
 def discover_feed(homepage, timeout, cache):
@@ -134,19 +203,19 @@ def build_jobs(cfg):
         jobs.append({
             "id": g["id"], "name": "Google Actualités: " + g["query"], "feed": url,
             "lang": g["hl"], "tier": 2, "kind": "secondary", "verify": False,
-            "keywords": False, "aggregator": "Google News",
+            "keywords": False, "africa": False, "aggregator": "Google News",
         })
     for b in cfg.get("bing_news", []):
         url = "https://www.bing.com/news/search?" + urlencode({"q": b["query"], "format": "rss", "setlang": b["lang"]})
         jobs.append({
             "id": b["id"], "name": "Bing Actualités: " + b["query"], "feed": url,
             "lang": b["lang"], "tier": 2, "kind": "secondary", "verify": False,
-            "keywords": False, "aggregator": "Bing News",
+            "keywords": False, "africa": False, "aggregator": "Bing News",
         })
     return jobs
 
 
-def make_article(entry, job, now, max_age, keywords, categories, verify_publishers):
+def make_article(entry, job, now, max_age, gates, categories, verify_publishers):
     title = clean_text(entry.get("title", ""))
     link = entry.get("link")
     published = entry_date(entry)
@@ -169,9 +238,11 @@ def make_article(entry, job, now, max_age, keywords, categories, verify_publishe
     else:
         summary = shorten(clean_text(entry.get("summary", "")), SUMMARY_MAX)
 
-    haystack = (title + " " + summary).lower()
-    if job["keywords"] and not any(k in haystack for k in keywords):
+    # Un agrégateur (Google, Bing) renvoie n'importe quoi : musique et Afrique obligatoires.
+    needs_music = bool(job["keywords"] or job["aggregator"])
+    if gates.check(title, summary, link, source_name, needs_music, bool(job.get("africa"))):
         return None
+    haystack = prep(title + " " + summary)
 
     category = "actus"
     for cat, words in categories.items():
@@ -217,7 +288,7 @@ def google_site_url(job):
     )
 
 
-def run_job(job, cfg, cache, now):
+def run_job(job, cfg, cache, now, gates):
     s = cfg["settings"]
     result = {
         "id": job["id"], "name": job["name"], "ok": False, "items": 0, "fetched": 0,
@@ -242,12 +313,11 @@ def run_job(job, cfg, cache, now):
         result["error"] = err
         return result, []
     result["fetched"] = len(parsed.entries)
-    keywords = [k.lower() for k in cfg["music_keywords"]]
     categories = {c: [w.lower() for w in ws] for c, ws in cfg["categories"].items()}
     verify_publishers = [v.lower() for v in s.get("verify_publishers", [])]
     articles = []
     for entry in parsed.entries[: s.get("max_items_per_feed", 60)]:
-        a = make_article(entry, job, now, s["max_age_days"], keywords, categories, verify_publishers)
+        a = make_article(entry, job, now, s["max_age_days"], gates, categories, verify_publishers)
         if a:
             articles.append(a)
     result["ok"] = True
@@ -292,6 +362,13 @@ def compute_status(articles):
     return articles
 
 
+def keep_existing(a, sources_by_id, gates):
+    src = sources_by_id.get(a["source_id"])
+    needs_music = src["keywords"] if src else True  # source inconnue = éditeur vu via Google ou Bing
+    africa_exempt = bool(src and src.get("africa"))
+    return gates.check(a["title"], a.get("summary", ""), a["url"], a["source"], needs_music, africa_exempt) is None
+
+
 def load_json(path, default):
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -304,9 +381,10 @@ def main():
     now = datetime.now(timezone.utc)
     cache = load_json(CACHE_PATH, {})
     jobs = build_jobs(cfg)
+    gates = Gates(cfg)
 
     with ThreadPoolExecutor(max_workers=cfg["settings"].get("workers", 8)) as pool:
-        outcomes = list(pool.map(lambda j: run_job(j, cfg, cache, now), jobs))
+        outcomes = list(pool.map(lambda j: run_job(j, cfg, cache, now, gates), jobs))
 
     health = [r for r, _ in outcomes]
     fresh = [a for _, arts in outcomes for a in arts]
@@ -314,6 +392,11 @@ def main():
     previous = load_json(DATA_DIR / "articles.json", {}).get("articles", [])
     cutoff = now - timedelta(days=cfg["settings"]["max_age_days"])
     previous = [a for a in previous if parse_iso(a["published"]) >= cutoff]
+    # Les filtres s'appliquent aussi à l'historique : un article accepté hier par l'ancienne règle part.
+    sources_by_id = {src["id"]: src for src in cfg["sources"]}
+    before = len(previous)
+    previous = [a for a in previous if keep_existing(a, sources_by_id, gates)]
+    purged = before - len(previous)
 
     merged = dedupe(fresh + previous)  # les nouveautés passent avant l'historique
     merged = compute_status(merged)
@@ -331,8 +414,14 @@ def main():
         encoding="utf-8",
     )
 
+    (ROOT / "data" / "rejected.json").write_text(
+        json.dumps({"updated": now.isoformat(), "counts": gates.counts, "sample": gates.rejected}, ensure_ascii=False, indent=1),
+        encoding="utf-8",
+    )
+
     ok = sum(1 for h in health if h["ok"])
     print(f"{ok}/{len(health)} sources OK, {len(fresh)} articles collectés, {len(merged)} au total")
+    print(f"Filtres : {gates.counts} ; {purged} anciens articles retirés de l'historique")
     for h in health:
         if not h["ok"]:
             print(f"  KO {h['id']}: {h['error']}")
