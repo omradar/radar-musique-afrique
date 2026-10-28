@@ -162,6 +162,7 @@ bing_news:
 # ---------- Mots-clés ----------
 # Un article d'une source avec keywords: true doit en contenir au moins un (titre ou extrait).
 music_keywords:
+  - afro nation
   - musique
   - music
   - musical
