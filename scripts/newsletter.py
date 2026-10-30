@@ -170,19 +170,21 @@ def resolve_url(url):
 
 
 def fetch_text(url):
-    """Début du texte de l'article (paragraphes), pour que le modèle ait des faits à reformuler."""
+    """Renvoie (URL d'origine, début du texte). Le texte donne au modèle des faits à reformuler."""
     import requests
     from bs4 import BeautifulSoup
 
     real = resolve_url(url)
-    if not real or any(d in urlparse(real).netloc for d in SKIP_FETCH_DOMAINS):
-        return ""
+    if not real:
+        return None, ""
+    if any(d in urlparse(real).netloc for d in SKIP_FETCH_DOMAINS):
+        return real, ""
     try:
         r = requests.get(real, headers={"User-Agent": UA}, timeout=FETCH_TIMEOUT)
         if r.status_code != 200 or "html" not in r.headers.get("content-type", ""):
-            return ""
+            return real, ""
     except requests.RequestException:
-        return ""
+        return real, ""
     soup = BeautifulSoup(r.content, "html.parser")
     for tag in soup(["script", "style", "nav", "footer", "aside", "form", "header", "noscript"]):
         tag.decompose()
@@ -192,7 +194,7 @@ def fetch_text(url):
     text = " ".join(paras)
     if len(text) > TEXT_CHARS:
         text = text[:TEXT_CHARS].rsplit(" ", 1)[0] + "..."
-    return text
+    return real, text
 
 
 def clean_summary(summary):
@@ -204,13 +206,15 @@ def enrich(items, fetch=True):
     """Ajoute 'text' et 'depth' : texte (page lue), extrait (court résumé du flux) ou titre (rien d'autre)."""
     def job(a):
         try:
-            return fetch_text(a["url"]) if fetch else ""
+            return fetch_text(a["url"]) if fetch else (None, "")
         except Exception:  # noqa: BLE001  (une page illisible ne doit jamais bloquer la newsletter)
-            return ""
+            return None, ""
 
     with ThreadPoolExecutor(max_workers=FETCH_WORKERS) as pool:
-        texts = list(pool.map(job, items))
-    for a, text in zip(items, texts):
+        results = list(pool.map(job, items))
+    for a, (real, text) in zip(items, results):
+        if real and "news.google.com" in a["url"]:
+            a["url"] = real  # le lecteur arrive sur l'article, pas sur un lien Google de 300 caractères
         summary = clean_summary(a.get("summary"))
         if len(text) >= 200:
             a["text"], a["depth"] = text, "texte"
@@ -454,7 +458,11 @@ def write_with_fallbacks(system, user, items, lang, date_label):
 
 def polish(text):
     # Garde-fou de style : pas de tirets cadratins
-    return text.replace(" — ", ", ").replace("—", ", ")
+    text = text.replace(" — ", ", ").replace("—", ", ")
+    # Garde-fou de forme : le modèle ferme parfois un lien avec "]" ou "." au lieu de ")"
+    def close(m):
+        return f"]({m.group(1)})" + ("." if m.group(2).endswith(".") else "")
+    return re.sub(r"\]\((https?://[^)\s\]]+?)([\].]+)(?=\s|$)", close, text)
 
 
 def render_html(md_text, lang, site_note):
