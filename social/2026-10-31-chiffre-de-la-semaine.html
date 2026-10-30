@@ -1,0 +1,258 @@
+<title>Le Chiffre du 31 octobre</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout : planche de travail, bandeau radar en haut, carrousel 4:5 en grille, légende à copier dessous. Les slides gardent les couleurs Instagram fixes, la page suit le thème. */
+:root{
+  --surface:#F5F2EC; --raised:#FFFFFF; --text:#131211; --muted:#5A554C; --border:#D3CCC0; --accent:#C8201A;
+  /* couleurs fixes des slides (même rendu quel que soit le thème) */
+  --s-paper:#F5F2EC; --s-ink:#131211; --s-muted:#5A554C; --s-rule:#D3CCC0; --s-red:#C8201A; --s-amber:#F2A71B; --s-night:#0B0B0C; --s-night-text:#F5F2EC; --s-night-muted:#A8A094; --s-red-dark:#FF4B3E;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --ease:cubic-bezier(0.22,1,0.36,1);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--surface:#0B0B0C;--raised:#23211E;--text:#F5F2EC;--muted:#A8A094;--border:#3B3832;--accent:#FF4B3E;color-scheme:dark}}
+:root[data-theme="dark"]{--surface:#0B0B0C;--raised:#23211E;--text:#F5F2EC;--muted:#A8A094;--border:#3B3832;--accent:#FF4B3E;color-scheme:dark}
+
+body{background:var(--surface);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.5}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 64px;display:flex;flex-direction:column;gap:32px}
+
+header.mast{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;border-bottom:2px solid var(--text);padding-bottom:16px}
+.logo{font-family:var(--mono);font-weight:600;letter-spacing:.08em;font-size:14px;text-transform:uppercase}
+.logo b{color:var(--accent);font-weight:600}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4vw,39px);line-height:1.1;margin:6px 0 0;text-wrap:balance}
+.meta{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+.toggle{display:inline-flex;border:1px solid var(--text);border-radius:999px;padding:3px;gap:2px}
+.toggle button{font:600 14px/1 var(--mono);letter-spacing:.08em;min-width:56px;min-height:44px;border:0;border-radius:999px;background:transparent;color:var(--text);cursor:pointer;transition:background .15s var(--ease)}
+.toggle button[aria-pressed="true"]{background:var(--text);color:var(--surface)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.section-h{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;border-top:2px solid var(--text);padding-top:10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.section-h span{color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:24px}
+figure{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+figcaption{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between}
+
+/* ---- slides : 1080x1350 en unités cqw ---- */
+.slide{container-type:inline-size;aspect-ratio:4/5;max-width:100%;width:100%;position:relative;overflow:hidden;border:1px solid var(--border)}
+.s{position:absolute;inset:0;padding:7.4cqw;display:flex;flex-direction:column;gap:3cqw}
+.s .k{font-family:var(--mono);font-weight:500;font-size:3cqw;letter-spacing:.08em;text-transform:uppercase}
+.s .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;font-family:var(--mono);font-size:2.6cqw;letter-spacing:.08em;text-transform:uppercase;border-top:.3cqw solid currentColor;padding-top:2.4cqw}
+.s .foot .brand b{font-weight:600}
+.s h2{font-family:var(--serif);font-weight:600;font-size:8.6cqw;line-height:1.05;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.s p{font-family:var(--sans);font-size:4.4cqw;line-height:1.38;margin:0}
+.s .lead{font-family:var(--serif);font-weight:500;font-size:6cqw;line-height:1.18}
+
+.paper{background:var(--s-paper);color:var(--s-ink)}
+.paper .k{color:var(--s-red)} .paper .foot .brand b{color:var(--s-red)} .paper .foot{color:var(--s-ink)}
+.paper .dim{color:var(--s-muted)}
+.night{background:var(--s-night);color:var(--s-night-text)}
+.night .k{color:var(--s-red-dark)} .night .foot .brand b{color:var(--s-red-dark)} .night .dim{color:var(--s-night-muted)}
+.amber{background:var(--s-amber);color:var(--s-ink)}
+.amber .foot .brand b{color:var(--s-ink);background:var(--s-ink);color:var(--s-amber);padding:0 .8cqw}
+
+.big{font-family:var(--serif);font-weight:700;font-size:62cqw;line-height:.78;letter-spacing:-.04em;margin:4cqw 0 0 -2cqw}
+.big-cap{font-family:var(--serif);font-weight:600;font-size:9cqw;line-height:1.02;text-wrap:balance;max-width:16ch}
+.ping{display:inline-block;width:2.2cqw;height:2.2cqw;border-radius:50%;background:var(--s-red);margin-right:1.6cqw;vertical-align:.1em}
+.amber .ping{background:var(--s-ink)}
+
+/* 22 territoires */
+.dots{display:grid;grid-template-columns:repeat(11,1fr);gap:1.6cqw;margin-top:1cqw}
+.dot{aspect-ratio:1;border:.35cqw solid var(--s-ink);display:grid;place-items:center;font-family:var(--mono);font-size:2.2cqw;font-weight:600}
+.dot.on{background:var(--s-amber);border-color:var(--s-ink)}
+.legend{font-family:var(--mono);font-size:2.6cqw;letter-spacing:.06em;text-transform:uppercase;display:flex;gap:4cqw;flex-wrap:wrap}
+.legend i{display:inline-block;width:2.6cqw;height:2.6cqw;border:.35cqw solid var(--s-ink);vertical-align:-.3cqw;margin-right:1.2cqw}
+.legend i.on{background:var(--s-amber)}
+
+.rows{display:flex;flex-direction:column;border-top:.3cqw solid var(--s-ink)}
+.row{display:grid;grid-template-columns:30cqw 1fr;gap:3cqw;padding:3.2cqw 0;border-bottom:.2cqw solid var(--s-rule);align-items:baseline}
+.row .lab{font-family:var(--mono);font-size:2.8cqw;letter-spacing:.08em;text-transform:uppercase;color:var(--s-red)}
+.row .val{font-family:var(--serif);font-weight:600;font-size:5.6cqw;line-height:1.12}
+
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3.6cqw}
+.checks li{display:grid;grid-template-columns:5cqw 1fr;gap:2.4cqw;font-size:4.3cqw;line-height:1.35}
+.checks li::before{content:"";width:3.2cqw;height:3.2cqw;border:.4cqw solid var(--s-red-dark);margin-top:1cqw}
+.quote{font-family:var(--serif);font-style:italic;font-weight:500;font-size:7.2cqw;line-height:1.12;text-wrap:balance}
+
+/* légende */
+.cap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+@media (max-width:760px){.cap{grid-template-columns:1fr}}
+.box{background:var(--raised);border:1px solid var(--border);padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.box h3{margin:0;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:8px}
+.box pre{margin:0;white-space:pre-wrap;word-wrap:break-word;font-family:var(--sans);font-size:15px;line-height:1.55;max-width:66ch}
+.copy{font:600 14px/1 var(--sans);min-height:40px;padding:0 16px;border-radius:6px;border:1px solid var(--text);background:transparent;color:var(--text);cursor:pointer}
+.copy.done{background:var(--accent);border-color:var(--accent);color:#fff}
+.notes{font-size:15px;color:var(--muted);max-width:72ch;display:flex;flex-direction:column;gap:6px;margin:0;padding-left:18px}
+.notes strong{color:var(--text)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <div>
+      <div class="logo">Africa Music <b>Radar</b></div>
+      <h1 data-fr="Le Chiffre de la semaine · samedi 31 octobre" data-en="Number of the Week · Saturday 31 October">Le Chiffre de la semaine · samedi 31 octobre</h1>
+      <div class="meta" data-fr="Carrousel Instagram 4:5 · 7 slides · source Stratégies" data-en="Instagram carousel 4:5 · 7 slides · source Stratégies">Carrousel Instagram 4:5 · 7 slides · source Stratégies</div>
+    </div>
+    <div class="toggle" role="group" aria-label="Langue">
+      <button type="button" id="btn-fr" aria-pressed="true">FR</button>
+      <button type="button" id="btn-en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-h"><strong data-fr="Le carrousel" data-en="The carousel">Le carrousel</strong><span data-fr="1080 × 1350 px" data-en="1080 × 1350 px">1080 × 1350 px</span></div>
+  </section>
+
+  <div class="grid" id="slides">
+
+    <!-- 1 -->
+    <figure><div class="slide"><div class="s amber">
+      <div class="k"><span class="ping"></span><span data-fr="Le Chiffre de la semaine" data-en="Number of the week">Le Chiffre de la semaine</span></div>
+      <div class="big">1</div>
+      <div class="big-cap" data-fr="pays sur 22 où YouTube rémunère la musique" data-en="country out of 22 where YouTube pays for music">pays sur 22 où YouTube rémunère la musique</div>
+      <div class="foot"><span data-fr="Afrique francophone · selon Universal Music Africa" data-en="Francophone Africa · per Universal Music Africa">Afrique francophone · selon Universal Music Africa</span><span class="brand">AMR <b>●</b></span></div>
+    </div></div><figcaption><span>01</span><span data-fr="Couverture" data-en="Cover">Couverture</span></figcaption></figure>
+
+    <!-- 2 -->
+    <figure><div class="slide"><div class="s paper">
+      <div class="k" data-fr="22 territoires" data-en="22 territories">22 territoires</div>
+      <h2 data-fr="Du Sénégal à Madagascar, un seul pays coche la case." data-en="From Senegal to Madagascar, only one country ticks the box.">Du Sénégal à Madagascar, un seul pays coche la case.</h2>
+      <div class="dots" aria-hidden="true">
+        <div class="dot on">SN</div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      </div>
+      <div class="legend"><span><i class="on"></i><span data-fr="Musique monétisée sur YouTube" data-en="Music monetised on YouTube">Musique monétisée sur YouTube</span></span><span><i></i><span data-fr="Pas encore" data-en="Not yet">Pas encore</span></span></div>
+      <p class="dim" data-fr="Universal Music Africa opère sur 22 territoires. Selon son DG, Franck-Alcide Kacou, YouTube n'y monétise pour l'instant les contenus musicaux qu'au Sénégal." data-en="Universal Music Africa operates in 22 territories. According to its MD, Franck-Alcide Kacou, YouTube currently monetises music content in only one of them: Senegal.">Universal Music Africa opère sur 22 territoires. Selon son DG, Franck-Alcide Kacou, YouTube n'y monétise pour l'instant les contenus musicaux qu'au Sénégal.</p>
+      <div class="foot"><span>Africa Music <b>Radar</b></span><span class="brand">02 / 07</span></div>
+    </div></div><figcaption><span>02</span><span data-fr="Le contexte" data-en="Context">Le contexte</span></figcaption></figure>
+
+    <!-- 3 -->
+    <figure><div class="slide"><div class="s night">
+      <div class="k" data-fr="Ce que ça change" data-en="Why it matters">Ce que ça change</div>
+      <h2 data-fr="Des millions de vues, presque rien sur la fiche de paie." data-en="Millions of views, next to nothing on the statement.">Des millions de vues, presque rien sur la fiche de paie.</h2>
+      <p data-fr="Un clip qui tourne en boucle à Abidjan, Douala ou Kinshasa nourrit la notoriété de l'artiste. Mais dans 21 pays sur 22, ces vues ne se transforment pas en revenus publicitaires musicaux sur YouTube." data-en="A video on repeat in Abidjan, Douala or Kinshasa builds an artist's profile. But in 21 of the 22 countries, those views do not turn into music ad revenue on YouTube.">Un clip qui tourne en boucle à Abidjan, Douala ou Kinshasa nourrit la notoriété de l'artiste. Mais dans 21 pays sur 22, ces vues ne se transforment pas en revenus publicitaires musicaux sur YouTube.</p>
+      <p class="dim" data-fr="La plateforme la plus regardée n'est pas forcément celle qui paie." data-en="The most watched platform is not necessarily the one that pays.">La plateforme la plus regardée n'est pas forcément celle qui paie.</p>
+      <div class="foot"><span>Africa Music <b>Radar</b></span><span class="brand">03 / 07</span></div>
+    </div></div><figcaption><span>03</span><span data-fr="L'enjeu" data-en="Stakes">L'enjeu</span></figcaption></figure>
+
+    <!-- 4 -->
+    <figure><div class="slide"><div class="s paper">
+      <div class="k" data-fr="Le front qui bouge" data-en="The front that's moving">Le front qui bouge</div>
+      <div class="quote" data-fr="Meta, Côte d'Ivoire : une avancée est en cours." data-en="Meta, Côte d'Ivoire: progress is under way.">Meta, Côte d'Ivoire : une avancée est en cours.</div>
+      <p data-fr="Elle arrive après un lobbying mené par Universal et par le ministère ivoirien de la Culture." data-en="It follows lobbying by Universal and Côte d'Ivoire's Ministry of Culture.">Elle arrive après un lobbying mené par Universal et par le ministère ivoirien de la Culture.</p>
+      <p class="dim" data-fr="La leçon : la monétisation ne tombe pas du ciel. Elle se négocie pays par pays, plateforme par plateforme, et l'État a un rôle à jouer." data-en="The lesson: monetisation doesn't just arrive. It is negotiated country by country, platform by platform, and governments have a part to play.">La leçon : la monétisation ne tombe pas du ciel. Elle se négocie pays par pays, plateforme par plateforme, et l'État a un rôle à jouer.</p>
+      <div class="foot"><span>Africa Music <b>Radar</b></span><span class="brand">04 / 07</span></div>
+    </div></div><figcaption><span>04</span><span data-fr="Le signal" data-en="Signal">Le signal</span></figcaption></figure>
+
+    <!-- 5 -->
+    <figure><div class="slide"><div class="s paper">
+      <div class="k" data-fr="Le reste du tableau" data-en="The wider picture">Le reste du tableau</div>
+      <h2 data-fr="Le marché grandit quand même." data-en="The market is still growing.">Le marché grandit quand même.</h2>
+      <div class="rows">
+        <div class="row"><div class="lab">Streaming</div><div class="val" data-fr="Croissance à deux chiffres" data-en="Double-digit growth">Croissance à deux chiffres</div></div>
+        <div class="row"><div class="lab" data-fr="Revenus" data-en="Revenue">Revenus</div><div class="val" data-fr="Équilibre entre streaming, live et annonceurs" data-en="Balanced across streaming, live and brands">Équilibre entre streaming, live et annonceurs</div></div>
+        <div class="row"><div class="lab">YouTube</div><div class="val" data-fr="1 pays monétisé sur 22" data-en="1 monetised country out of 22">1 pays monétisé sur 22</div></div>
+      </div>
+      <div class="foot"><span>Africa Music <b>Radar</b></span><span class="brand">05 / 07</span></div>
+    </div></div><figcaption><span>05</span><span data-fr="Le marché" data-en="Market">Le marché</span></figcaption></figure>
+
+    <!-- 6 -->
+    <figure><div class="slide"><div class="s night">
+      <div class="k" data-fr="Le réflexe radar" data-en="Radar checklist">Le réflexe radar</div>
+      <h2 data-fr="Artistes, managers, labels : trois vérifs cette semaine." data-en="Artists, managers, labels: three checks this week.">Artistes, managers, labels : trois vérifs cette semaine.</h2>
+      <ul class="checks">
+        <li><span data-fr="Ouvrez YouTube Studio et regardez de quels pays viennent vos vues." data-en="Open YouTube Studio and check which countries your views come from.">Ouvrez YouTube Studio et regardez de quels pays viennent vos vues.</span></li>
+        <li><span data-fr="Demandez à votre distributeur si vos titres sont bien déclarés dans Content ID." data-en="Ask your distributor whether your tracks are registered in Content ID.">Demandez à votre distributeur si vos titres sont bien déclarés dans Content ID.</span></li>
+        <li><span data-fr="Ne bâtissez pas votre budget sur la pub YouTube : live et marques pèsent autant que le streaming." data-en="Don't build your budget on YouTube ads: live and brand deals weigh as much as streaming.">Ne bâtissez pas votre budget sur la pub YouTube : live et marques pèsent autant que le streaming.</span></li>
+      </ul>
+      <div class="foot"><span>Africa Music <b>Radar</b></span><span class="brand">06 / 07</span></div>
+    </div></div><figcaption><span>06</span><span data-fr="À faire" data-en="Action">À faire</span></figcaption></figure>
+
+    <!-- 7 -->
+    <figure><div class="slide"><div class="s amber">
+      <div class="k"><span class="ping"></span><span data-fr="Chaque semaine" data-en="Every week">Chaque semaine</span></div>
+      <div class="big-cap" style="margin-top:6cqw" data-fr="Le business de la musique africaine, trié pour vous." data-en="The business of African music, sorted for you.">Le business de la musique africaine, trié pour vous.</div>
+      <p data-fr="Abonnez-vous à la newsletter Africa Music Radar. Lien en bio." data-en="Subscribe to the Africa Music Radar newsletter. Link in bio.">Abonnez-vous à la newsletter Africa Music Radar. Lien en bio.</p>
+      <p style="font-family:var(--mono);font-size:2.8cqw;letter-spacing:.06em;text-transform:uppercase" data-fr="Source : Stratégies, interview de Franck-Alcide Kacou (Universal Music Africa), 29 octobre 2026" data-en="Source: Stratégies, interview with Franck-Alcide Kacou (Universal Music Africa), 29 October 2026">Source : Stratégies, interview de Franck-Alcide Kacou (Universal Music Africa), 29 octobre 2026</p>
+      <div class="foot"><span>Africa Music <b>Radar</b></span><span class="brand">07 / 07</span></div>
+    </div></div><figcaption><span>07</span><span data-fr="Fin + source" data-en="End + source">Fin + source</span></figcaption></figure>
+  </div>
+
+  <section>
+    <div class="section-h"><strong data-fr="Légende Instagram" data-en="Instagram caption">Légende Instagram</strong><span data-fr="FR et EN" data-en="FR and EN">FR et EN</span></div>
+  </section>
+  <div class="cap">
+    <div class="box">
+      <h3>FR <button class="copy" type="button" id="copy-fr" data-target="cap-fr">Copier</button></h3>
+      <pre id="cap-fr">1 pays sur 22.
+
+C'est le nombre de territoires d'Universal Music Africa où YouTube monétise aujourd'hui la musique : le Sénégal. C'est ce qu'explique son DG, Franck-Alcide Kacou, dans une interview à Stratégies.
+
+Partout ailleurs, de la Côte d'Ivoire à Madagascar, un clip peut faire des millions de vues sans générer de revenus publicitaires musicaux sur YouTube.
+
+Le bon signal : une avancée est en cours avec Meta en Côte d'Ivoire, après un lobbying d'Universal et du ministère de la Culture. La monétisation se gagne pays par pays.
+
+Artistes, managers : vous savez d'où viennent vos vues ? Dites-le en commentaire 👇
+
+#AfricaMusicRadar #MusiqueAfricaine #IndustrieMusicale #YouTube #Streaming #Sénégal #CôteDIvoire #MusicBusiness</pre>
+    </div>
+    <div class="box">
+      <h3>EN <button class="copy" type="button" id="copy-en" data-target="cap-en">Copy</button></h3>
+      <pre id="cap-en">1 country out of 22.
+
+That's how many of Universal Music Africa's territories currently see YouTube monetise music: Senegal. Its MD, Franck-Alcide Kacou, said so in an interview with Stratégies.
+
+Everywhere else, from Côte d'Ivoire to Madagascar, a video can rack up millions of views without generating music ad revenue on YouTube.
+
+The good news: progress is under way with Meta in Côte d'Ivoire, after lobbying by Universal and the Ministry of Culture. Monetisation is won country by country.
+
+Artists, managers: do you know where your views come from? Tell us below 👇
+
+#AfricaMusicRadar #AfricanMusic #MusicIndustry #YouTube #Streaming #Senegal #IvoryCoast #MusicBusiness</pre>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-h"><strong data-fr="Avant de publier" data-en="Before posting">Avant de publier</strong><span></span></div>
+  </section>
+  <ul class="notes">
+    <li data-fr="<strong>Formulation prudente.</strong> Le chiffre vient d'une déclaration de Franck-Alcide Kacou, pas d'une liste officielle YouTube. D'où le « selon Universal Music Africa » sur la couverture." data-en="<strong>Careful wording.</strong> The figure comes from Franck-Alcide Kacou's statement, not an official YouTube list, hence 'per Universal Music Africa' on the cover."><strong>Formulation prudente.</strong> Le chiffre vient d'une déclaration de Franck-Alcide Kacou, pas d'une liste officielle YouTube. D'où le « selon Universal Music Africa » sur la couverture.</li>
+    <li data-fr="<strong>Identifiez Universal Music Africa et Stratégies</strong> en collaboration ou en mention, ça peut déclencher un repartage." data-en="<strong>Tag Universal Music Africa and Stratégies</strong> as collaborators or mentions; it can trigger a reshare."><strong>Identifiez Universal Music Africa et Stratégies</strong> en collaboration ou en mention, ça peut déclencher un repartage.</li>
+    <li data-fr="<strong>Story du jour</strong> : la slide 2 en sondage « Vos clips YouTube vous rapportent-ils quelque chose ? Oui / Non »." data-en="<strong>Daily story</strong>: slide 2 with a poll 'Do your YouTube videos earn you anything? Yes / No'."><strong>Story du jour</strong> : la slide 2 en sondage « Vos clips YouTube vous rapportent-ils quelque chose ? Oui / Non ».</li>
+  </ul>
+</div>
+
+<script>
+(function(){
+  var fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
+  function set(lang){
+    document.documentElement.lang=lang;
+    fr.setAttribute('aria-pressed',lang==='fr'); en.setAttribute('aria-pressed',lang==='en');
+    document.querySelectorAll('[data-fr]').forEach(function(el){
+      var v=el.getAttribute('data-'+lang); if(v==null) return;
+      if(el.tagName==='LI') el.innerHTML=v; else el.textContent=v;
+    });
+    try{localStorage.setItem('amr-lang',lang)}catch(e){}
+  }
+  fr.addEventListener('click',function(){set('fr')});
+  en.addEventListener('click',function(){set('en')});
+  var saved=null; try{saved=localStorage.getItem('amr-lang')}catch(e){}
+  set(saved==='en'?'en':'fr');
+
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var pre=document.getElementById(b.getAttribute('data-target'));
+      var label=b.textContent;
+      function ok(){b.classList.add('done');b.textContent=label==='Copy'?'Copied':'Copié';setTimeout(function(){b.classList.remove('done');b.textContent=label},1600)}
+      function fallback(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(pre.textContent).then(ok,fallback)}else{fallback()}
+    });
+  });
+})();
+</script>
