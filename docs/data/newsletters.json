@@ -1,6 +1,20 @@
 {
  "items": [
   {
+   "date": "2026-10-30",
+   "lang": "fr",
+   "title": "Actu Musique Afrique : Collecte de droits mécaniques, structuration B2B et mouvements en live",
+   "html": "newsletters/2026-10-30-fr.html",
+   "md": "newsletters/2026-10-30-fr.md"
+  },
+  {
+   "date": "2026-10-30",
+   "lang": "en",
+   "title": "African Music Industry Brief: Royalties, Live Bottlenecks, and Tech Solutions",
+   "html": "newsletters/2026-10-30-en.html",
+   "md": "newsletters/2026-10-30-en.md"
+  },
+  {
    "date": "2026-10-29",
    "lang": "fr",
    "title": "Redevances sous suspense, dominations de charts et réorganisations de tournées",
