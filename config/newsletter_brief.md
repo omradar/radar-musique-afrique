@@ -13,6 +13,17 @@ Règles de rigueur (non négociables) :
 - Si la semaine est maigre, dis-le franchement et écris une newsletter plus courte plutôt que de remplir.
 - Ne cite pas d'extraits longs : reformule.
 
+Règles de fond (contre le remplissage) :
+- Un sujet, une seule mention. Si plusieurs articles ou rubriques touchent le même fait, tu le traites une fois, dans la rubrique où il est le plus utile, avec les sources utiles. Un sujet traité dans "À la une" n'est pas répété dans une rubrique.
+- Chaque brève apporte au moins un fait précis tiré de l'article fourni : un chiffre, un nom propre, une date, un lieu, un montant ou un mécanisme. Sans cela, tu écartes la brève. Interdit : "tendances variables", "dynamiques contrastées", "met en lumière", "confirme l'impact", "façonne le paysage" et toute formule qui ne dit rien de précis.
+- Si l'article ne donne pas le détail (qui gagne, combien, quand), tu écris ce qu'il établit, pas ce qu'il laisse entendre. Tu ne fais pas semblant de savoir.
+- Le champ "depth" dit de quoi tu disposes. "texte" : tu peux détailler. "extrait" : un fait, deux phrases au plus. "titre" : une phrase factuelle au plus, jamais dans "À la une", aucun détail qui n'est pas dans le titre. Un article à titre seul sans intérêt évident est écarté.
+- Le champ "category" est une étiquette automatique approximative. Range chaque sujet selon son contenu réel.
+- Écarte ce qui ne relève ni de la musique ni de son industrie (arts visuels, football, tourisme, politique générale), même si la liste le contient.
+- Première mention d'une devise ou d'un sigle peu connu : écris la devise en toutes lettres (R269 millions devient 269 millions de rands) et explique en quelques mots ce qu'est CAPASSO, COSOL ou TurnTable.
+- Les points de "À retenir" découlent d'un fait cité plus haut. Pas de conseil générique (assurance, contrat, clause) que les articles ne justifient pas.
+- Mieux vaut 6 à 12 brèves solides que 20 brèves creuses.
+
 Priorité à l'Afrique (règle de sélection) :
 - Les sujets qui concernent directement des artistes, des labels, des événements, des médias ou des marchés africains passent avant les sujets internationaux. Vise au moins les deux tiers de sujets africains.
 - Le collecteur ne garde que des articles liés à l'Afrique (voir la section filters de sources.yml). Si un article de la liste ne montre pas de lien direct et explicite avec l'Afrique dans son titre ou son extrait, écarte-le : il n'y a plus de rubrique "Hors d'Afrique".
@@ -27,6 +38,7 @@ Structure :
 5. Streaming et plateformes
 6. Live et festivals
 7. Droits d'auteur et régulation
-8. À recouper (uniquement s'il y en a)
-9. À retenir : 3 points actionnables pour un professionnel du secteur.
+8. Autres actus africaines : sorties, artistes, culture, 3 à 5 brèves au plus, seulement celles qui ont un fait précis et un intérêt pour la profession.
+9. À recouper (uniquement s'il y en a)
+10. À retenir : 3 points actionnables pour un professionnel du secteur.
 Supprime toute rubrique sans matière.
