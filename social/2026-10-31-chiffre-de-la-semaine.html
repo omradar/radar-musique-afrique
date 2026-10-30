@@ -38,6 +38,7 @@ figure{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
 figcaption{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
 
 /* ---- slides ---- */
+.png{display:block;width:100%;height:auto;aspect-ratio:4/5;border:1px solid var(--border)}
 .slide{container-type:inline-size;aspect-ratio:4/5;max-width:100%;width:100%;position:relative;overflow:hidden;border:1px solid var(--border)}
 .s{position:absolute;inset:0;padding:7.4cqw;display:flex;flex-direction:column;gap:3.4cqw}
 .prog{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2cqw;margin-bottom:1cqw}
@@ -104,7 +105,7 @@ figcaption{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-tran
     <div>
       <div class="logo">Africa Music <b>Radar</b></div>
       <h1 data-fr="Le Chiffre de la semaine · samedi 31 octobre" data-en="Figure of the Week · Saturday 31 October">Le Chiffre de la semaine · samedi 31 octobre</h1>
-      <div class="meta" data-fr="Carrousel Instagram 4:5 · 5 slides · source Stratégies" data-en="Instagram carousel 4:5 · 5 slides · source Stratégies">Carrousel Instagram 4:5 · 5 slides · source Stratégies</div>
+      <div class="meta" data-fr="Carrousel Instagram 4:5 · 5 slides · PNG · source Stratégies" data-en="Instagram carousel 4:5 · 5 slides · PNG · source Stratégies">Carrousel Instagram 4:5 · 5 slides · PNG · source Stratégies</div>
     </div>
     <div class="toggle" role="group" aria-label="Langue">
       <button type="button" id="btn-fr" aria-pressed="true">FR</button>
@@ -117,74 +118,11 @@ figcaption{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-tran
   </section>
 
   <div class="grid">
-
-    <!-- 1 couverture -->
-    <figure>
-      <div class="slide" id="cover-slide"><div class="cover" id="cover" style="position:absolute;inset:0">
-        <div class="photo" id="cover-photo"></div><div class="shade"></div>
-        <div class="s">
-          <div class="prog"><i class="on"></i><i></i><i></i><i></i><i></i></div>
-          <div class="k" data-fr="Le Chiffre de la semaine" data-en="Figure of the week">Le Chiffre de la semaine</div>
-          <div class="vis" aria-hidden="true"><div class="board">
-            <i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-          </div></div>
-          <div class="hook"><span class="n">1</span><span class="d" data-fr="sur 22" data-en="in 22">sur 22</span></div>
-          <p data-fr="Sur les 22 pays d'Universal Music Africa, YouTube ne paie la musique que dans un seul." data-en="Across Universal Music Africa's 22 countries, YouTube pays for music in just one.">Sur les 22 pays d'Universal Music Africa, YouTube ne paie la musique que dans un seul.</p>
-          <div class="foot"><span>Africa Music <b>Radar</b></span><span class="swipe" data-fr="Lequel ? →" data-en="Which one? →">Lequel ? →</span></div>
-        </div>
-      </div></div>
-      <figcaption><span data-fr="01 · Accroche" data-en="01 · Hook">01 · Accroche</span></figcaption>
-      <div class="tools">
-        <label class="pick" for="photo-input"><input type="file" id="photo-input" accept="image/*"><span data-fr="Ajouter une photo" data-en="Add a photo">Ajouter une photo</span></label>
-        <button type="button" class="ghost" id="photo-clear" hidden data-fr="Retirer" data-en="Remove">Retirer</button>
-      </div>
-    </figure>
-
-    <!-- 2 -->
-    <figure><div class="slide"><div class="s paper">
-      <div class="prog"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
-      <div class="k" data-fr="Le gagnant" data-en="The one">Le gagnant</div>
-      <h2 data-fr="Le Sénégal." data-en="Senegal.">Le Sénégal.</h2>
-      <div class="dots" aria-hidden="true">
-        <div class="dot on">SN</div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-        <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-      </div>
-      <p data-fr="Le seul pays du réseau Universal où YouTube monétise la musique." data-en="The only country in Universal's network where YouTube monetises music.">Le seul pays du réseau Universal où YouTube monétise la musique.</p>
-      <div class="foot"><span class="dim" data-fr="Selon Franck-Alcide Kacou, DG d'Universal Music Africa" data-en="Per Franck-Alcide Kacou, MD of Universal Music Africa">Selon Franck-Alcide Kacou, DG d'Universal Music Africa</span></div>
-    </div></div><figcaption><span data-fr="02 · La réponse" data-en="02 · Answer">02 · La réponse</span></figcaption></figure>
-
-    <!-- 3 -->
-    <figure><div class="slide"><div class="s night">
-      <div class="prog"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
-      <div class="k" data-fr="Les 21 autres" data-en="The other 21">Les 21 autres</div>
-      <h2 data-fr="Des millions de vues. Pas de monétisation YouTube." data-en="Millions of views. No YouTube monetisation.">Des millions de vues. Pas de monétisation YouTube.</h2>
-      <div class="cities" aria-hidden="true"><span>Abidjan</span><span>Douala</span><span>Kinshasa</span><span>Bamako</span><span>Lomé</span><span>Antananarivo</span></div>
-      <p class="dim" data-fr="La plateforme la plus regardée n'est pas celle qui paie." data-en="The most watched platform isn't the one that pays.">La plateforme la plus regardée n'est pas celle qui paie.</p>
-      <div class="foot"><span>Africa Music <b>Radar</b></span></div>
-    </div></div><figcaption><span data-fr="03 · L'enjeu" data-en="03 · Stakes">03 · L'enjeu</span></figcaption></figure>
-
-    <!-- 4 -->
-    <figure><div class="slide"><div class="s paper">
-      <div class="prog"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
-      <div class="k" data-fr="Ça bouge" data-en="Things are moving">Ça bouge</div>
-      <div class="quote" data-fr="Meta avance en Côte d'Ivoire." data-en="Meta is moving in Côte d'Ivoire.">Meta avance en Côte d'Ivoire.</div>
-      <p data-fr="Après le lobbying d'Universal et du ministère ivoirien de la Culture." data-en="After lobbying by Universal and Côte d'Ivoire's Ministry of Culture.">Après le lobbying d'Universal et du ministère ivoirien de la Culture.</p>
-      <p class="dim" data-fr="La monétisation se négocie, pays par pays." data-en="Monetisation is negotiated, country by country.">La monétisation se négocie, pays par pays.</p>
-      <div class="foot"><span>Africa Music <b>Radar</b></span></div>
-    </div></div><figcaption><span data-fr="04 · Le signal" data-en="04 · Signal">04 · Le signal</span></figcaption></figure>
-
-    <!-- 5 -->
-    <figure><div class="slide"><div class="s amber">
-      <div class="prog"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
-      <div class="k" data-fr="À vous" data-en="Your turn">À vous</div>
-      <h2 data-fr="Vos vues YouTube viennent d'où ?" data-en="Where do your YouTube views come from?">Vos vues YouTube viennent d'où ?</h2>
-      <p data-fr="Dites-le en commentaire. La suite chaque semaine dans la newsletter, lien en bio." data-en="Tell us in the comments. More every week in the newsletter, link in bio.">Dites-le en commentaire. La suite chaque semaine dans la newsletter, lien en bio.</p>
-      <div class="foot" style="flex-direction:column;align-items:flex-start;gap:2cqw">
-        <span class="src" data-fr="Source : Stratégies, interview de Franck-Alcide Kacou, 29.10.2026" data-en="Source: Stratégies, interview with Franck-Alcide Kacou, 29.10.2026">Source : Stratégies, interview de Franck-Alcide Kacou, 29.10.2026</span>
-        <span>Africa Music <b style="color:var(--s-ink);background:var(--s-ink);color:var(--s-amber);padding:0 .8cqw">Radar</b></span>
-      </div>
-    </div></div><figcaption><span data-fr="05 · Question + source" data-en="05 · Question + source">05 · Question + source</span></figcaption></figure>
+    <figure><img class="png" data-fr-src="2026-10-31/chiffre-2026-10-31-fr-1.png" data-en-src="2026-10-31/chiffre-2026-10-31-en-1.png" src="2026-10-31/chiffre-2026-10-31-fr-1.png" alt="Slide 1" width="1080" height="1350"><figcaption><span data-fr="01 · Accroche" data-en="01 · Hook">01 · Accroche</span></figcaption></figure>
+    <figure><img class="png" data-fr-src="2026-10-31/chiffre-2026-10-31-fr-2.png" data-en-src="2026-10-31/chiffre-2026-10-31-en-2.png" src="2026-10-31/chiffre-2026-10-31-fr-2.png" alt="Slide 2" width="1080" height="1350"><figcaption><span data-fr="02 · La réponse" data-en="02 · Answer">02 · La réponse</span></figcaption></figure>
+    <figure><img class="png" data-fr-src="2026-10-31/chiffre-2026-10-31-fr-3.png" data-en-src="2026-10-31/chiffre-2026-10-31-en-3.png" src="2026-10-31/chiffre-2026-10-31-fr-3.png" alt="Slide 3" width="1080" height="1350"><figcaption><span data-fr="03 · L'enjeu" data-en="03 · Stakes">03 · L'enjeu</span></figcaption></figure>
+    <figure><img class="png" data-fr-src="2026-10-31/chiffre-2026-10-31-fr-4.png" data-en-src="2026-10-31/chiffre-2026-10-31-en-4.png" src="2026-10-31/chiffre-2026-10-31-fr-4.png" alt="Slide 4" width="1080" height="1350"><figcaption><span data-fr="04 · Le signal" data-en="04 · Signal">04 · Le signal</span></figcaption></figure>
+    <figure><img class="png" data-fr-src="2026-10-31/chiffre-2026-10-31-fr-5.png" data-en-src="2026-10-31/chiffre-2026-10-31-en-5.png" src="2026-10-31/chiffre-2026-10-31-fr-5.png" alt="Slide 5" width="1080" height="1350"><figcaption><span data-fr="05 · Question + source" data-en="05 · Question + source">05 · Question + source</span></figcaption></figure>
   </div>
 
   <section>
@@ -225,10 +163,9 @@ Artists, managers: where do your views come from? Tell us below 👇
     <div class="section-h"><strong data-fr="Ce qui a changé" data-en="What changed">Ce qui a changé</strong><span></span></div>
   </section>
   <ul class="notes">
-    <li data-fr="<strong>Une idée par slide</strong>, 20 mots maximum. 5 slides au lieu de 6." data-en="<strong>One idea per slide</strong>, 20 words max. 5 slides instead of 6."><strong>Une idée par slide</strong>, 20 mots maximum. 5 slides au lieu de 6.</li>
-    <li data-fr="<strong>Une question ouverte en couverture</strong> (« Lequel ? ») qui ne se résout qu'en swipant." data-en="<strong>An open question on the cover</strong> ('Which one?') that only resolves on swipe."><strong>Une question ouverte en couverture</strong> (« Lequel ? ») qui ne se résout qu'en swipant.</li>
-    <li data-fr="<strong>Une barre de progression</strong> en haut de chaque slide : on sait combien il reste, on va au bout." data-en="<strong>A progress bar</strong> on every slide: people know how much is left and finish."><strong>Une barre de progression</strong> en haut de chaque slide : on sait combien il reste, on va au bout.</li>
-    <li data-fr="<strong>L'image avant le texte</strong> : la grille des 22 pays sert de visuel par défaut. Une vraie photo (foule de concert, tournage de clip, de vos propres archives) la remplace d'un clic." data-en="<strong>Image before text</strong>: the 22-country grid is the default visual. A real photo (concert crowd, video shoot, from your own archive) replaces it in one click."><strong>L'image avant le texte</strong> : la grille des 22 pays sert de visuel par défaut. Une vraie photo (foule de concert, tournage de clip, de vos propres archives) la remplace d'un clic.</li>
+    <li data-fr="<strong>La carte d'Afrique est le fil rouge</strong> : elle revient sur chaque slide, l'œil se repère avant de lire." data-en="<strong>The map of Africa is the through-line</strong>: it returns on every slide, so the eye gets its bearings before reading."><strong>La carte d'Afrique est le fil rouge</strong> : elle revient sur chaque slide, l'œil se repère avant de lire.</li>
+    <li data-fr="<strong>Le radar signe la série</strong> : couverture noire, radar rouge, chiffre ambre. Ce gabarit devient la couverture de chaque Chiffre de la semaine." data-en="<strong>The radar signs the series</strong>: black cover, red radar, amber figure. This template becomes every Figure of the Week cover."><strong>Le radar signe la série</strong> : couverture noire, radar rouge, chiffre ambre. Ce gabarit devient la couverture de chaque Chiffre de la semaine.</li>
+    <li data-fr="<strong>PNG 1080 × 1350 prêts à poster</strong>, dans le dépôt : social/2026-10-31/." data-en="<strong>1080 × 1350 PNGs ready to post</strong>, in the repo: social/2026-10-31/."><strong>PNG 1080 × 1350 prêts à poster</strong>, dans le dépôt : social/2026-10-31/.</li>
   </ul>
 </div>
 
@@ -242,6 +179,7 @@ Artists, managers: where do your views come from? Tell us below 👇
       var v=el.getAttribute('data-'+lang); if(v==null) return;
       if(el.tagName==='LI') el.innerHTML=v; else el.textContent=v;
     });
+    document.querySelectorAll('img.png').forEach(function(im){im.src=im.getAttribute('data-'+lang+'-src')});
     try{localStorage.setItem('amr-lang',lang)}catch(e){}
   }
   fr.addEventListener('click',function(){set('fr')});
@@ -259,23 +197,5 @@ Artists, managers: where do your views come from? Tell us below 👇
     });
   });
 
-  var cover=document.getElementById('cover'), photo=document.getElementById('cover-photo'),
-      input=document.getElementById('photo-input'), clear=document.getElementById('photo-clear'),
-      slide=document.getElementById('cover-slide'), url=null;
-  function load(file){
-    if(!file||!/^image\//.test(file.type)) return;
-    if(url) URL.revokeObjectURL(url);
-    url=URL.createObjectURL(file);
-    photo.style.backgroundImage='url("'+url+'")';
-    cover.classList.add('has-photo'); clear.hidden=false;
-  }
-  input.addEventListener('change',function(){load(input.files[0])});
-  clear.addEventListener('click',function(){
-    photo.style.backgroundImage=''; cover.classList.remove('has-photo'); clear.hidden=true; input.value='';
-    if(url){URL.revokeObjectURL(url);url=null}
-  });
-  ['dragenter','dragover'].forEach(function(t){slide.addEventListener(t,function(e){e.preventDefault();slide.classList.add('drag')})});
-  ['dragleave','drop'].forEach(function(t){slide.addEventListener(t,function(e){e.preventDefault();slide.classList.remove('drag')})});
-  slide.addEventListener('drop',function(e){load(e.dataTransfer.files[0])});
 })();
 </script>
