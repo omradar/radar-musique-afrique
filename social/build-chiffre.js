@@ -96,7 +96,7 @@ ${chrome(theme, idx, label)}
 const T = {
   fr: {
     series:'Le Chiffre · 31.10',
-    s1:{ sub:'sur 22', l1:["Sur les 22 pays d'Universal Music Africa,", "YouTube ne paie la musique que dans un seul."], swipe:'Lequel ?' },
+    s1:{ credit:"Franck-Alcide Kacou, DG d'Universal Music Africa", sub:'sur 22', l1:["Sur les 22 pays d'Universal Music Africa,", "YouTube ne paie la musique que dans un seul."], swipe:'Lequel ?' },
     s2:{ k:'La réponse', h:['Le Sénégal.'], p:["Seul pays du réseau Universal où", "YouTube monétise la musique."], src:"Selon Franck-Alcide Kacou, DG d'Universal Music Africa", tag:'SÉNÉGAL' },
     s3:{ k:'Les 21 autres', h:['Des millions de vues.', 'Pas de monétisation', 'YouTube.'] },
     s4:{ k:'Ça bouge', h:["Meta avance en", "Côte d'Ivoire."], p:["Après le lobbying d'Universal et du", "ministère ivoirien de la Culture."], tag:'EN COURS' },
@@ -104,7 +104,7 @@ const T = {
   },
   en: {
     series:'Figure · 31.10',
-    s1:{ sub:'in 22', l1:["Across Universal Music Africa's 22 countries,", "YouTube pays for music in just one."], swipe:'Which one?' },
+    s1:{ credit:'Franck-Alcide Kacou, MD of Universal Music Africa', sub:'in 22', l1:["Across Universal Music Africa's 22 countries,", "YouTube pays for music in just one."], swipe:'Which one?' },
     s2:{ k:'The answer', h:['Senegal.'], p:["The only country in Universal's network", "where YouTube monetises music."], src:"Per Franck-Alcide Kacou, MD of Universal Music Africa", tag:'SENEGAL' },
     s3:{ k:'The other 21', h:['Millions of views.', 'No YouTube', 'monetisation.'] },
     s4:{ k:'Things are moving', h:["Meta is moving in", "Côte d'Ivoire."], p:["After lobbying by Universal and", "Côte d'Ivoire's Ministry of Culture."], tag:'IN PROGRESS' },
@@ -131,6 +131,27 @@ function slides(lang) {
     b += mono(t.s1.swipe, 80, 1300, 24, C.amber);
     { const ax = 80 + t.s1.swipe.length*16.2 + 18; b += `<line x1="${ax}" y1="1292" x2="${ax+56}" y2="1292" stroke="${C.amber}" stroke-width="3"/><path d="M${ax+44},1282 L${ax+58},1292 L${ax+44},1302" fill="none" stroke="${C.amber}" stroke-width="3"/>`; }
     out.push(wrap(NIGHT, b, 0, t.series));
+  }
+
+  // 1 bis · couverture photo (si une photo est fournie) : photo en haut, chiffre + mini carte radar en bas
+  if (process.env.PHOTO) {
+    const data = 'data:image/' + (process.env.PHOTO.endsWith('.png') ? 'png' : 'jpeg') + ';base64,' + fs.readFileSync(process.env.PHOTO).toString('base64');
+    const defs = `<linearGradient id="topShade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${C.night}" stop-opacity=".75"/><stop offset="1" stop-color="${C.night}" stop-opacity="0"/></linearGradient>
+<linearGradient id="photoFade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${C.night}" stop-opacity="0"/><stop offset="1" stop-color="${C.night}" stop-opacity="1"/></linearGradient>`;
+    let b = `<image href="${data}" x="-40" y="0" width="${W+80}" height="980" preserveAspectRatio="xMidYMid slice"/>`;
+    b += `<rect x="0" y="0" width="${W}" height="220" fill="url(#topShade)"/>`;
+    b += `<rect x="0" y="640" width="${W}" height="342" fill="url(#photoFade)"/>`;
+    b += mono(t.s1.credit, 80, 905, 19, C.nightMuted);
+    // mini carte + radar, signature de la série
+    const m = mapLayer([790, 950, 1010, 1170], { land:'#2E2B27', stroke:C.night, highlight:{ 'Senegal':{ fill:C.amber, stroke:C.amber } } });
+    const [sx, sy] = m.proj([-14.8, 14.4]);
+    b += radar(sx, sy, 120, C.redDark, 3, true) + m.svg + `<circle cx="${sx}" cy="${sy}" r="6" fill="${C.amber}"/>`;
+    b += `<text x="64" y="1150" font-family="${F.serif}" font-weight="700" font-size="300" letter-spacing="-10" fill="${C.amber}">1</text>`;
+    b += `<text x="270" y="1150" font-family="${F.serif}" font-weight="600" font-size="110" letter-spacing="-3" fill="${C.nightText}">${esc(t.s1.sub)}</text>`;
+    b += lines(t.s1.l1, 80, 1218, 38, 50, `font-family="${F.sans}" font-weight="600" fill="${C.nightText}"`);
+    b += mono(t.s1.swipe, 80, 1300, 24, C.amber);
+    { const ax = 80 + t.s1.swipe.length*16.2 + 18; b += `<line x1="${ax}" y1="1292" x2="${ax+56}" y2="1292" stroke="${C.amber}" stroke-width="3"/><path d="M${ax+44},1282 L${ax+58},1292 L${ax+44},1302" fill="none" stroke="${C.amber}" stroke-width="3"/>`; }
+    out[0] = wrap(NIGHT, b, 0, t.series, defs);
   }
 
   // 2 · la réponse : carte papier, Sénégal surligné avec étiquette
