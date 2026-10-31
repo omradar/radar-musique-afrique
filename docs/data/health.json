@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T06:28:14.848049+00:00",
+ "updated": "2026-10-31T12:25:08.346949+00:00",
  "sources": [
   {
    "id": "musicinafrica",
@@ -15,8 +15,8 @@
    "id": "afropop",
    "name": "Afropop Worldwide",
    "ok": true,
-   "items": 21,
-   "fetched": 24,
+   "items": 20,
+   "fetched": 23,
    "feed": "https://news.google.com/rss/search?q=site%3Aafropop.org+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -26,7 +26,7 @@
    "name": "OkayAfrica",
    "ok": true,
    "items": 40,
-   "fetched": 52,
+   "fetched": 53,
    "feed": "https://news.google.com/rss/search?q=site%3Aokayafrica.com+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -46,7 +46,7 @@
    "name": "IFPI",
    "ok": true,
    "items": 0,
-   "fetched": 2,
+   "fetched": 1,
    "feed": "https://news.google.com/rss/search?q=site%3Aifpi.org+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -65,7 +65,7 @@
    "id": "allafrica-fr",
    "name": "allAfrica (FR)",
    "ok": true,
-   "items": 21,
+   "items": 23,
    "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Afr.allafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": true,
@@ -76,7 +76,7 @@
    "name": "allAfrica (EN)",
    "ok": true,
    "items": 18,
-   "fetched": 62,
+   "fetched": 57,
    "feed": "https://news.google.com/rss/search?q=site%3Aallafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -96,7 +96,7 @@
    "name": "We Are Tech Africa",
    "ok": true,
    "items": 0,
-   "fetched": 4,
+   "fetched": 3,
    "feed": "https://news.google.com/rss/search?q=site%3Awearetech.africa+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": true,
    "error": null
@@ -236,7 +236,7 @@
    "name": "Osiris",
    "ok": true,
    "items": 0,
-   "fetched": 21,
+   "fetched": 19,
    "feed": "https://osiris.sn/spip.php?page=backend",
    "fallback": false,
    "error": null
@@ -285,7 +285,7 @@
    "id": "ghanaweb",
    "name": "GhanaWeb",
    "ok": true,
-   "items": 20,
+   "items": 18,
    "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Aghanaweb.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
@@ -366,7 +366,7 @@
    "name": "CISAC",
    "ok": true,
    "items": 0,
-   "fetched": 4,
+   "fetched": 3,
    "feed": "https://news.google.com/rss/search?q=site%3Acisac.org+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -386,7 +386,7 @@
    "name": "PwC Africa Entertainment & Media Outlook",
    "ok": true,
    "items": 0,
-   "fetched": 30,
+   "fetched": 28,
    "feed": "https://news.google.com/rss/search?q=site%3Apwc.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -396,7 +396,7 @@
    "name": "IFACCA",
    "ok": true,
    "items": 0,
-   "fetched": 18,
+   "fetched": 19,
    "feed": "https://news.google.com/rss/search?q=site%3Aifacca.org+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -415,7 +415,7 @@
    "id": "interspace",
    "name": "The InterSpace Daily",
    "ok": true,
-   "items": 4,
+   "items": 2,
    "fetched": 10,
    "feed": "https://interspacemusic.com/blog/feed/",
    "fallback": false,
@@ -436,7 +436,7 @@
    "name": "Mdundo (communiqués investisseurs)",
    "ok": true,
    "items": 1,
-   "fetched": 21,
+   "fetched": 19,
    "feed": "https://news.google.com/rss/search?q=site%3Amfn.se+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -536,7 +536,7 @@
    "name": "Audiomack Creators",
    "ok": true,
    "items": 3,
-   "fetched": 17,
+   "fetched": 16,
    "feed": "https://news.google.com/rss/search?q=site%3Acreators.audiomack.com+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -545,18 +545,18 @@
    "id": "expresso-ilhas",
    "name": "Expresso das Ilhas",
    "ok": true,
-   "items": 5,
-   "fetched": 81,
-   "feed": "https://news.google.com/rss/search?q=site%3Aexpressodasilhas.cv+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=pt&gl=PT&ceid=PT%3Apt",
-   "fallback": true,
+   "items": 1,
+   "fetched": 10,
+   "feed": "https://expressodasilhas.cv/rss",
+   "fallback": false,
    "error": null
   },
   {
    "id": "ver-angola",
    "name": "Ver Angola",
    "ok": true,
-   "items": 7,
-   "fetched": 44,
+   "items": 8,
+   "fetched": 87,
    "feed": "https://news.google.com/rss/search?q=site%3Averangola.net+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=pt&gl=PT&ceid=PT%3Apt",
    "fallback": true,
    "error": null
@@ -565,7 +565,7 @@
    "id": "citizen-tz",
    "name": "The Citizen Tanzania",
    "ok": true,
-   "items": 3,
+   "items": 2,
    "fetched": 40,
    "feed": "https://www.thecitizen.co.tz/rss.xml",
    "fallback": false,
@@ -606,7 +606,7 @@
    "name": "Pulse Uganda",
    "ok": true,
    "items": 0,
-   "fetched": 20,
+   "fetched": 19,
    "feed": "https://www.pulse.ug/rss-articles.xml",
    "fallback": false,
    "error": null
@@ -645,7 +645,7 @@
    "id": "newtimes-rw",
    "name": "The New Times Rwanda",
    "ok": true,
-   "items": 17,
+   "items": 16,
    "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Anewtimes.co.rw+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
@@ -696,7 +696,7 @@
    "name": "Le Matin Maroc",
    "ok": true,
    "items": 17,
-   "fetched": 60,
+   "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Alematin.ma+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": true,
    "error": null
@@ -845,8 +845,8 @@
    "id": "gn-afrique-business-fr",
    "name": "Google Actualités: musique africaine (streaming OR business OR \"droits d'auteur\")",
    "ok": true,
-   "items": 5,
-   "fetched": 7,
+   "items": 3,
+   "fetched": 5,
    "feed": "https://news.google.com/rss/search?q=musique+africaine+%28streaming+OR+business+OR+%22droits+d%27auteur%22%29+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": false,
    "error": null
@@ -854,19 +854,19 @@
   {
    "id": "gn-sn-fr",
    "name": "Google Actualités: musique Sénégal mbalax concert",
-   "ok": false,
-   "items": 0,
-   "fetched": 0,
+   "ok": true,
+   "items": 2,
+   "fetched": 2,
    "feed": "https://news.google.com/rss/search?q=musique+S%C3%A9n%C3%A9gal+mbalax+concert+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
-   "error": "flux vide ou illisible"
+   "error": null
   },
   {
    "id": "gn-ci-fr",
    "name": "Google Actualités: musique (\"Côte d'Ivoire\" OR coupé-décalé)",
    "ok": true,
-   "items": 7,
-   "fetched": 26,
+   "items": 8,
+   "fetched": 27,
    "feed": "https://news.google.com/rss/search?q=musique+%28%22C%C3%B4te+d%27Ivoire%22+OR+coup%C3%A9-d%C3%A9cal%C3%A9%29+when%3A7d&hl=fr&gl=CI&ceid=CI%3Afr",
    "fallback": false,
    "error": null
@@ -875,7 +875,7 @@
    "id": "gn-cm-fr",
    "name": "Google Actualités: musique (Cameroun OR Congo OR RDC OR Gabon)",
    "ok": true,
-   "items": 12,
+   "items": 13,
    "fetched": 30,
    "feed": "https://news.google.com/rss/search?q=musique+%28Cameroun+OR+Congo+OR+RDC+OR+Gabon%29+when%3A7d&hl=fr&gl=CM&ceid=CM%3Afr",
    "fallback": false,
@@ -885,8 +885,8 @@
    "id": "gn-maghreb-fr",
    "name": "Google Actualités: musique (Maroc OR Algérie OR Tunisie)",
    "ok": true,
-   "items": 17,
-   "fetched": 31,
+   "items": 15,
+   "fetched": 30,
    "feed": "https://news.google.com/rss/search?q=musique+%28Maroc+OR+Alg%C3%A9rie+OR+Tunisie%29+when%3A7d&hl=fr&gl=MA&ceid=MA%3Afr",
    "fallback": false,
    "error": null
@@ -905,8 +905,8 @@
    "id": "gn-afrobeats-en",
    "name": "Google Actualités: Afrobeats music industry business",
    "ok": true,
-   "items": 20,
-   "fetched": 27,
+   "items": 18,
+   "fetched": 25,
    "feed": "https://news.google.com/rss/search?q=Afrobeats+music+industry+business+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
    "fallback": false,
    "error": null
@@ -916,7 +916,7 @@
    "name": "Google Actualités: Nigeria music royalties streaming label",
    "ok": true,
    "items": 6,
-   "fetched": 11,
+   "fetched": 20,
    "feed": "https://news.google.com/rss/search?q=Nigeria+music+royalties+streaming+label+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
    "fallback": false,
    "error": null
@@ -934,12 +934,12 @@
   {
    "id": "gn-ke-en",
    "name": "Google Actualités: Kenya Tanzania Uganda music industry streaming",
-   "ok": false,
-   "items": 0,
-   "fetched": 0,
+   "ok": true,
+   "items": 1,
+   "fetched": 1,
    "feed": "https://news.google.com/rss/search?q=Kenya+Tanzania+Uganda+music+industry+streaming+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen",
    "fallback": false,
-   "error": "flux vide ou illisible"
+   "error": null
   },
   {
    "id": "gn-gh-en",
@@ -955,8 +955,8 @@
    "id": "gn-sponsoring-en",
    "name": "Google Actualités: African music (sponsorship OR partnership)",
    "ok": true,
-   "items": 7,
-   "fetched": 45,
+   "items": 8,
+   "fetched": 47,
    "feed": "https://news.google.com/rss/search?q=African+music+%28sponsorship+OR+partnership%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
    "error": null
@@ -966,7 +966,7 @@
    "name": "Google Actualités: Audiomack (announces OR launches OR partnership OR Africa)",
    "ok": true,
    "items": 4,
-   "fetched": 11,
+   "fetched": 10,
    "feed": "https://news.google.com/rss/search?q=Audiomack+%28announces+OR+launches+OR+partnership+OR+Africa%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
    "error": null
@@ -986,7 +986,7 @@
    "name": "Google Actualités: Mdundo (music OR artists OR payments)",
    "ok": true,
    "items": 1,
-   "fetched": 2,
+   "fetched": 3,
    "feed": "https://news.google.com/rss/search?q=Mdundo+%28music+OR+artists+OR+payments%29+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen",
    "fallback": false,
    "error": null
@@ -996,7 +996,7 @@
    "name": "Google Actualités: (Orange OR Sonatel OR \"Max it\") (musique OR sponsoring OR concert)",
    "ok": true,
    "items": 1,
-   "fetched": 62,
+   "fetched": 29,
    "feed": "https://news.google.com/rss/search?q=%28Orange+OR+Sonatel+OR+%22Max+it%22%29+%28musique+OR+sponsoring+OR+concert%29+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
    "error": null
