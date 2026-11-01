@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-01T06:32:47.650945+00:00",
+ "updated": "2026-11-01T12:27:08.418535+00:00",
  "counts": {
-  "pas musique": 1183,
-  "pas Afrique": 128,
-  "spam": 35
+  "pas musique": 1155,
+  "pas Afrique": 118,
+  "spam": 37
  },
  "sample": [
   {
@@ -257,124 +257,204 @@
    "title": "Global Recorded Music Retail Revenues to Reach $121.1 Billion by 2033"
   },
   {
-   "reason": "pas musique",
-   "source": "BusinessDay Nigeria",
-   "title": "The Politics of no‑vote and the imperatives of economic development and sustainability in Nigeria’s democracy"
-  },
-  {
-   "reason": "pas musique",
-   "source": "BusinessDay Nigeria",
-   "title": "How Zulum is turning the tide in Borno’s health sector"
-  },
-  {
-   "reason": "pas musique",
-   "source": "BusinessDay Nigeria",
-   "title": "Beyond the screen: Seeing through technology in the digital age"
-  },
-  {
-   "reason": "pas musique",
-   "source": "BusinessDay Nigeria",
-   "title": "Anniversary blues: At 66, Oliver Odili, globetrotter and businessman, calls for a welfare system"
-  },
-  {
-   "reason": "pas musique",
-   "source": "BusinessDay Nigeria",
-   "title": "Capital market registrars to examine institutional resilience beyond recapitalisation"
-  },
-  {
    "reason": "spam",
    "source": "OkayAfrica",
    "title": "Tag: yadis"
   },
   {
    "reason": "pas musique",
-   "source": "We Are Tech Africa",
-   "title": "Le groupe Yamaha lance son concours d'innovation TRANSPOSE 2026"
+   "source": "BusinessDay Nigeria",
+   "title": "Obi: Tinubu lacks competence to govern Nigeria"
   },
   {
    "reason": "pas musique",
-   "source": "We Are Tech Africa",
-   "title": "Zama Ndlovu crée des univers intelligents pour connecter l'humain et son décor"
+   "source": "BusinessDay Nigeria",
+   "title": "Nestlé Nigeria taps 18-year communications veteran to lead reputation and sustainability agenda"
   },
   {
    "reason": "pas musique",
-   "source": "We Are Tech Africa",
-   "title": "Égypte : la proptech Aqar Exit lève 200 000 dollars dans l'immobilier"
+   "source": "BusinessDay Nigeria",
+   "title": "Nigeria’s digital economy faces DNS security risks as cyberattacks hit 4,361 weekly"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Loi des Finances Rectificative 2026 (LFR 2026) : sans accord avec le FMI, le Sénégal face au risque d’une crise systémique et d’une contagio"
+   "source": "BusinessDay Nigeria",
+   "title": "Linkage Assurance grows assets to over N100bn as nine-month profit climbs 31%"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Sénégal : le ministère des Finances agite le spectre d’une crise de trésorerie"
+   "source": "BusinessDay Nigeria",
+   "title": "Beyond FGN securities: Understanding the long-term diversification of pension assets"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "La BAD lève un milliard de dirhams au Maroc : pourquoi cette première émission obligataire pourrait changer le financement du développement "
+   "source": "allAfrica (EN)",
+   "title": "Nigeria: Bayero University Kano Stages 19th Inter-Faculty Sports Festival"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Cameroun : «le pays est à l’arrêt », le réquisitoire sans concession de Célestin Tawamba contre l’immobilisme économique"
+   "source": "allAfrica (EN)",
+   "title": "Ghana: Hogbetsotso 2026 to Promote Tourism, Local Businesses"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "JOJ Dakar 2026 : les 10 informations à retenir du premier rendez-vous olympique de l’histoire de l’Afrique"
+   "source": "allAfrica (EN)",
+   "title": "Africa: Alternativa Film Festival Expands to Africa, Opens 2027 Submissions With $120,000 in Prizes"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "À Dakar, le message de la jeunesse africaine à quelques heures de l’ouverture des JOJ"
+   "source": "allAfrica (EN)",
+   "title": "Rwanda: Culture Can't Be Consolidated"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Indice Mo Ibrahim 2026 : les Seychelles dominent, le Maroc entre dans le Top 10, l’Afrique du Sud décroche"
+   "source": "allAfrica (EN)",
+   "title": "Kenya: NBO Film Festival Announces 2026 Award Winners and Celebrates a Landmark Edition"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Dossier du Sahara à l’ONU: la MINURSO privée de mandat après un désaccord entre Washington et Moscou"
+   "source": "allAfrica (EN)",
+   "title": "Rwanda: Showbiz - From GTA Vi's Soundtrack to Narnia's Big-Screen Return"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "La révolution manquante du financement du développement africain"
+   "source": "allAfrica (EN)",
+   "title": "Uganda: Soroti to Host National Agroecology Festival As Farmers Push for Sustainable Agriculture"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Clôture des marchés financiers africains : le Didex 20 en repli"
+   "source": "allAfrica (EN)",
+   "title": "Rwanda: Kivumbi King Brings 'The Evolution of Cyacyana' to Bk Arena"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Mozambique : la prime rate maintenue à 15,5 % en novembre, pour le septième mois consécutif"
+   "source": "allAfrica (EN)",
+   "title": "Kenya: Nbo Film Festival Kicks Off Its 7th Edition (15 - 25 Oct, 2026)"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Gabon : le service de la dette absorberait 77 % des recettes de l’État en 2027"
+   "source": "allAfrica (EN)",
+   "title": "African Startups Invited to Yamaha's Transpose Innovation Challenge"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Cameroun : une application dédiée au suivi des importations de produits pétroliers"
+   "source": "allAfrica (EN)",
+   "title": "Somalia U-15 Beat Saudi Arabia 2-1 At FIFA World Cup Festival in Azerbaijan"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Capital-investissement minier : Appian vise environ 2 milliards de dollars en Afrique et cite sept pays"
+   "source": "allAfrica (EN)",
+   "title": "Kenya: Former LSK Chair Seeks Clarity On Live Streaming Provisions in New Law"
   },
   {
    "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Bénin : 30 millions d’euros de financement pour le premier projet solaire IPP du pays"
+   "source": "allAfrica (EN)",
+   "title": "Nigeria: Affricuff Aims to Connect People Through Diverse Cultures - Misodi"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (EN)",
+   "title": "Madagascar/Zambia: Zambia, Madagascar Shine As Cosafa Teams Battle for Honours At FIFA U15 World Cup"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (EN)",
+   "title": "Nigeria: BOI, AFD Sign $30m Facility to Boost Nigeria's Creative Sector"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (EN)",
+   "title": "Nigeria/Benin: Future Eagles Hammer New Caledonia, Beaten By Benin Republic"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (EN)",
+   "title": "Nigeria: Future Eagles Draw Jordan 2-2 At FIFA U-15 World Cup"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (EN)",
+   "title": "Kenya: Kindiki Dismisses Claims of Plan to Block Live Election Results"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (EN)",
+   "title": "Kenya: When Nairobi Stood Still - a Review of the Epic 'Third Flow Experience @30' Grand Finale"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Madagascar: Portrait - Sebastian Groth, la diplomatie au rythme du jazz"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Madagascar: FIFA U-15 World Cup & Festival 2026 - Les jeunes Barea terminent deuxièmes du groupe T et rejoignent le Tier B"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Afrique: Doha Film Festival 2026 - Deux Tunisiens au jury des longs-métrages et un court-métrage en compétition"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Togo: Un festival des sports de plage en décembre"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Algérie: Ouverture de la 15e édition du Festival international du théâtre"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Madagascar: FIFA U15 World Cup & Festival - Trois victoires consécutives pour les jeunes Barea"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Madagascar: Tournée - Rajery et Raúl Rodríguez mêlent valiha et flamenco en Espagne"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Tunisie: Gultrah Sound System aux JMC - Halim Yousfi, l'énergie intacte d'une génération"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Tunisie: Dhiaeddine Maknine - Une voix jeune au service du malouf"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Madagascar: FIFA U15 World Cup & Festival - Les jeunes Barea bouclent leur aventure dans le Top 40 mondial"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Sénégal: « Je demande surtout à Dieu de continuer à m'inspirer »"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Cote d'Ivoire: Danse contemporaine/« Les Larmes de l'océan » - Daudet Grazaï donne un corps à la tragédie de l'exil"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Cote d'Ivoire: Comment le projet «Premier continent» veut lancer un festival de cinéma et une école d'acteurs"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Maroc: Soirée musicale à Rabat en célébration de la Fête de l'Unité"
+  },
+  {
+   "reason": "pas musique",
+   "source": "allAfrica (FR)",
+   "title": "Afrique: FIFA U15 World Cup & Festival - Les Barea affrontent le Sénégal en quarts de finale du Tier B"
   },
   {
    "reason": "pas musique",
@@ -479,6 +559,11 @@
   {
    "reason": "pas musique",
    "source": "Variety",
+   "title": "Inde Navarrette Wins Halloween With Penis-Destroying Robot ‘SNL’ Sketch ‘The Inventor’s Wife’"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Variety",
    "title": "‘Godzilla Minus Zero’ Stars Relive Hollywood Ovation and Fan Chants for Yamazaki Takashi at Tokyo Festival"
   },
   {
@@ -523,8 +608,18 @@
   },
   {
    "reason": "pas musique",
-   "source": "Variety",
-   "title": "Tokyo Asian Future Drama ‘Jani Be Good’ Probes Silence and Motherhood in a Chinese-Indonesian Family, Marking Ariani Darmawan’s Return"
+   "source": "We Are Tech Africa",
+   "title": "Le groupe Yamaha lance son concours d'innovation TRANSPOSE 2026"
+  },
+  {
+   "reason": "pas musique",
+   "source": "We Are Tech Africa",
+   "title": "Zama Ndlovu crée des univers intelligents pour connecter l'humain et son décor"
+  },
+  {
+   "reason": "pas musique",
+   "source": "We Are Tech Africa",
+   "title": "Égypte : la proptech Aqar Exit lève 200 000 dollars dans l'immobilier"
   },
   {
    "reason": "pas musique",
@@ -628,6 +723,131 @@
   },
   {
    "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Nigeria : Lagos impose l’assurance maladie dès janvier 2027 et fixe les primes à partir de 11 dollars"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Loi des Finances Rectificative 2026 (LFR 2026) : sans accord avec le FMI, le Sénégal face au risque d’une crise systémique et d’une contagio"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Sénégal : le ministère des Finances agite le spectre d’une crise de trésorerie"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "La BAD lève un milliard de dirhams au Maroc : pourquoi cette première émission obligataire pourrait changer le financement du développement "
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Cameroun : «le pays est à l’arrêt », le réquisitoire sans concession de Célestin Tawamba contre l’immobilisme économique"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "JOJ Dakar 2026 : les 10 informations à retenir du premier rendez-vous olympique de l’histoire de l’Afrique"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "À Dakar, le message de la jeunesse africaine à quelques heures de l’ouverture des JOJ"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Indice Mo Ibrahim 2026 : les Seychelles dominent, le Maroc entre dans le Top 10, l’Afrique du Sud décroche"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Dossier du Sahara à l’ONU: la MINURSO privée de mandat après un désaccord entre Washington et Moscou"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "La révolution manquante du financement du développement africain"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Clôture des marchés financiers africains : le Didex 20 en repli"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Mozambique : la prime rate maintenue à 15,5 % en novembre, pour le septième mois consécutif"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Gabon : le service de la dette absorberait 77 % des recettes de l’État en 2027"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Cameroun : une application dédiée au suivi des importations de produits pétroliers"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Financial Afrik",
+   "title": "Capital-investissement minier : Appian vise environ 2 milliards de dollars en Afrique et cite sept pays"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Telecom Review Africa",
+   "title": "Morocco Appoints Its First AI Minister as Ahmed Rahhou Takes the Helm"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Telecom Review Africa",
+   "title": "Tech Intelligence Beyond Mobility: TRS 2026 Concludes Landmark 20th Edition"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Telecom Review Africa",
+   "title": "Safaricom Business Rolls Out SD-WAN to Unify and Strengthen Business Networks"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Telecom Review Africa",
+   "title": "Senegal and Mali Interconnect Their Fiber-Optic Networks to Boost Regional Connectivity"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Telecom Review Africa",
+   "title": "Mikko Lavanti Details How Telecom Networks Must Evolve to Support the AI Supercycle"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Telecom Review Africa",
+   "title": "Reflecting on 20 Editions of the Telecom Review Leaders’ Summit"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Telecom Review Africa",
+   "title": "Build Sovereign Digital Infrastructure at TRS 2026"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Telecom Review Africa",
+   "title": "Explore the State of Telecom and ICT at TRS 2026"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Telecom Review Africa",
+   "title": "Create Full-Service Financial Ecosystems with Telcos at TRS 2026"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Telecom Review Africa",
+   "title": "Meet Mission-Critical Needs with AI at TRS 2026"
+  },
+  {
+   "reason": "pas musique",
    "source": "Citi Newsroom",
    "title": "Alfred Addaquay: The Professor behind the Keys"
   },
@@ -693,228 +913,68 @@
   },
   {
    "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Morocco Appoints Its First AI Minister as Ahmed Rahhou Takes the Helm"
+   "source": "Citi Newsroom",
+   "title": "Mahama highlights kente’s role in deepening Ghana-Russia relations"
   },
   {
    "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Tech Intelligence Beyond Mobility: TRS 2026 Concludes Landmark 20th Edition"
+   "source": "Xalima",
+   "title": "Premier League : Nicolas Jackson marque encore, Aston Villa accroché par Fulham"
   },
   {
    "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Safaricom Business Rolls Out SD-WAN to Unify and Strengthen Business Networks"
+   "source": "Xalima",
+   "title": "JOJ Dakar 2026 : après la fête, place aux premières compétitions"
   },
   {
    "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Senegal and Mali Interconnect Their Fiber-Optic Networks to Boost Regional Connectivity"
+   "source": "Xalima",
+   "title": "LFR 2026 : après deux rejets, le gouvernement face à l’épreuve de la plénière"
   },
   {
    "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Mikko Lavanti Details How Telecom Networks Must Evolve to Support the AI Supercycle"
+   "source": "Xalima",
+   "title": "JOJ Dakar 2026 : la cérémonie d’ouverture a commencé en présence de plusieurs dirigeants étrangers"
   },
   {
    "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Reflecting on 20 Editions of the Telecom Review Leaders’ Summit"
+   "source": "Xalima",
+   "title": "Léona Niassène : le khalife évoque un avenir présidentiel pour Ousmane Sonko"
   },
   {
    "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Build Sovereign Digital Infrastructure at TRS 2026"
+   "source": "Xalima",
+   "title": "JOJ Dakar 2026 : 136 athlètes sénégalais et une cérémonie historique à Diamniadio"
   },
   {
    "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Explore the State of Telecom and ICT at TRS 2026"
+   "source": "Xalima",
+   "title": "LFR 2026 : après un deuxième rejet en commission, le dialogue budgétaire dans l’impasse"
   },
   {
    "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Create Full-Service Financial Ecosystems with Telcos at TRS 2026"
+   "source": "Xalima",
+   "title": "Les difficultés budgétaires font planer le risque de délestages électriques"
   },
   {
    "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Meet Mission-Critical Needs with AI at TRS 2026"
+   "source": "Xalima",
+   "title": "JOJ Dakar 2026 : Omar Sy, Khaby Lame et les grandes figures de la diaspora mobilisés pour un rendez-vous historique"
   },
   {
    "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "JOJ Dakar 2026 : Derrière le spectacle, des acteurs de l’ombre à la manœuvre"
+   "source": "Seneplus",
+   "title": "Toussaint, les chrétiens célèbrent la fête de tous les saints ce dimanche"
   },
   {
    "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Cérémonie d’ouverture JOJ Dakar 2026 : Dakar organise, l’Afrique s’illustre"
+   "source": "Seneplus",
+   "title": "La raison du plus bavard n’est pas toujours la meilleure"
   },
   {
    "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "LFR 2026 : après deux rejets en commission, le texte revient en plénière le 3 novembre"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "JOJ Dakar 2026 : un spectacle grandiose pour une première africaine"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Joj Dakar 2026 : Diagna Ndiaye veut faire du Sénégal une référence olympique"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "PLFR 2026 : le gouvernement déplore l’absence de contreproposition après le rejet en Commission"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "[DIRECT] Suivez la cérémonie d’ouverture des JOJ Dakar 2026 au stade Abdoulaye Wade de Diamniadio"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "JOJ Dakar 2026 : Diamniadio, carrefour du monde à l’heure de l’Olympisme"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "JOJ Dakar 2026 – Beach-volley : Sidibé et Thiam lancent bien le Sénégal"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "JOJ Dakar 2026 – Beach-volley féminin (Saly) : le Sénégal entre en lice avec autorité"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Le Président engage des échanges sur le financement de l’économie du sport"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "JOJ Dakar 2026 : transports gratuits et parkings aménagés pour la cérémonie d’ouverture"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Babacar Mbengue, Dg SAPCO – Sénégal: « Les Joj doivent marquer le point de départ d’une nouvelle ambition pour Saly et la Petite-Côte »"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "JOJ Dakar 2026 : Dakar, carrefour du dialogue et de la coopération internationale"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "JOJ « Dakar 2026 » : les grandes puissances à la conquête de l’or"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Sport et développement : le président Bassirou Diomaye Faye plaide pour un héritage durable des JOJ Dakar 2026"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Lutte contre le trafic de stupéfiants : plus de 200 kg de chanvre indien saisis à Nianing"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Mobilisation JOJ : Le Président Diomaye Faye imprime une innovation dans sa communication"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Babacar Cissé, un médaillé olympique dans l’ombre"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Dotation de 1000 casques et gilets DE 1 000 : les conducteurs de motos-Jakarta sensibilisés à la sécurité routière"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "JOJ Dakar 2026 : Le MITTA déploie un dispositif spécial de transport pour la cérémonie d’ouverture"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Résolution 2797 du Conseil de sécurité : dépasser les blocages pour ouvrir un nouvel horizon africain"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Cérémonie d’ouverture JOJ : les présidents El Ghazouani et Julius Maada Bio déjà à Dakar"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Le Soleil",
-   "title": "Cérémonie d’ouverture JOJ, ce soir à 18h au Stade Abdoulaye Wade : « Dakar 2026 », l’histoire s’écrit en Afrique"
-  },
-  {
-   "reason": "spam",
-   "source": "Afropop Worldwide",
-   "title": "Articles"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Lupita Nyong’o, Dua Lipa and Ciara lead celebrity style at 2026 WSJ Innovator Awards"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Chanel’s Matthieu Blazy honoured as fashion innovator at 2026 WSJ Awards"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Nation Media Journalist Dies in ICU After Snake Bite"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Kenya Railways Launches SGR Vehicle Freight Service Between Mombasa and Nairobi"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "PS Omollo Engages Nairobi Tailors In Push to Recognise Artisans in National Development"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "How University Lecturers And Professors Will Earn More Under New UASU Salary Deal"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Legal Tussles Cloud Gold Exploration in Siaya and Vihiga Counties"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Sugarcane Farmers Set to Elect New Board"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Airtel Africa Revenues Surge 28% As H1 Profits Hit US $452Million"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "CDSC Issues Clarification on Share Transfers to UFAA"
+   "source": "Seneplus",
+   "title": "Direction générale de l’OIT, Gilbert Houngbo face à deux concurrents, l’Afrique à l’épreuve de sa solidarité diplomatique"
   },
   {
    "reason": "pas musique",
@@ -952,74 +1012,29 @@
    "title": "LFR 2026, ne pas faire payer à la Nation le prix d'une querelle"
   },
   {
-   "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "Cinq ans après la disparition d'Iba Der Thiam, son épouse raconte l’homme derrière l’historien"
+   "reason": "spam",
+   "source": "Afropop Worldwide",
+   "title": "Articles"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "JOJ Dakar 2026, le Sénégal domine le Cap-Vert en beach-volley"
+   "source": "SenTV",
+   "title": "Diamaguène Sicap : un neveu accusé d’avoir volé le mouton de son oncle, un receleur également déféré"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "Sénégal, et si la classe moyenne était la clé du développement ?"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Xalima",
-   "title": "JOJ Dakar 2026 : la cérémonie d’ouverture a commencé en présence de plusieurs dirigeants étrangers"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Léona Niassène : le khalife évoque un avenir présidentiel pour Ousmane Sonko"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Xalima",
-   "title": "JOJ Dakar 2026 : 136 athlètes sénégalais et une cérémonie historique à Diamniadio"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Xalima",
-   "title": "LFR 2026 : après un deuxième rejet en commission, le dialogue budgétaire dans l’impasse"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Les difficultés budgétaires font planer le risque de délestages électriques"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Xalima",
-   "title": "JOJ Dakar 2026 : Omar Sy, Khaby Lame et les grandes figures de la diaspora mobilisés pour un rendez-vous historique"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Al-Nassr : Sadio Mané buteur et passeur décisif, Ronaldo signe un triplé spectaculaire"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Patrimoine mondial : Saint-Louis porte désormais la voix de l’Afrique au sein d’une organisation internationale"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Intelligence artificielle : le Sénégal veut passer des ambitions aux applications concrètes"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Affaire Madiambal Diagne : le recours contre le mandat d’arrêt international examiné le 4 novembre"
+   "source": "SenTV",
+   "title": "États-Unis : 303 Sénégalais détenus dans les centres de rétention de l’immigration, selon le consul général à New York"
   },
   {
    "reason": "pas musique",
    "source": "SenTV",
    "title": "JOJ Dakar 2026 : le Sénégal fait vibrer le monde au rythme de son patrimoine culturel"
+  },
+  {
+   "reason": "pas musique",
+   "source": "SenTV",
+   "title": "Louga : sept kilos de chanvre indien saisis par la BRS à Moukh Moukh, deux suspects interpellés"
   },
   {
    "reason": "pas musique",
@@ -1053,18 +1068,13 @@
   },
   {
    "reason": "pas musique",
-   "source": "SenTV",
-   "title": "Mort de Astou Pierre Ndiaye après une attaque à l’acide : son ex-compagnon arrêté en Mauritanie"
+   "source": "Jeune Afrique",
+   "title": "Banquiers, politiques, prélats, féministes… La galaxie éclectique de Coura Sène"
   },
   {
    "reason": "pas musique",
-   "source": "SenTV",
-   "title": "JOJ Dakar 2026 : Plusieurs dirigeants africains à Dakar, Diomaye Faye renforce le rayonnement diplomatique du Sénégal"
-  },
-  {
-   "reason": "pas musique",
-   "source": "SenTV",
-   "title": "Nutrition infantile : ces goûters locaux qui peuvent remplacer les biscuits et les boissons sucrées"
+   "source": "Jeune Afrique",
+   "title": "L’intervention au Niger, un test de crédibilité grandeur nature pour l’armée algérienne"
   },
   {
    "reason": "pas musique",
@@ -1208,13 +1218,23 @@
   },
   {
    "reason": "pas musique",
-   "source": "Jeune Afrique",
-   "title": "Banques nationales : qui sont les vrais gagnants de 2026 ?"
+   "source": "Sonatel",
+   "title": "Santé et engagement : la Fondation Sonatel et la LISCA se mobilisent pour la prévention du cancer"
   },
   {
    "reason": "pas musique",
-   "source": "Jeune Afrique",
-   "title": "Au Tchad, le contrôle des mines d’or de Miski provoque de nouveaux affrontements"
+   "source": "Sonatel",
+   "title": "Sonatel franchit une nouvelle étape dans son histoire boursière avec le fractionnement de ses actions"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Sonatel",
+   "title": "Inondations, Plan SUR : 9 zones, plus de 6 000 vies touchées"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Sonatel",
+   "title": "Gamou 2026 : Orange renforce ses investissements dans la connectivité à Tivaouane, Kaolack, Ndiassane et Thiénaba"
   },
   {
    "reason": "pas musique",
@@ -1229,12 +1249,17 @@
   {
    "reason": "pas musique",
    "source": "RFI Afrique",
+   "title": "À Ceuta, l'explosion des discours et des actes racistes contre les Marocains"
+  },
+  {
+   "reason": "pas musique",
+   "source": "RFI Afrique",
    "title": "La météorite retrouvée en 2022 au Mali livre ses premiers secrets"
   },
   {
    "reason": "pas musique",
    "source": "RFI Afrique",
-   "title": "À Ceuta, l'explosion des discours et des actes racistes contre les Marocains"
+   "title": "Burkina Faso: l'apprentissage en langues nationales renforcé dans les écoles"
   },
   {
    "reason": "pas musique",
@@ -1328,13 +1353,8 @@
   },
   {
    "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Blanchiment d'argent: le GAFI retire la Côte d'Ivoire et la RDC de sa liste grise"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "«Le Cameroun fait face à une dégradation de sa situation économique», estime Célestin Tawamba"
+   "source": "The Africa Report",
+   "title": "Civic turnarounds to the banking C-suite: Inside Kenny Fihla’s pan-African power network"
   },
   {
    "reason": "pas musique",
@@ -1383,8 +1403,133 @@
   },
   {
    "reason": "pas musique",
-   "source": "The Africa Report",
-   "title": "Ethiopia’s Russian fighter jets raise stakes in Eritrea standoff"
+   "source": "Le Soleil",
+   "title": "Je suis volontaire donc je suis ! ( par Arame NDIAYE)"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "JOJ Dakar 2026 : la diplomatie étrangère salue le spectacle sénégalais"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Alkebulan, Kèb et Sitoé : une mythologie africaine pour entrer dans l’histoire olympique (Par Moussa DIOP)"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Dakar,l’Olympie africaine de la jeunesse mondiale"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Le président Bassirou Diomaye Faye célèbre le rayonnement culturel du Sénégal"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Plaidoyer pour un centre de santé et une ambulance médicalisée"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "« Permettre aux athlètes de décrocher une médaille olympique »"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "L’engagement pour le bien-être de sa communauté"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Un engagement pour faire émerger des champions économiques"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Deux breakeurs, un rêve de médaille"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Eden Kazoum, seule contre les meilleures"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Les chrétiens célèbrent la mémoire de tous les saints"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "JOJ Dakar 2026 : Derrière le spectacle, des acteurs de l’ombre à la manœuvre"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Cérémonie d’ouverture JOJ Dakar 2026 : Dakar organise, l’Afrique s’illustre"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "LFR 2026 : après deux rejets en commission, le texte revient en plénière le 3 novembre"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "JOJ Dakar 2026 : un spectacle grandiose pour une première africaine"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Joj Dakar 2026 : Diagna Ndiaye veut faire du Sénégal une référence olympique"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "PLFR 2026 : le gouvernement déplore l’absence de contreproposition après le rejet en Commission"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "[DIRECT] Suivez la cérémonie d’ouverture des JOJ Dakar 2026 au stade Abdoulaye Wade de Diamniadio"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "JOJ Dakar 2026 : Diamniadio, carrefour du monde à l’heure de l’Olympisme"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "JOJ Dakar 2026 – Beach-volley : Sidibé et Thiam lancent bien le Sénégal"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "JOJ Dakar 2026 – Beach-volley féminin (Saly) : le Sénégal entre en lice avec autorité"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "Le Président engage des échanges sur le financement de l’économie du sport"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Le Soleil",
+   "title": "JOJ Dakar 2026 : transports gratuits et parkings aménagés pour la cérémonie d’ouverture"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Billboard",
+   "title": "Here’s Where to Watch the 2026 New York Marathon Live Online"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "Billboard",
+   "title": "Gracie Abrams Goes From Juliet to Romeo During ‘SNL’ Halloween Performances"
   },
   {
    "reason": "pas musique",
@@ -1425,16 +1570,6 @@
    "reason": "pas musique",
    "source": "Billboard",
    "title": "Atlanta Gridiron Classic 2026: Here’s Where to Watch Florida Gators vs. Georgia Bulldogs Live Online Free"
-  },
-  {
-   "reason": "pas Afrique",
-   "source": "Billboard",
-   "title": "Valentín Elizalde’s Legacy Gets a New HBO Max Docuseries & More Uplifting Moments in Latin Music"
-  },
-  {
-   "reason": "pas Afrique",
-   "source": "Billboard",
-   "title": "Harry Styles Revives His 2010 ‘X Factor’ Audition Look for ‘Isn’t She Lovely’ at Harryween"
   },
   {
    "reason": "pas musique",
@@ -1568,23 +1703,68 @@
   },
   {
    "reason": "pas musique",
-   "source": "Sonatel",
-   "title": "Santé et engagement : la Fondation Sonatel et la LISCA se mobilisent pour la prévention du cancer"
+   "source": "Seneweb",
+   "title": "CEMAC : Retrait des anciennes pièces de CFA"
   },
   {
    "reason": "pas musique",
-   "source": "Sonatel",
-   "title": "Sonatel franchit une nouvelle étape dans son histoire boursière avec le fractionnement de ses actions"
+   "source": "Seneweb",
+   "title": "Russie : Poutine reçoit Assimi Goïta au Kremlin"
   },
   {
    "reason": "pas musique",
-   "source": "Sonatel",
-   "title": "Inondations, Plan SUR : 9 zones, plus de 6 000 vies touchées"
+   "source": "Seneweb",
+   "title": "Nouadhibou : 134 migrants dont 44 Sénégalais interceptés"
   },
   {
    "reason": "pas musique",
-   "source": "Sonatel",
-   "title": "Gamou 2026 : Orange renforce ses investissements dans la connectivité à Tivaouane, Kaolack, Ndiassane et Thiénaba"
+   "source": "Seneweb",
+   "title": "Ouverture des JOJ : Yoro Dia félicite le tandem Sall-Faye et adresse une mention spéciale à Diagna Ndiaye"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "La raison du plus bavard n’est pas toujours la meilleure [PAR Mary Teuw Niane]"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Macky Sall : Après le revers à l'ONU, l'équation du retour politique"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Migration irrégulière : 307 migrants partis de la Gambie secourus au large d’El Hierro."
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "JOJ Dakar 2026 : l’Afrique accueille, mais à quel prix et pour qui ?"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Trump menace l'Iran de nouvelles frappes sur \"un ou deux sites\""
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "[JOJ Dakar 2026] Ces secteurs économiques \"pronostiqués\" parmi les futurs grands gagnants de la compétition"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Bissau : 141 Sénégalais interceptés alors qu'ils préparaient un départ clandestin"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "« Quel peuple ! Quelle culture ! » : ​Cérémonie des JOJ, le coup de maître du Sénégal !"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Sinthiou Diamdior : Farba Ngom multiplie les actions de proximité auprès des jeunes de Matam"
   },
   {
    "reason": "pas musique",
@@ -1718,73 +1898,8 @@
   },
   {
    "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Dakar 2026 : Diomaye Faye ouvre le sommet présidentiel et appelle à faire du sport un levier de développement"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Ziguinchor : Niaguis sonne l’union sacrée de l’agroécologie africaine"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Ballon d'Or: Mourinho félicite Kane mais ressent \"de la frustration\" pour Mbappé"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Ouverture Des JOJ: Suivez L'ambiance Aux Alentours Du Stade Me Wade..."
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "L'ambassade américaine à Moscou avertit la Russie d'une \"menace crédible\" d'attentat à Moscou samedi"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Lutte contre les cancers féminins : la CDC offre un appareil capable de traiter les lésions précancéreuses en 30 secondes"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Premier League : Chelsea enfonce Manchester United dans la crise"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Lutte contre la corruption : En mission à Bakou, Moustapha Ka vante les réformes de l'OFNAC et prône la coopération internationale"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Louga : Deux individus arrêtés avec 7 kg de chanvre indien à Moukh Moukh"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Dékheulé : Le mausolée de Lat Dior délaissé à tort, le sabre introuvable, le musée non valorisé"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Revers judiciaire pour Crédit International SA : Christian Khalife et Mamadou Lamine Mbaye condamnés au paiement de 100 millions à Cheikh A."
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Météo : L'ANACIM annonce des pluies hors saison à partir de ce week-end, Dakar concernée"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Émigration irrégulière : 27 candidats à l’émigration interpellés sur la plage de Djifer"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "JOJ Dakar 2026 : la jeunesse africaine au cœur des enjeux démocratiques et de la coopération internationale"
+   "source": "TechLabari",
+   "title": "Ghana’s New Automated Traffic Camera System Has Officially Gone Live. Will It Work In The Long Term?"
   },
   {
    "reason": "pas musique",
@@ -1823,8 +1938,63 @@
   },
   {
    "reason": "pas musique",
-   "source": "TechLabari",
-   "title": "Why A Critical Flaw in PHP, the Code Behind Much of the Web, Sent Site Owners Racing to Patch"
+   "source": "Senego",
+   "title": "JOJ Dakar 2026 : la trêve olympique face au risque de shutdown budgétaire"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "« Quelque chose de grand est en train de se passer à Dakar » : L’ancien international Stéphane Badji impressionné par les JOJ"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "JOJ Dakar 2026 : La légende du basket Pau Gasol débarque dans la capitale sénégalaise (Vidéo)"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Tamsir Guèye appelle Cheikh Mbagnick Ndiaye à rejoindre Kiiraay, qui pose ses conditions"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Aminat Tine et Nafi Segnane offrent au Sénégal une deuxième victoire aux JOJ 2026"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "« Sénégal authentique ! Quel peuple ! Quelle culture ! » : Le message de fierté de Bassirou Diomaye Faye après la cérémonie d’ouverture"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "JOJ Dakar 2026 : Khalifa Ababacar Sall salue l’ouverture et plaide pour les jeunes"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Mary Teuw Niane dénonce les faux comptes et les « meutes numériques »"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Les chrétiens célèbrent la Toussaint : Une journée dédiée à la communion des saints"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "LFR 2026 : deux anciens députés alertent sur le lien avec le programme du FMI"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Pour El Hadji Amadou Dia Ba, le talent ne suffit pas à décrocher une médaille olympique"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Clotilde Coly salue la richesse culturelle célébrée à l’ouverture des JOJ"
   },
   {
    "reason": "pas musique",
@@ -1835,176 +2005,6 @@
    "reason": "pas musique",
    "source": "Senego",
    "title": "La Matinale Senego : Sagna interpelle Sonko, Pastef rejette le budget"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Aux JOJ, une volontaire suisse salue le symbole du continent africain formé pendant la cérémonie"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Sénégal : le budget rectificatif revient en plénière le 3 novembre après deux rejets"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "AS Pikine-Teungueth : les Pikinois veulent effacer le 0-2 de la saison passée"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Après le rejet en commission, le ministère alerte sur la trésorerie de l’État"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Après deux matchs sur le banc, Bamba Dieng signe un triplé face à Macva Sabac"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "JOJ Dakar 2026 : Marianne Niox et Adama Diop, artisans de la cérémonie d’ouverture"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Khalifa Sall : « Le Sénégal vient, une fois encore, de rappeler au monde que la grandeur d’un peuple se mesure aussi à … »"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Guinée-Bissau : Horta N’Tam négocierait un report électoral contre la sécurité en Casamance"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "JOJ Dakar 2026 : l’ambassade des États-Unis félicite le Sénégal après l’ouverture"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Météo Sénégal : l’ANACIM alerte sur des pluies et orages dans plusieurs régions"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Mamadou Diagna Ndiaye veut faire des JOJ Dakar 2026 une « référence »"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Abass Fall : « Merci M. Le Président de l’Assemblée nationale. Mon Maître en politique »"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Bande Annonce, Toumaal Gor – Saison 01 – Episode 11"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "À Diamniadio, Bassirou Diomaye Faye ouvre les JOJ Dakar 2026 au stade Abdoulaye Wade"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Assemblée nationale : la Commission des Finances convoquée pour examiner le projet de LFR 2026"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Badge « all access » aux JOJ : Guy Marius Sagna salue la transparence d’Ousmane Sonko"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "395 migrants embarqués en Gambie atteignent les Canaries"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Noo Lank appelle à faire des JOJ Dakar 2026 un levier durable pour la jeunesse"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Modou Lô et Eumeu Sène à l’ouverture des JOJ Dakar 2026, la lutte à l’honneur"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Jeux olympiques de la Jeunesse : suivez en direct la cérémonie d’ouverture …"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Kaffrine : 3 millions FCFA d’appuis de l’ASPC au sport et à la jeunesse"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "À Dakar, Mgr André Gueye exhorte les jeunes athlètes au fair-play et à la fraternité"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Affaire Aminata Sy : le colocataire de Karamo dit avoir été arrêté le premier"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Idrissa Seck invite à célébrer le talent et le courage de la jeunesse aux JOJ"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Loi de finances rectificative : Guy Marius Sagna explique le rejet de Pastef"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Touba : deux frères poursuivis pour avoir repris le cabinet médical de leur père sans qualification"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Ousmane Sonko : « Merci au COJOJ, qui m’a gratifié d’un badge « all access ». J’irai certainement visiter … »"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "JOJ : le Sénégal en effervescence à quelques heures de la cérémonie d’ouverture"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Makhtar Diop et Diomaye Faye évoquent l’investissement privé dans l’héritage des JOJ"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Amy Mara Dièye plaide contre le renoncement aux soins face au coût du parcours médical"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "JOJ à Dakar : « Une édition historique, car elle sera probablement la dernière… », selon Romain Molina"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "Cérémonie officielle : Cheikh Bara Ndiaye dénonce « l’absence d’invitation adressée au président de l’Assemblée nationale »"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "« Vous êtes notre énergie renouvelable »: le message de Diomaye Faye à la jeunesse au Sommet de Dakar"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Senego",
-   "title": "JOJ de Dakar : le double mixte sénégalais éliminé 0-3 par l’Égypte"
   }
  ]
 }
