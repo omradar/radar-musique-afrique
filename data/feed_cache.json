@@ -55,5 +55,7 @@
   "https://citizen.digital": "https://www.citizen.digital/feed.xml",
   "https://www.sidwaya.info": "https://www.sidwaya.info/feed/",
   "https://nbcnews.na": "https://nbcnews.na/rss.xml",
-  "https://www.monitor.co.ug": "https://www.monitor.co.ug/rss.xml"
+  "https://www.monitor.co.ug": "https://www.monitor.co.ug/rss.xml",
+  "https://en.yabiladi.com": "https://en.yabiladi.com/rss",
+  "https://www.musicexchange.org.za": "https://www.musicexchange.org.za/feed/"
 }
