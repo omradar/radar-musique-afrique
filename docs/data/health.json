@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T00:35:57.252984+00:00",
+ "updated": "2026-11-17T06:54:10.333330+00:00",
  "sources": [
   {
    "id": "musicinafrica",
@@ -24,12 +24,12 @@
   {
    "id": "okayafrica",
    "name": "OkayAfrica",
-   "ok": false,
-   "items": 0,
-   "fetched": 0,
-   "feed": null,
-   "fallback": false,
-   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site:okayafrica.com+when:30d&hl=en-US&gl=US&ceid=US:en"
+   "ok": true,
+   "items": 38,
+   "fetched": 56,
+   "feed": "https://news.google.com/rss/search?q=site%3Aokayafrica.com+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
+   "fallback": true,
+   "error": null
   },
   {
    "id": "mbw",
@@ -44,12 +44,12 @@
   {
    "id": "ifpi",
    "name": "IFPI",
-   "ok": true,
+   "ok": false,
    "items": 0,
-   "fetched": 1,
-   "feed": "https://news.google.com/rss/search?q=site%3Aifpi.org+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site:ifpi.org+(music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist)+when:30d&hl=en-US"
   },
   {
    "id": "midia",
@@ -65,7 +65,7 @@
    "id": "allafrica-fr",
    "name": "allAfrica (FR)",
    "ok": true,
-   "items": 17,
+   "items": 19,
    "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Afr.allafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": true,
@@ -74,12 +74,12 @@
   {
    "id": "allafrica-en",
    "name": "allAfrica (EN)",
-   "ok": false,
-   "items": 0,
-   "fetched": 0,
-   "feed": null,
-   "fallback": false,
-   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site:allafrica.com+(music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist)+when:30d&hl="
+   "ok": true,
+   "items": 17,
+   "fetched": 62,
+   "feed": "https://news.google.com/rss/search?q=site%3Aallafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
+   "fallback": true,
+   "error": null
   },
   {
    "id": "financialafrik",
@@ -94,12 +94,12 @@
   {
    "id": "wearetech",
    "name": "We Are Tech Africa",
-   "ok": false,
+   "ok": true,
    "items": 0,
-   "fetched": 0,
-   "feed": null,
-   "fallback": false,
-   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site%3Awearetech.africa+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+whe"
+   "fetched": 2,
+   "feed": "https://news.google.com/rss/search?q=site%3Awearetech.africa+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
+   "fallback": true,
+   "error": null
   },
   {
    "id": "businessday",
@@ -115,7 +115,7 @@
    "id": "businesstoday-ke",
    "name": "Business Today Kenya",
    "ok": true,
-   "items": 1,
+   "items": 0,
    "fetched": 10,
    "feed": "https://businesstoday.co.ke/feed/",
    "fallback": false,
@@ -136,7 +136,7 @@
    "name": "CAF",
    "ok": true,
    "items": 0,
-   "fetched": 9,
+   "fetched": 10,
    "feed": "https://news.google.com/rss/search?q=site%3Acafonline.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -165,7 +165,7 @@
    "id": "arise",
    "name": "Arise News",
    "ok": true,
-   "items": 0,
+   "items": 2,
    "fetched": 20,
    "feed": "https://www.arise.tv/feed",
    "fallback": false,
@@ -174,12 +174,12 @@
   {
    "id": "citinewsroom",
    "name": "Citi Newsroom",
-   "ok": true,
-   "items": 5,
-   "fetched": 59,
-   "feed": "https://news.google.com/rss/search?q=site%3Acitinewsroom.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site:citinewsroom.com+(music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist)+when:30d&"
   },
   {
    "id": "telecomreview",
@@ -236,7 +236,7 @@
    "name": "Osiris",
    "ok": true,
    "items": 0,
-   "fetched": 19,
+   "fetched": 10,
    "feed": "https://osiris.sn/spip.php?page=backend",
    "fallback": false,
    "error": null
@@ -289,7 +289,7 @@
    "fetched": 0,
    "feed": null,
    "fallback": false,
-   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site:ghanaweb.com+(music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist)+when:30d&hl=e"
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site%3Aghanaweb.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A"
   },
   {
    "id": "techlabari",
@@ -329,7 +329,7 @@
    "fetched": 0,
    "feed": null,
    "fallback": false,
-   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site%3Asamro.org.za+when%3A30d&hl=en&gl=US&ceid=US%3Aen"
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : flux vide ou illisible"
   },
   {
    "id": "cosoma",
@@ -384,22 +384,22 @@
   {
    "id": "pwc-africa-eum",
    "name": "PwC Africa Entertainment & Media Outlook",
-   "ok": true,
-   "items": 0,
-   "fetched": 30,
-   "feed": "https://news.google.com/rss/search?q=site%3Apwc.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
-  },
-  {
-   "id": "ifacca",
-   "name": "IFACCA",
    "ok": false,
    "items": 0,
    "fetched": 0,
    "feed": null,
    "fallback": false,
-   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site%3Aifacca.org+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30"
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site%3Apwc.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&h"
+  },
+  {
+   "id": "ifacca",
+   "name": "IFACCA",
+   "ok": true,
+   "items": 0,
+   "fetched": 1,
+   "feed": "https://news.google.com/rss/search?q=site%3Aifacca.org+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
+   "fallback": true,
+   "error": null
   },
   {
    "id": "adams-africa",
@@ -434,12 +434,12 @@
   {
    "id": "mdundo-ir",
    "name": "Mdundo (communiqués investisseurs)",
-   "ok": true,
+   "ok": false,
    "items": 0,
-   "fetched": 19,
-   "feed": "https://news.google.com/rss/search?q=site%3Amfn.se+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site%3Amfn.se+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl"
   },
   {
    "id": "techcabal",
@@ -459,7 +459,7 @@
    "fetched": 0,
    "feed": null,
    "fallback": false,
-   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site%3Atechpoint.africa+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+whe"
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site:techpoint.africa+(music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist)+when:30d&"
   },
   {
    "id": "disrupt-africa",
@@ -475,7 +475,7 @@
    "id": "techeconomy",
    "name": "Techeconomy",
    "ok": true,
-   "items": 1,
+   "items": 0,
    "fetched": 50,
    "feed": "https://techeconomy.ng/feed.xml",
    "fallback": false,
@@ -514,12 +514,12 @@
   {
    "id": "ticketing-business",
    "name": "The Ticketing Business",
-   "ok": true,
+   "ok": false,
    "items": 0,
-   "fetched": 1,
-   "feed": "https://news.google.com/rss/search?q=site%3Atheticketingbusiness.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site%3Atheticketingbusiness.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artis"
   },
   {
    "id": "hypebot",
@@ -559,16 +559,16 @@
    "fetched": 0,
    "feed": null,
    "fallback": false,
-   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site%3Averangola.net+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3"
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site:verangola.net+(music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist)+when:30d&hl="
   },
   {
    "id": "citizen-tz",
    "name": "The Citizen Tanzania",
    "ok": true,
-   "items": 10,
-   "fetched": 77,
-   "feed": "https://news.google.com/rss/search?q=site%3Athecitizen.co.tz+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
+   "items": 1,
+   "fetched": 40,
+   "feed": "https://www.thecitizen.co.tz/rss.xml",
+   "fallback": false,
    "error": null
   },
   {
@@ -595,18 +595,18 @@
    "id": "monitor-ug",
    "name": "Daily Monitor Uganda",
    "ok": true,
-   "items": 9,
-   "fetched": 57,
-   "feed": "https://news.google.com/rss/search?q=site%3Amonitor.co.ug+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
+   "items": 1,
+   "fetched": 40,
+   "feed": "https://www.monitor.co.ug/rss.xml",
+   "fallback": false,
    "error": null
   },
   {
    "id": "pulse-ug",
    "name": "Pulse Uganda",
    "ok": true,
-   "items": 1,
-   "fetched": 18,
+   "items": 2,
+   "fetched": 26,
    "feed": "https://www.pulse.ug/rss-articles.xml",
    "fallback": false,
    "error": null
@@ -686,7 +686,7 @@
    "name": "Yabiladi",
    "ok": true,
    "items": 0,
-   "fetched": 13,
+   "fetched": 1,
    "feed": "https://en.yabiladi.com/rss",
    "fallback": false,
    "error": null
@@ -695,8 +695,8 @@
    "id": "lematin-ma",
    "name": "Le Matin Maroc",
    "ok": true,
-   "items": 12,
-   "fetched": 64,
+   "items": 14,
+   "fetched": 66,
    "feed": "https://news.google.com/rss/search?q=site%3Alematin.ma+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": true,
    "error": null
@@ -834,19 +834,19 @@
   {
    "id": "gn-afrique-musique-fr",
    "name": "Google Actualités: musique africaine industrie",
-   "ok": true,
-   "items": 12,
-   "fetched": 20,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=musique+africaine+industrie+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=musique+africaine+industrie+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr"
   },
   {
    "id": "gn-afrique-business-fr",
    "name": "Google Actualités: musique africaine (streaming OR business OR \"droits d'auteur\")",
    "ok": true,
-   "items": 11,
-   "fetched": 20,
+   "items": 13,
+   "fetched": 21,
    "feed": "https://news.google.com/rss/search?q=musique+africaine+%28streaming+OR+business+OR+%22droits+d%27auteur%22%29+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": false,
    "error": null
@@ -864,22 +864,22 @@
   {
    "id": "gn-ci-fr",
    "name": "Google Actualités: musique (\"Côte d'Ivoire\" OR coupé-décalé)",
-   "ok": false,
-   "items": 0,
-   "fetched": 0,
+   "ok": true,
+   "items": 7,
+   "fetched": 26,
    "feed": "https://news.google.com/rss/search?q=musique+%28%22C%C3%B4te+d%27Ivoire%22+OR+coup%C3%A9-d%C3%A9cal%C3%A9%29+when%3A7d&hl=fr&gl=CI&ceid=CI%3Afr",
    "fallback": false,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=musique+%28%22C%C3%B4te+d%27Ivoire%22+OR+coup%C3%A9-d%C3%A9cal%C3%A9%29+when%3A7d&hl=fr&gl=CI&ceid=CI%3Afr"
+   "error": null
   },
   {
    "id": "gn-cm-fr",
    "name": "Google Actualités: musique (Cameroun OR Congo OR RDC OR Gabon)",
-   "ok": false,
-   "items": 0,
-   "fetched": 0,
+   "ok": true,
+   "items": 16,
+   "fetched": 29,
    "feed": "https://news.google.com/rss/search?q=musique+%28Cameroun+OR+Congo+OR+RDC+OR+Gabon%29+when%3A7d&hl=fr&gl=CM&ceid=CM%3Afr",
    "fallback": false,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=musique+%28Cameroun+OR+Congo+OR+RDC+OR+Gabon%29+when%3A7d&hl=fr&gl=CM&ceid=CM%3Afr"
+   "error": null
   },
   {
    "id": "gn-maghreb-fr",
@@ -895,8 +895,8 @@
    "id": "gn-diaspora-fr",
    "name": "Google Actualités: (afrobeats OR amapiano) (concert OR festival)",
    "ok": true,
-   "items": 1,
-   "fetched": 4,
+   "items": 2,
+   "fetched": 5,
    "feed": "https://news.google.com/rss/search?q=%28afrobeats+OR+amapiano%29+%28concert+OR+festival%29+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": false,
    "error": null
@@ -916,7 +916,7 @@
    "name": "Google Actualités: Nigeria music royalties streaming label",
    "ok": true,
    "items": 4,
-   "fetched": 13,
+   "fetched": 12,
    "feed": "https://news.google.com/rss/search?q=Nigeria+music+royalties+streaming+label+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
    "fallback": false,
    "error": null
@@ -924,12 +924,12 @@
   {
    "id": "gn-za-en",
    "name": "Google Actualités: amapiano South Africa music industry",
-   "ok": true,
-   "items": 10,
-   "fetched": 18,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=amapiano+South+Africa+music+industry+when%3A7d&hl=en&gl=ZA&ceid=ZA%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=amapiano+South+Africa+music+industry+when:7d&hl=en-ZA&gl=ZA&ceid=ZA:en"
   },
   {
    "id": "gn-ke-en",
@@ -939,7 +939,7 @@
    "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=Kenya+Tanzania+Uganda+music+industry+streaming+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen",
    "fallback": false,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Kenya+Tanzania+Uganda+music+industry+streaming+when:7d&hl=en-KE&gl=KE&ceid=KE:en"
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Kenya+Tanzania+Uganda+music+industry+streaming+when%3A7d&hl=en&gl=KE&ceid=KE%3Aen"
   },
   {
    "id": "gn-gh-en",
@@ -954,12 +954,12 @@
   {
    "id": "gn-sponsoring-en",
    "name": "Google Actualités: African music (sponsorship OR partnership)",
-   "ok": true,
-   "items": 5,
-   "fetched": 26,
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
    "feed": "https://news.google.com/rss/search?q=African+music+%28sponsorship+OR+partnership%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
-   "error": null
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=African+music+%28sponsorship+OR+partnership%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen"
   },
   {
    "id": "gn-audiomack",
@@ -1004,12 +1004,12 @@
   {
    "id": "gn-platforms-en",
    "name": "Google Actualités: Spotify Audiomack Boomplay Deezer Africa",
-   "ok": false,
-   "items": 0,
-   "fetched": 0,
+   "ok": true,
+   "items": 1,
+   "fetched": 1,
    "feed": "https://news.google.com/rss/search?q=Spotify+Audiomack+Boomplay+Deezer+Africa+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Spotify+Audiomack+Boomplay+Deezer+Africa+when:7d&hl=en-US&gl=US&ceid=US:en"
+   "error": null
   },
   {
    "id": "bing-afrique-fr",
