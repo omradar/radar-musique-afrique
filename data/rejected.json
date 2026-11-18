@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-18T00:42:51.921296+00:00",
+ "updated": "2026-11-18T06:52:54.868872+00:00",
  "counts": {
-  "pas Afrique": 125,
-  "pas musique": 1155,
-  "spam": 25
+  "pas Afrique": 95,
+  "pas musique": 703,
+  "spam": 4
  },
  "sample": [
   {
@@ -259,152 +259,172 @@
   {
    "reason": "pas musique",
    "source": "BusinessDay Nigeria",
-   "title": "Enugu Assembly passes bill to restrict rent increase to 2% every four years"
+   "title": "CMFC strikes $50m deal to develop Tanzania gold project"
   },
   {
    "reason": "pas musique",
    "source": "BusinessDay Nigeria",
-   "title": "African film companies seek up to $5m as investors scrutinise Nollywood’s bankability"
+   "title": "Dear daughter, be ambitious. But to what end?"
   },
   {
    "reason": "pas musique",
    "source": "BusinessDay Nigeria",
-   "title": "Google picks three Nigerian startups for AI Lab, opening access to Gemini, global investors"
+   "title": "When community investment creates lasting value"
   },
   {
    "reason": "pas musique",
    "source": "BusinessDay Nigeria",
-   "title": "Tinubu approves Kebbi Dry Port at Birnin Kebbi rally, implementation details unclear"
-  },
-  {
-   "reason": "spam",
-   "source": "OkayAfrica",
-   "title": "Tag: felukah"
+   "title": "WORLD IN BRIEF: Nvidia rules out Huang’s return, Rubio dismisses cyberattack fears, Guinea miners stockpile gold after export curbs and othe"
   },
   {
    "reason": "pas musique",
-   "source": "We Are Tech Africa",
-   "title": "Le groupe Yamaha lance son concours d'innovation TRANSPOSE 2026"
+   "source": "BusinessDay Nigeria",
+   "title": "Why products fail (Part XIX)"
   },
   {
    "reason": "pas musique",
-   "source": "We Are Tech Africa",
-   "title": "Égypte : la proptech Aqar Exit lève 200 000 dollars dans l'immobilier"
+   "source": "Financial Afrik",
+   "title": "La quotidienne des marchés financiers africains : à la BRVM, la pression vendeuse l’emporte"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Kenya: Former LSK Chair Seeks Clarity On Live Streaming Provisions in New Law"
+   "source": "Financial Afrik",
+   "title": "APPO : le bilan en quatre axes du ministre Mamadou Sangafowa Coulibaly"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Rwanda: Culture Can't Be Consolidated"
+   "source": "Financial Afrik",
+   "title": "Guinée : PDI Gold décroche les permis de Bankan et Mansounia pour un investissement de 463 millions de dollars"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Rwanda: Spain Crowned Inaugural FIFA U-15 World Cup & Festival Champions"
+   "source": "Financial Afrik",
+   "title": "La Côte d’Ivoire et le Botswana activent la synergie mines-agriculture"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "African Startups Invited to Yamaha's Transpose Innovation Challenge"
+   "source": "Financial Afrik",
+   "title": "Angola-Japon : Tokyo prévoit 262,6 millions USD, dont 260 millions pour une ligne électrique entre Lubango et la Namibie"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Ethiopia: Africans Must Reclaim Cultural Narratives - Nebiyou"
+   "source": "Financial Afrik",
+   "title": "Salon Monétique Régional – 9ème édition (SMR9)"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Rwanda: Mashariki Film Festival Unveils 2026 Iziwacu Nominations"
+   "source": "Financial Afrik",
+   "title": "Entretien avec Kéba KEINDE, PDG de Millenium Investment Corporation"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Nigeria: 2027 Grammys - Six Nigerian Stars Earn Nominations As Five New Categories Debut (Full List)"
+   "source": "Financial Afrik",
+   "title": "Myriam Agbanglanon Adotevi : «l’ambition de SUNU Investment Holding est de devenir un acteur bancaire de référence en Afrique de l’Ouest »"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Kenya: 2027 Grammys - African Stars Take Over the Global Stage As Nominations Drop"
+   "source": "Financial Afrik",
+   "title": "Gabon : les impayés exposent à une nouvelle suspension de l’ITIE"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Nigeria: Fela's 'Gentleman' Soundtracks 'The Thomas Crown Affair' Trailer"
+   "source": "Financial Afrik",
+   "title": "Cameroun : les SVT boudent les émissions obligataires du Trésor en septembre 2026"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Africa: Film Africa Press Release"
+   "source": "Financial Afrik",
+   "title": "Gabon : Eramet lance une augmentation de capital de près de 500 millions €"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Kenya: Nbo Film Festival Kicks Off Its 7th Edition (15 - 25 Oct, 2026)"
+   "source": "Financial Afrik",
+   "title": "UEMOA : la 12ᵉ revue annuelle des réformes communautaires fait étape au Sénégal"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Kenya: NBO Film Festival Announces 2026 Award Winners and Celebrates a Landmark Edition"
+   "source": "Financial Afrik",
+   "title": "Réélu en août, Hakainde Hichilema attendu à Makutano Mining sur fond de coopération minière avec la RDC"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Nigeria: Fela, Sade Adu Officially Inducted Into Rock & Roll Hall of Fame"
+   "source": "Financial Afrik",
+   "title": "Cameroun : les recettes pétrolières transférables reculent de 21,3 % au premier semestre 2026"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Uganda: Joshua Baraka Named Visa's First Ugandan Brand Ambassador"
+   "source": "Financial Afrik",
+   "title": "Le Sénégal lève 52,056 milliards de FCFA de bons du trésor sur le marché financier de l’UMOA"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Africa: All of Africa Today - November 16, 2026"
+   "source": "Sonatel",
+   "title": "Santé et engagement : la Fondation Sonatel et la LISCA se mobilisent pour la prévention du cancer"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Nigeria's Fela Kuti Makes History at Rock & Roll Hall of Fame"
+   "source": "Sonatel",
+   "title": "Sonatel franchit une nouvelle étape dans son histoire boursière avec le fractionnement de ses actions"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Uganda: Captain Morgan Unveils Muck Arena Ahead of Nyege Nyege 2026"
+   "source": "Sonatel",
+   "title": "Inondations, Plan SUR : 9 zones, plus de 6 000 vies touchées"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Nigeria: How Kannywood Movies Are Attracting Millions of Viewers On YouTube"
+   "source": "Business Today Kenya",
+   "title": "KRA Announces New Tax Invoice Rules for Farmers Supplying Factories"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Kenya: Ruto Says He Has Fulfilled 2022 Election Pledges to Maa Community"
+   "source": "Business Today Kenya",
+   "title": "Safaricom Ethiopia Subsidiary to Break Even in 2027"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Nigeria: Limcaf's Big Night and the Business of Art"
+   "source": "Business Today Kenya",
+   "title": "SACCOs Put On Notice for Prioritizing High Dividends"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Nigeria: New TV Series Explores Everyday Life in Modern China"
+   "source": "Business Today Kenya",
+   "title": "NSE Gets Regulatory Nod to Extend Trading Hours"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Cape Verde Votes for President, With Incumbent Favoured to Win"
+   "source": "Business Today Kenya",
+   "title": "Equity Group Q3 Net Earnings Ups 32.2%to KSh71.5 Billion. What is behind the numbers"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (EN)",
-   "title": "Africa Made It: Turning Africa's Cotton Wealth into Jobs, Industry and Economic Power"
+   "source": "Business Today Kenya",
+   "title": "TSC Flags Viral CEO Interview as ‘Misleading Fake’"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Business Today Kenya",
+   "title": "NTT DATA Expands AI Factory Footprint Globally"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Business Today Kenya",
+   "title": "APEC Gathering Vital For Regional Cooperation, Development – Kyrgyz Economist"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Business Today Kenya",
+   "title": "Xi Says China-Vietnam Top-Level Exchanges Inject Positive Energy Into Regional Peace and Development"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Business Today Kenya",
+   "title": "APEC CEO Summit 2026 Kicks Off in Shenzhen With Focus on Regional Cooperation, Future Prosperity"
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCrunch",
+   "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt"
   },
   {
    "reason": "pas musique",
@@ -503,178 +523,48 @@
   },
   {
    "reason": "pas musique",
-   "source": "TechCrunch",
-   "title": "Uber and Zipline’s drone delivery service takes off in Texas, with dozens of cities to follow"
+   "source": "Variety",
+   "title": "‘Dune: Prophecy’ Star Tabu Joins YRF Entertainment’s Netflix Rescue Drama ‘Tunnel Men’ (EXCLUSIVE)"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Maroc: Oujda - Coup d'envoi de la 14e édition du Festival international du cinéma et immigration"
+   "source": "Variety",
+   "title": "‘Panchayat’ Season 5 Sets December Date on Prime Video (EXCLUSIVE)"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Tunisie: Ligue 2 - 8E Journée - Groupe A - Festival offensif de Mégrine Sport"
+   "source": "Variety",
+   "title": "Former Bond Villain Rami Malek Says Robert Pattinson Will Be an ‘Extraordinary’ 007: ‘I Could Not Be More Proud’"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Afrique: La pièce théâtrale marocaine « 40 degrés » doublement primée au Festival de théâtre de Jordanie"
+   "source": "Variety",
+   "title": "Amitabh Bachchan, Amish Tripathi-Backed AAA Game ‘The Age of Bhaarat’ Taps India’s Annapurna Studios for Motion Capture (EXCLUSIVE)"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Tunisie: Journées théâtrales de Carthage - Le coeur de Tunis bat au rythme de la scène"
+   "source": "Variety",
+   "title": "Emma Chamberlain, Wesley Wang, Aryna Sabalenka and More Unveil New Projects for YouTube"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Afrique: 3e Festival international du cinéma au Sahara - Une dynamique régionale ascendante"
+   "source": "Variety",
+   "title": "7 Scene-Stealing Gifts for the 2026 Holiday Season"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Angola: Des cinéastes angolais triomphent au festival du film de Luanda"
+   "source": "Variety",
+   "title": "‘Dancing With the Stars’ Sets First-Ever Live Finale for Season 35"
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Afrique: Plus de 60 films de 39 nationalités sélectionnés pour le Festival international du court métrage de Timimoun au pays"
+   "source": "Variety",
+   "title": "Indian Mythology Meets Mumbai Noir in Animated Feature ‘Bombay Eternal’ From ‘Rana Naidu’ Producer Locomotive Global, AI Outfit Studio Blo ("
   },
   {
    "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Afrique: Doha Film Festival 2026 - Deux Tunisiens au jury des longs-métrages et un court-métrage en compétition"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Afrique: Festival International du Film de Marrakech 2026 - Trois artistes aux parcours d'exception mis à l'honneur"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Afrique: Le Festival international du film de Marrakech invite les grandes voix du cinéma à partager leurs histoires avec le public"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Ile Maurice: Ashish Beesoondial - Faire sortir la créativité hors les murs du Caudan ARTs Centre"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Tunisie: Ministère de la Culture - 950 agents contractuels bientôt régularisés"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Madagascar: Art Lyrique- Madagascar Opera Society fait éclore les voix de demain"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Afrique: Festival international du film de Marrakech - Présence remarquée du cinéma marocain"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Togo: Un festival des sports de plage en décembre"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Afrique: Djerba - Coup d'envoi du festival international du cinéma de la femme et des jeunes"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Madagascar: Viavy film festival - L'appel à films de la troisième édition lancé"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Afrique: JOJ Dakar 2026 - L'artiste Boubou sensibilise les jeunes à travers une performance artistique"
-  },
-  {
-   "reason": "pas musique",
-   "source": "allAfrica (FR)",
-   "title": "Afrique: Festival international du cinéma d'auteur - Projection à Rabat du documentaire « Le Maroc au Liban », une plongée dans quatre siècl"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "La quotidienne des marchés financiers africains : à la BRVM, la pression vendeuse l’emporte"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "APPO : le bilan en quatre axes du ministre Mamadou Sangafowa Coulibaly"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Guinée : PDI Gold décroche les permis de Bankan et Mansounia pour un investissement de 463 millions de dollars"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "La Côte d’Ivoire et le Botswana activent la synergie mines-agriculture"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Angola-Japon : Tokyo prévoit 262,6 millions USD, dont 260 millions pour une ligne électrique entre Lubango et la Namibie"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Salon Monétique Régional – 9ème édition (SMR9)"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Entretien avec Kéba KEINDE, PDG de Millenium Investment Corporation"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Myriam Agbanglanon Adotevi : «l’ambition de SUNU Investment Holding est de devenir un acteur bancaire de référence en Afrique de l’Ouest »"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Gabon : les impayés exposent à une nouvelle suspension de l’ITIE"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Cameroun : les SVT boudent les émissions obligataires du Trésor en septembre 2026"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Gabon : Eramet lance une augmentation de capital de près de 500 millions €"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "UEMOA : la 12ᵉ revue annuelle des réformes communautaires fait étape au Sénégal"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Réélu en août, Hakainde Hichilema attendu à Makutano Mining sur fond de coopération minière avec la RDC"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Cameroun : les recettes pétrolières transférables reculent de 21,3 % au premier semestre 2026"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Financial Afrik",
-   "title": "Le Sénégal lève 52,056 milliards de FCFA de bons du trésor sur le marché financier de l’UMOA"
+   "source": "Variety",
+   "title": "Ron Howard Says a Jim Carrey ‘Grinch’ Sequel Won’t Get Made Unless ‘It Has a Chance to Be Great’: We’re Moving ‘Cautiously’"
   },
   {
    "reason": "pas Afrique",
@@ -683,188 +573,98 @@
   },
   {
    "reason": "pas musique",
-   "source": "Variety",
-   "title": "Longtime Exec Howard Lee Departs as Skydance Confirms New Cable Structure and Division Name Under Channing Dungey"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Variety",
-   "title": "Thom Velde, Former AMC Theatres Executive, Dies at 83"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Variety",
-   "title": "Netflix Eyes Return to Cannes After 10 Years as Festival Lobbies for Joel Coen’s ‘Jack of Spades,’ Starring Josh O’Connor"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Variety",
-   "title": "Jeff Bezos Was ‘Heavily Involved’ in Casting Robert Pattinson as James Bond and Admits Initial Fears ‘Because He’s Already So Famous’"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Variety",
-   "title": "Jennifer Lawrence’s ‘Hunger Games’ Premiere Look Proves the Boudoir Coat Is Back: Here’s Where to Shop Similar Styles Online"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Variety",
-   "title": "CMA Awards Predictions: Expect Ella Langley to Get Everything but Male Vocalist, and Maybe Even That’s Not Safe"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Variety",
-   "title": "Marvel Started Planning for Robert Downey Jr.’s Doctor Doom Before Jonathan Majors Was Fired and ‘Avengers: The Kang Dynasty’ Fell Apart, Sa"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Variety",
-   "title": "The Next Bond Villain: From Idris Elba to Kristen Stewart, 22 Actors Who Should Face Off Against Robert Pattinson"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Variety",
-   "title": "‘Concrete Land’ Leads IDA Documentary Award Nominations With Six; ‘To Hold a Mountain,’ ‘You Can See Everything’ Also Score"
+   "source": "Arise News",
+   "title": "Olympic Eagles Thrash DR Congo 4-0 To Book Zambia Clash In LA 2028 Qualifiers"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Panic As Fire In Lagos Filling Station Spreads To Schools, Students Evacuated"
+   "title": "APC: ADC, NDC Recruiting Youths For Political Violence"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Ikokwu: Wike Lacks Moral Authority To Question Peter Obi’s Patriotism"
+   "title": "US, Mexico Lose Measles-Free Status Amid Record Case Numbers"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Peter Obi To Hold Anambra Town Hall Meeting Friday As NDC Intensifies Nationwide Engagements"
+   "title": "2027: Jigawa Governor Namadi Flags Off APC Campaign, Seeks Support For Tinubu’s Re-Election"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Robert Pattinson Named Next James Bond"
+   "title": "Gunmen Kill 30-Year-Old Man, Injure Parents In Jigawa Home Attack"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Tinubu Orders Release Of 78 Suspects Arrested Over Attack On His Convoy In Abuja"
+   "title": "US Intelligence Agency Scrambles As Classified Communications Network Goes Down"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "NANS Asks NDLEA To Stop N10,000 Student Drug Testing Fee"
+   "title": "Wike: APC Must Get 25% In FCT + Tinubu Pardons Attackers + Peter Obi Condemns Kwankwaso Attack – Trending With Ojy Okpe"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Five EU Countries Set To Announce Rwanda Migrant Deportation Centre"
+   "title": "AFCON 2027: Nigeria Held By Tanzania As Super Eagles Struggle To Find Breakthrough In Qualifier"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "WHO Warns Drug-Resistant Infections Could Kill 39 Million By 2050"
+   "title": "Soludo To Hold Mega Rally In Anambra For Tinubu’s Re-Election"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "England Ends Spain’s 44-Match Unbeaten Run In 3-2 Win"
+   "title": "Biafra Separatist Leader Simon Ekpa Released From Finnish Prison After Sentence Reduction"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Fani-Kayode’s History Of Public Outbursts, Legal Battles And Political Controversies"
+   "title": "NDC Accuses Tinubu Government Of Hiding ₦11.2trn Pipeline Security Spending"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "NGX Group Acquires 10% Stake In Nairobi Securities Exchange"
+   "title": "VIDEO: Fountain of Life Trustees Release Taiwo Odukoya’s Succession Video, Insist on Jimmy’s Removal, Appoint Interim Leader"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Peller And Jarvis Set To Welcome Baby Boy, Share Gender Reveal Moments"
+   "title": "Ms Lauryn Hill To Headline Detty December Fest 2026 In Lagos With Sons YG Marley and Zion"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Okpebholo: Peter Obi Is A Baby Politician"
+   "title": "Jigawa Clash Between Herders, Political Campaign Convoy Leaves One Dead, Two Injured"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Jim Ratcliffe Favoured Conte As Alternative To Pochettino For One Key Reason"
+   "title": "Kwara Court Sets November 20 Deadline For Saraki, Ahmed’s Offa Robbery Arraignment"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Thugs Attack Kwankwaso’s Campaign Convoy In Kano"
+   "title": "Ezekwesili: INEC Cannot Clean Up Voter Register Compromised By Its Own Officials"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "UK Expands Jobs Guarantee Scheme, Targets 90,000 Young People"
+   "title": "NDLEA Arrests Eight Drug Couriers With 634 Cocaine Pellets In Lagos, Kano"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Yemeni Forces Withdraw From Bab Al-Mandab, Leaving Houthis In Control Of Key Red Sea Gateway"
+   "title": "South Africa Summons Fani-Kayode Over Discrimination Allegation, Reminds Him of Diplomatic Protocols"
   },
   {
    "reason": "pas musique",
    "source": "Arise News",
-   "title": "Zelensky Urges Musk, US To Lift Starshield Speed Restrictions Affecting Ukraine’s Drone Defences"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Cameroon’s Telecom Regulator Finds Compliance and Service Gaps at Three Mobile Operators"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Megatel Becomes First Telkom Business MVNO Partner"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Orange Sierra Leone Strengthens Government Ties to Boost Connectivity and Digital Inclusion"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Vodacom South Africa Deploys 5G Carrier Aggregation to Boost Network Performance"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Ghana Sets March 2027 Deadline for 70% 5G Network Coverage"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "ITU Member States Re-Elect Doreen Bogdan-Martin as Secretary-General"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Ericsson, Vodafone Egypt Achieve 14% 5G Efficiency Gain in AI Trial"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Ethiopia’s GDP Rebasing Brings Digital Finance into National Accounts as Ethio telecom Revenue Climbs"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "Safaricom Half-Year Profit Jumps 35.9% to KES 58.2 Billion"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Telecom Review Africa",
-   "title": "6G’s USD 1.24 Trillion Economic Opportunity Hinges on Spectrum"
+   "title": "Zelensky Hails ‘Unprecedented’ Ukrainian Attack As Crimean Bridge Section Collapses"
   },
   {
    "reason": "pas musique",
@@ -988,6 +788,101 @@
   },
   {
    "reason": "pas musique",
+   "source": "Xalima",
+   "title": "Mort du petit-fils d’Abdou Diouf et du fils de Mamadou Lamine Diallo : les investigations s’intensifient, les causes restent à établir"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Xalima",
+   "title": "Nioro du Rip : une employée de maison soupçonnée d’avoir introduit du verre pilé dans le « fondé » de sa patronne"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Xalima",
+   "title": "Crise au Groupe Futurs Médias : une dernière contribution financière annoncée et trois mois pour redresser la situation"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Xalima",
+   "title": "Dakar : plus de 1,2 tonne de foie de bœuf avarié saisie aux Parcelles Assainies, la sécurité alimentaire de nouveau en question"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Xalima",
+   "title": "PASTEF : Bassirou Diomaye Faye et 31 autres personnalités radiés des listes du parti"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Xalima",
+   "title": "CAN 2027 : le Sénégal officiellement qualifié à deux journées de la fin des éliminatoires"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Xalima",
+   "title": "Drame de la Corniche à Dakar : quatre décès annoncés, cinq personnes dans le coma et des causes encore indéterminées"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Xalima",
+   "title": "Drame de la Corniche et naufrage de Lompoul : toutes les vies sénégalaises ont-elles la même valeur médiatique ?"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Xalima",
+   "title": "Hajj 2027 : le Sénégal et l’Arabie saoudite signent un protocole pour améliorer l’organisation du pèlerinage"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneplus",
+   "title": "Dox Mbokk politique de Barth"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneplus",
+   "title": "Les députés entament l’examen du projet de loi de finances en plénière ce mercredi"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneplus",
+   "title": "CAN U23, le Sénégal écarte le Soudan du Sud et rejoint le dernier tour"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneplus",
+   "title": "Pastef acte la radiation de 32 personnes, dont Bassirou Diomaye Diakhar Faye"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneplus",
+   "title": "Elles ont pris le terrain : la leçon politique des filles aux JOJ de Dakar"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneplus",
+   "title": "Au-delà de l'écume de surface, autopsie d'une crise systémique au Sénégal"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneplus",
+   "title": "Des dizaines de femmes accusent un chauffeur Yango de violences sexuelles"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneplus",
+   "title": "La République des idées, retisser le lien social"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneplus",
+   "title": "Normalisation de l'axe Dakar-Paris"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneplus",
+   "title": "JOJ, maintenant, transformons l’essai"
+  },
+  {
+   "reason": "pas musique",
    "source": "SenTV",
    "title": "PASTEF : Bassirou Diomaye Faye et 31 autres personnalités radiés des rangs du parti"
   },
@@ -1038,128 +933,138 @@
   },
   {
    "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Dakar : plus de 1,2 tonne de foie de bœuf avarié saisie aux Parcelles Assainies, la sécurité alimentaire de nouveau en question"
+   "source": "RFI Afrique",
+   "title": "RDC: un an après l'accord stratégique avec les États-Unis, du cuivre livré et de grands chantiers encore à négocier"
   },
   {
    "reason": "pas musique",
-   "source": "Xalima",
-   "title": "PASTEF : Bassirou Diomaye Faye et 31 autres personnalités radiés des listes du parti"
+   "source": "RFI Afrique",
+   "title": "Mozambique: le procès de l'opposant Venancio Mondlane s'est ouvert devant la Cour suprême de Maputo"
   },
   {
    "reason": "pas musique",
-   "source": "Xalima",
-   "title": "CAN 2027 : le Sénégal officiellement qualifié à deux journées de la fin des éliminatoires"
+   "source": "RFI Afrique",
+   "title": "«La RDC est une puissance qu'on ne peut pas ignorer dans la famille francophone», estime Léonard Okitundu"
   },
   {
    "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Drame de la Corniche à Dakar : quatre décès annoncés, cinq personnes dans le coma et des causes encore indéterminées"
+   "source": "RFI Afrique",
+   "title": "RDC: l'armée dément avoir bombardé une ferme appartenant à Joseph Kabila"
   },
   {
    "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Drame de la Corniche et naufrage de Lompoul : toutes les vies sénégalaises ont-elles la même valeur médiatique ?"
+   "source": "RFI Afrique",
+   "title": "Le Nigeria signe un nouvel accord militaire avec le Cameroun, le Niger et le Tchad"
   },
   {
    "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Hajj 2027 : le Sénégal et l’Arabie saoudite signent un protocole pour améliorer l’organisation du pèlerinage"
+   "source": "RFI Afrique",
+   "title": "Nouvelle attaque dans la région de Dosso, dans le sud-ouest du Niger"
   },
   {
    "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Décès de deux jeunes après un repas collectif : les conclusions médicales ne suffisent pas à établir les causes"
+   "source": "RFI Afrique",
+   "title": "Côte d'Ivoire: à Yamoussoukro, le lac aux caïmans fascine toujours"
   },
   {
    "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Sénégal : trésorerie, fiscalité et financement, les entreprises face à leurs difficultés"
+   "source": "RFI Afrique",
+   "title": "Sénégal: le Pastef officialise le départ de ses rangs du président Bassirou Diomaye Faye"
   },
   {
    "reason": "pas musique",
-   "source": "Xalima",
-   "title": "Sénégal–Soudan (4-2) : les Lions renversent la situation, Pathé Mboup marque les esprits"
+   "source": "RFI Afrique",
+   "title": "Report de l'élection du secrétaire général de l'OIF: des négociations tendues et des réformes en attente"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "CAN U23, le Sénégal écarte le Soudan du Sud et rejoint le dernier tour"
+   "source": "RFI Afrique",
+   "title": "Éliminatoires CAN 2027: Sénégal, Mali, Burkina Faso, Cameroun, Bénin et Maroc qualifiés, bilan de la 4e journée"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "Pastef acte la radiation de 32 personnes, dont Bassirou Diomaye Diakhar Faye"
+   "source": "RFI Afrique",
+   "title": "Guerre au Soudan: des drones responsables de près de 75 % des décès de civils cette année, selon l'ONU"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "Elles ont pris le terrain : la leçon politique des filles aux JOJ de Dakar"
+   "source": "RFI Afrique",
+   "title": "Ouganda: deux ans après l'arrestation de l'opposant Kizza Besigye, sa famille alerte sur son état de santé"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "Au-delà de l'écume de surface, autopsie d'une crise systémique au Sénégal"
+   "source": "RFI Afrique",
+   "title": "Guinée: 22 ex-administrateurs territoriaux condamnés à deux ans de prison dans l'affaire d'orpaillage illégal à Siguiri"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "Des dizaines de femmes accusent un chauffeur Yango de violences sexuelles"
+   "source": "RFI Afrique",
+   "title": "Niger: la communauté arabe Mahamid sommée de quitter le pays avant la fin de l'année"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "La République des idées, retisser le lien social"
+   "source": "RFI Afrique",
+   "title": "Gabon: l’ancien ministre et ancien commandant en chef de la police Jean-Boniface Assélé placé sous mandat de dépôt"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "Normalisation de l'axe Dakar-Paris"
+   "source": "RFI Afrique",
+   "title": "Mali: Clément Dembélé, innocenté mais emprisonné depuis trois ans"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "JOJ, maintenant, transformons l’essai"
+   "source": "RFI Afrique",
+   "title": "Éliminatoires CAN 2027: après la polémique sur le record de buts en sélection, Salah peut trancher au Malawi"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "Le Sénégal valide sa qualification pour la CAN"
+   "source": "RFI Afrique",
+   "title": "L'Allemagne, l'Autriche, le Danemark, la Grèce et les Pays-Bas présentent leur projet de «hub de retour» pour migrants au Rwanda"
   },
   {
    "reason": "pas musique",
-   "source": "Seneplus",
-   "title": "Abéné, la gendarmerie interpelle 26 candidats à l’émigration irrégulière"
-  },
-  {
-   "reason": "spam",
-   "source": "Afropop Worldwide",
-   "title": "Ju Percussion"
-  },
-  {
-   "reason": "spam",
-   "source": "Afropop Worldwide",
-   "title": "Cory Henry"
-  },
-  {
-   "reason": "spam",
-   "source": "Afropop Worldwide",
-   "title": "Nour Harkati"
+   "source": "RFI Afrique",
+   "title": "Éliminatoires CAN 2027: le Sénégal et le Cameroun ont un pied en phase finale"
   },
   {
    "reason": "pas musique",
-   "source": "Sonatel",
-   "title": "Santé et engagement : la Fondation Sonatel et la LISCA se mobilisent pour la prévention du cancer"
+   "source": "RFI Afrique",
+   "title": "Report de l’élection du secrétaire général de l’OIF: «Sur le fond, la position de la RDC a gagné»"
   },
   {
    "reason": "pas musique",
-   "source": "Sonatel",
-   "title": "Sonatel franchit une nouvelle étape dans son histoire boursière avec le fractionnement de ses actions"
+   "source": "RFI Afrique",
+   "title": "Les minerais critiques d'Afrique centrale au centre des convoitises et des enjeux géopolitiques"
   },
   {
    "reason": "pas musique",
-   "source": "Sonatel",
-   "title": "Inondations, Plan SUR : 9 zones, plus de 6 000 vies touchées"
+   "source": "RFI Afrique",
+   "title": "«Une fois mon diplôme obtenu, je ne resterai pas»: au Tigré, les étudiants traumatisés par la guerre"
+  },
+  {
+   "reason": "pas musique",
+   "source": "RFI Afrique",
+   "title": "Éliminatoires CAN 2027: Côte d'Ivoire, RDC, Cameroun, Sénégal... Qui peut se qualifier lors de la 4e journée?"
+  },
+  {
+   "reason": "pas musique",
+   "source": "RFI Afrique",
+   "title": "Mali: quatrième semaine de grève des enseignants-chercheurs, les autorités commencent à réagir"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "Billboard",
+   "title": "Wade Forster Dominates 2027 Golden Guitar Nominations"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Billboard",
+   "title": "From the Olivias & Madonna to RAYE & Rosalía, Women Dominate 2027 Pop/Dance Grammy Nominations"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Billboard",
+   "title": "Kevin Parker’s Tame Impala Wins ARIA’s 2026 Global Impact Award"
   },
   {
    "reason": "pas musique",
@@ -1312,119 +1217,29 @@
    "title": "Paul Biya mobilise le RDPC, Dangote lance un méga projet en Namibie, Gadi Eizenkot aux portes du pouvoir… Les 5 infos qu’il ne fallait pas m"
   },
   {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "RDC: un an après l'accord stratégique avec les États-Unis, du cuivre livré et de grands chantiers encore à négocier"
+   "reason": "pas Afrique",
+   "source": "Billboard",
+   "title": "U.K. Labels Veteran Ferdy Unger-Hamilton Joins Gotobeat Advisory Board"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "Billboard",
+   "title": "Live Nation’s 17,000 Gather Brisbane Project Is Approved"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "Billboard",
+   "title": "Noah Kahan Reacts to 2027 Grammy Nominations Snub: ‘I Was In My Feelings for a Sec’"
   },
   {
    "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Report de l'élection du secrétaire général de l'OIF: des négociations tendues et des réformes en attente"
+   "source": "Billboard",
+   "title": "‘Grand Theft Auto VI’ Revs Its Engines & Leads 2026 Game Awards Nominations: Full List"
   },
   {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Éliminatoires CAN 2027: Sénégal, Mali, Burkina Faso, Cameroun, Bénin et Maroc qualifiés, bilan de la 4e journée"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Guerre au Soudan: des drones responsables de près de 75 % des décès de civils cette année, selon l'ONU"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Ouganda: deux ans après l'arrestation de l'opposant Kizza Besigye, sa famille alerte sur son état de santé"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Guinée: 22 ex-administrateurs territoriaux condamnés à deux ans de prison dans l'affaire d'orpaillage illégal à Siguiri"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Niger: la communauté arabe Mahamid sommée de quitter le pays avant la fin de l'année"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Gabon: l’ancien ministre et ancien commandant en chef de la police Jean-Boniface Assélé placé sous mandat de dépôt"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Mali: Clément Dembélé, innocenté mais emprisonné depuis trois ans"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Éliminatoires CAN 2027: après la polémique sur le record de buts en sélection, Salah peut trancher au Malawi"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "L'Allemagne, l'Autriche, le Danemark, la Grèce et les Pays-Bas présentent leur projet de «hub de retour» pour migrants au Rwanda"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Éliminatoires CAN 2027: le Sénégal et le Cameroun ont un pied en phase finale"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Report de l’élection du secrétaire général de l’OIF: «Sur le fond, la position de la RDC a gagné»"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Les minerais critiques d'Afrique centrale au centre des convoitises et des enjeux géopolitiques"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "«Une fois mon diplôme obtenu, je ne resterai pas»: au Tigré, les étudiants traumatisés par la guerre"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Éliminatoires CAN 2027: Côte d'Ivoire, RDC, Cameroun, Sénégal... Qui peut se qualifier lors de la 4e journée?"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Mali: quatrième semaine de grève des enseignants-chercheurs, les autorités commencent à réagir"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Guinée: 1 557 Ouest-Africains expulsés après leurs condamnations pour orpaillage clandestin"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Menace jihadiste en Guinée: «Il y a un déficit de maillage sécuritaire du gouvernement guinéen»"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Niger: un rapport provisoire de la Cour des comptes critique la société en charge de la gestion de l’eau"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Cameroun: début des contrôles et sanctions de mototaxis non en règle «pour que le secteur soit assaini»"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "RDC: Grève contre l’interdiction des baleinières en bois et pour exiger une «décision concertée» avec Kinshasa"
-  },
-  {
-   "reason": "pas musique",
-   "source": "RFI Afrique",
-   "title": "Présidentielle au Cap-Vert: José María Neves rempile pour un second mandat de cinq ans"
+   "reason": "pas Afrique",
+   "source": "Billboard",
+   "title": "DistroKid Gives AI Upload Data to UMG and Sony for Suno Copyright Lawsuit After Initial Refusal"
   },
   {
    "reason": "pas Afrique",
@@ -1435,46 +1250,6 @@
    "reason": "pas musique",
    "source": "Billboard",
    "title": "Cody Johnson on Why He’s Skipping 2026 CMA Awards: ‘Going 100 MPH All the Time Isn’t Healthy’"
-  },
-  {
-   "reason": "pas Afrique",
-   "source": "Billboard",
-   "title": "Travis Scott and Don Toliver Sued Over Sample on Hit JACKBOYS Track ‘What To Do?’"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Billboard",
-   "title": "How to Watch Billboard’s 2026 CMA Awards Red Carpet Livestream"
-  },
-  {
-   "reason": "pas Afrique",
-   "source": "Billboard",
-   "title": "These 12 Follow-Ups to Grammy Album of the Year Winners Didn’t Receive a Single Nomination: Full List"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Billboard",
-   "title": "Madonna Calls Dance ‘The Hidden Language of the Soul’ in 2027 Grammy Nomination ‘Love Letter’"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Billboard",
-   "title": "Cynthia Erivo to Host Rockefeller Center Tree Lighting Starring Kelly Clarkson, Alanis Morissette & More"
-  },
-  {
-   "reason": "pas Afrique",
-   "source": "Billboard",
-   "title": "VENU Honors Jorge Juárez With Disruptor Award at 2026 Billboard Live Music Summit | Billboard"
-  },
-  {
-   "reason": "pas Afrique",
-   "source": "Billboard",
-   "title": "Justice, Pretty Lights, Honey Dijon & RL Grime Lead Lightning In a Bottle 2027 Lineup"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Billboard",
-   "title": "Chris Brown Gives Elderly Woman a Night to Remember With Sultry ‘Take You Down’ Performance in Los Angeles"
   },
   {
    "reason": "pas musique",
@@ -1528,53 +1303,153 @@
   },
   {
    "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Safaricom Ethiopia Subsidiary to Break Even in 2027"
+   "source": "Osiris",
+   "title": "Bénin : le Cyber Africa Forum 2026 ouvre une semaine consacrée au numérique et à l'innovation"
   },
   {
    "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "SACCOs Put On Notice for Prioritizing High Dividends"
+   "source": "Osiris",
+   "title": "Cameroun : CAMTEL chiffre à 521 millions $ son manque à gagner sur la fibre optique"
   },
   {
    "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "NSE Gets Regulatory Nod to Extend Trading Hours"
+   "source": "Osiris",
+   "title": "Souveraineté numérique : l'Afrique face au piège de l'autarcie"
   },
   {
    "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Equity Group Q3 Net Earnings Ups 32.2%to KSh71.5 Billion. What is behind the numbers"
+   "source": "Osiris",
+   "title": "Le Sénégal réélu au Conseil de l'UIT pour 2027-2030, la Côte d'Ivoire fait son entrée"
   },
   {
    "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "TSC Flags Viral CEO Interview as ‘Misleading Fake’"
+   "source": "Osiris",
+   "title": "Mauritanie : de 6,5 % à 20 % d'acheteurs en ligne, le pari d'un nouveau marché numérique"
   },
   {
    "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "NTT DATA Expands AI Factory Footprint Globally"
+   "source": "Osiris",
+   "title": "Pourquoi l'Afrique de l'Ouest a besoin d'un passeport pour ses fintechs"
   },
   {
    "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "APEC Gathering Vital For Regional Cooperation, Development – Kyrgyz Economist"
+   "source": "Osiris",
+   "title": "Kenya–États-Unis : Nairobi vise la formation de 30 000 jeunes aux métiers du numérique"
   },
   {
    "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Xi Says China-Vietnam Top-Level Exchanges Inject Positive Energy Into Regional Peace and Development"
+   "source": "Osiris",
+   "title": "Malawi : fraude mobile et couverture réseau mettent le régulateur télécoms sous pression"
   },
   {
    "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "APEC CEO Summit 2026 Kicks Off in Shenzhen With Focus on Regional Cooperation, Future Prosperity"
+   "source": "Osiris",
+   "title": "UIT : le Sénégal reconduit au Conseil"
   },
   {
    "reason": "pas musique",
-   "source": "Business Today Kenya",
-   "title": "Moi University Turns to Sugarcane Farming, Targets 1,500 Acres"
+   "source": "Osiris",
+   "title": "Mauritanie : l'enseignement supérieur accélère sa transformation numérique"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Osiris",
+   "title": "Smart Zambia explore un rapprochement avec MTN MoMo pour les paiements publics"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Osiris",
+   "title": "Orange Sierra Leone : le renforcement des investissements discuté avec les autorités"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Osiris",
+   "title": "Nele Leosk, experte estonienne de l'e-gouvernance, élue à la tête du Bureau de développement de l'UIT"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Osiris",
+   "title": "Projet PASSANT : derrière le licenciement de trois cadres de SENUM SA, un chantier de fibre optique à 50 milliards FCFA"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Osiris",
+   "title": "Conseil de l'UIT : le Sénégal réélu pour le mandat 2027-2030"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Osiris",
+   "title": "Adama Kane, une voix sénégalaise dans les instances mondiales du numérique"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Osiris",
+   "title": "État civil : 77 % des 629 centres déjà équipés du logiciel de gestion, selon le directeur général de l'ANEC"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Osiris",
+   "title": "Le Sénégal réélu au Conseil de l'Union internationale des télécommunications"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Osiris",
+   "title": "Télécoms : ce que les pays africains recherchent au Conseil de l'UIT"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Osiris",
+   "title": "Budget 2027 : les députés rejettent en commission le projet du ministère des Télécommunications et du Numérique"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Surpris en pleine nuit dans un daara : l'intrus écope de 5 ans ferme"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "« Je n’ai pas éjaculé » : la prostituée, le maçon et la passe à 2 500 F CFA"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Budget 2027 : une plénière décisive ce mercredi"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Pannes à répétition aux États-Unis : \"aucune preuve\" de lien entre elles ou de malveillance, insiste Rubio"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "U-23 : La Fédération révèle une histoire bouleversante derrière la victoire des Lionceaux"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Ghana : un voyageur de 58 ans arrêté après avoir avalé 58 capsules de cocaïne présumée"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Cinq pays de l'UE annoncent la création d'un centre de rétention pour migrants au Rwanda."
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Wahbi Khazri : « Pour moi, le Sénégal est la meilleure équipe d’Afrique, la plus complète...»"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "\"Un fantôme venu du passé\" : aux États-Unis, des médecins face au retour de la rougeole"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Seneweb",
+   "title": "Maïmouna Diallo et le ressortissant Belge : l'histoire d'amour qui vire à la sextorsion"
   },
   {
    "reason": "pas musique",
@@ -1713,163 +1588,23 @@
   },
   {
    "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Foncier, crédits et numérique : Le Sénégal déploie sa feuille de route pour l’autonomisation économique des femmes"
+   "source": "Senego",
+   "title": "À Paris, Diomaye Faye échange avec Rothschild & Co et Vinci sur des projets au Sénégal"
   },
   {
    "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "USA : La Guinée pleure la mort de deux de ses ressortissants après l’effondrement d’un immeuble à Brooklyn"
+   "source": "Senego",
+   "title": "La Matinale Senego : Pastef écarte Diomaye, Aldiouma Sow riposte"
   },
   {
    "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Plénière sur le Budget 2027 : Les 4 principaux points que les députés vont examiner"
+   "source": "Senego",
+   "title": "Après le 3-1, Serigne Saliou Dia veut des renforts de l’équipe A pour le Maroc"
   },
   {
    "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Qualifications CAN-2027 : La Tunisie quitte la pelouse après un penalty controversé accordé à la Libye"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Ibrahima Cissokho : “Le Président de la République prendra toutes ses responsabilités au moment opportun…”"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Nigeria : un basketteur américain arrêté à Lagos avec près de 34 kg de cannabis"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Guédiawaye : Pour une histoire de « barada », elle asperge sa voisine d’eau bouillante"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Garçon de 3 ans égorgé à touba, assemblée vers le rejet de la lfi, le débat se pose...."
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Bras de fer entre l'exécutif et l'Assemblée : Une ancienne députée tire la sonnette d'alarme !"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Qualifications CAN 2027 : l’Angola d’Aliou Cissé domine le Soudan du Sud et se rapproche de la qualification"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Sénégal - FMI, rejet de budgets : Ces trois points “cruciaux” à régler pour ne pas dire adieu aux 2.2 milliards de dollars"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Seneweb",
-   "title": "Dahira Bi avec Oustaz Makhtar Sarr - Firi \"Al-Akhdari\" partie 69"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Bénin : le Cyber Africa Forum 2026 ouvre une semaine consacrée au numérique et à l'innovation"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Cameroun : CAMTEL chiffre à 521 millions $ son manque à gagner sur la fibre optique"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Souveraineté numérique : l'Afrique face au piège de l'autarcie"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Le Sénégal réélu au Conseil de l'UIT pour 2027-2030, la Côte d'Ivoire fait son entrée"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Mauritanie : de 6,5 % à 20 % d'acheteurs en ligne, le pari d'un nouveau marché numérique"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Pourquoi l'Afrique de l'Ouest a besoin d'un passeport pour ses fintechs"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Kenya–États-Unis : Nairobi vise la formation de 30 000 jeunes aux métiers du numérique"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Malawi : fraude mobile et couverture réseau mettent le régulateur télécoms sous pression"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "UIT : le Sénégal reconduit au Conseil"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Mauritanie : l'enseignement supérieur accélère sa transformation numérique"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Smart Zambia explore un rapprochement avec MTN MoMo pour les paiements publics"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Orange Sierra Leone : le renforcement des investissements discuté avec les autorités"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Nele Leosk, experte estonienne de l'e-gouvernance, élue à la tête du Bureau de développement de l'UIT"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Projet PASSANT : derrière le licenciement de trois cadres de SENUM SA, un chantier de fibre optique à 50 milliards FCFA"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Conseil de l'UIT : le Sénégal réélu pour le mandat 2027-2030"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Adama Kane, une voix sénégalaise dans les instances mondiales du numérique"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "État civil : 77 % des 629 centres déjà équipés du logiciel de gestion, selon le directeur général de l'ANEC"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Le Sénégal réélu au Conseil de l'Union internationale des télécommunications"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Télécoms : ce que les pays africains recherchent au Conseil de l'UIT"
-  },
-  {
-   "reason": "pas musique",
-   "source": "Osiris",
-   "title": "Budget 2027 : les députés rejettent en commission le projet du ministère des Télécommunications et du Numérique"
+   "source": "Senego",
+   "title": "Air Sénégal : une passerelle heurte l’appareil, les vols Dakar-Paris perturbés"
   },
   {
    "reason": "pas musique",
@@ -2005,6 +1740,271 @@
    "reason": "pas musique",
    "source": "Senego",
    "title": "Lalaké – Saison 2- Episode 35"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Pastef : Bassirou Diomaye Faye et 31 autres personnalités définitivement rayés de la liste des membres du parti"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Après les JOJ, le Sénégal doit rentabiliser ses investissements sportifs"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Prison avant d’être innocenté : comment se faire indemniser par l’État du Sénégal ?"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Pathé Mboup impliqué sur trois buts en deux matchs avec le Sénégal, malgré peu de temps de jeu"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Après le drame de Sadatou, la FENOPAME exige l’application de la loi 99-05"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "« De Judu Tay, Eupp Dolé Tay à Naniou outt ay pexe » : Dahirou Thiam « détruit » les membres de Kiiraay"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Tunisie-Libye : sept minutes d’arrêt après un pénalty contesté par les Tunisiens"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Senego",
+   "title": "Casamance : Balla Gaye 2 mobilise une marée humaine pour son Open Press (Direct)"
+  },
+  {
+   "reason": "pas musique",
+   "source": "OAPI",
+   "title": "De l’Afrique à l’Asie, L’OAPI renforce son rayonnement international avec les leaders mondiaux de l’innovation et des brevets en Chine"
+  },
+  {
+   "reason": "pas musique",
+   "source": "OAPI",
+   "title": "PUBLICATION N° 21MQ / 2026 du 13 Novembre 2026"
+  },
+  {
+   "reason": "pas musique",
+   "source": "OAPI",
+   "title": "Audience au sommet, inauguration et distinction, l’OAPI marque une étape importante en République centrafricaine"
+  },
+  {
+   "reason": "pas musique",
+   "source": "OAPI",
+   "title": "PUBLICATION N° 21DM / 2026 du 05 Novembre 2026"
+  },
+  {
+   "reason": "pas musique",
+   "source": "OAPI",
+   "title": "PUBLICATION N° 08 BR / 2026 du 04 Novembre 2026"
+  },
+  {
+   "reason": "pas musique",
+   "source": "OAPI",
+   "title": "PUBLICATION N° 20MQ / 2026 du 30 Octobre 2026"
+  },
+  {
+   "reason": "pas musique",
+   "source": "OAPI",
+   "title": "PUBLICATION N° 10NC / 2026 du 30 Octobre 2026"
+  },
+  {
+   "reason": "pas musique",
+   "source": "OAPI",
+   "title": "OAPI–OPIC : un partenariat stratégique renforcé pour la protection et la valorisation de l’innovation"
+  },
+  {
+   "reason": "pas musique",
+   "source": "OAPI",
+   "title": "Avis de report d’appel d’offres mise à jour de la base de données jurisprudentielles"
+  },
+  {
+   "reason": "pas musique",
+   "source": "OAPI",
+   "title": "Avis d’appel d’offres acquisition Oracle 23 ai"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "The InterSpace Daily",
+   "title": "Indonesia’s 8% Royalty Cost Cap Still Needs a Payout Trail"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "The InterSpace Daily",
+   "title": "Tencent Music Says AI Music Listening Remains Negligible"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "The InterSpace Daily",
+   "title": "A Spotify Release Block Still Needs a Delivery Correction"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "The InterSpace Daily",
+   "title": "Make the Setlist a Show Deliverable"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "The InterSpace Daily",
+   "title": "Universal Music and Sony Music Resolve DistroKid Subpoena Dispute"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "The InterSpace Daily",
+   "title": "Spotify Lets Artists Block Releases From Their Profiles"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "The InterSpace Daily",
+   "title": "What a Music Business Job Opening Should Tell an Independent Label"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "The InterSpace Daily",
+   "title": "The Missing Line in a Release Report Is Audience Origin"
+  },
+  {
+   "reason": "pas Afrique",
+   "source": "The InterSpace Daily",
+   "title": "What $665 Million in Rights Financing Means for a Catalogue Sale"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Adams & Adams IP Africa",
+   "title": "One Letter, Two Classes: Trolley Company v Riekert and the Limits of Paring Down"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Adams & Adams IP Africa",
+   "title": "Angola Approves EPO Patent Validation Agreement"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Adams & Adams IP Africa",
+   "title": "When the Workplace is Not Enough: Coida, Co-Employee Negligence and the Limits of the Employer’s Statutory Shield"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Adams & Adams IP Africa",
+   "title": "Your Brand, Their Domain: What Can You Do?"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Adams & Adams IP Africa",
+   "title": "Namibia’s AI crop deal sharpens focus on procurement and data governance"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Adams & Adams IP Africa",
+   "title": "Plant health rules become a passport to agricultural markets"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Adams & Adams IP Africa",
+   "title": "South Africa opens ARC vaccine IP to private manufacturing"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Adams & Adams IP Africa",
+   "title": "Côte d’Ivoire builds research capacity around coffee and cocoa genetics"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Adams & Adams IP Africa",
+   "title": "Africa’s seed trade gains momentum through regional integration"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Adams & Adams IP Africa",
+   "title": "Digital agriculture moves towards connected systems across Africa"
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCabal",
+   "title": "👨🏿‍🚀TechCabal Daily – Cassava seeks $1 billion for AI"
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCabal",
+   "title": "👨🏿‍🚀TechCabal Daily – ‘Starlink, you’ve been served’"
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCabal",
+   "title": "Benin wants to be Africa’s AI testbed. Cybersecurity is its starting point"
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCabal",
+   "title": "From tonal markings to XML files: How Ubini is teaching machines to speak Edo language"
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCabal",
+   "title": "I judged ten startups in Abidjan. Too few women got to make their case."
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCabal",
+   "title": "Stablecoins promised to fix cross-border payments. Fragmentation is getting in the way."
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCabal",
+   "title": "Telkom returns to growth as MTN takeover talks put its future in focus"
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCabal",
+   "title": "INEC’s voter register cleanup raises questions about staff oversight"
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCabal",
+   "title": "Jensen Huang: The anatomy of a scandal"
+  },
+  {
+   "reason": "pas musique",
+   "source": "TechCabal",
+   "title": "African investors are building exits and finding money in new places"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Techeconomy",
+   "title": "Enugu Assembly Passes Bill, Caps Rent Increase at 2% in 4 years"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Techeconomy",
+   "title": "Spiro Deploys 160,000 E-Bike across Africa, Completes 60 Million Battery Swaps"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Techeconomy",
+   "title": "Clea Launches Faster USD Payment Routes to China, Hong Kong for African Importers"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Techeconomy",
+   "title": "Privacy Assembly: Nigeria Wins Excellence in Accountability Award"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Techeconomy",
+   "title": "Serena Williams Launches New Venture Capital Firm, Targets $200m Fund"
+  },
+  {
+   "reason": "pas musique",
+   "source": "Techeconomy",
+   "title": "Three Nigerian Startups Selected for Google’s Africa Applied AI Lab cohort 1"
   }
  ]
 }
