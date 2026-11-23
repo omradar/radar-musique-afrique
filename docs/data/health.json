@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T22:56:52.707468+00:00",
+ "updated": "2026-11-23T04:40:55.435633+00:00",
  "sources": [
   {
    "id": "musicinafrica",
@@ -15,8 +15,8 @@
    "id": "afropop",
    "name": "Afropop Worldwide",
    "ok": true,
-   "items": 33,
-   "fetched": 37,
+   "items": 30,
+   "fetched": 34,
    "feed": "https://news.google.com/rss/search?q=site%3Aafropop.org+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -25,8 +25,8 @@
    "id": "okayafrica",
    "name": "OkayAfrica",
    "ok": true,
-   "items": 40,
-   "fetched": 50,
+   "items": 39,
+   "fetched": 55,
    "feed": "https://news.google.com/rss/search?q=site%3Aokayafrica.com+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -65,7 +65,7 @@
    "id": "allafrica-fr",
    "name": "allAfrica (FR)",
    "ok": true,
-   "items": 20,
+   "items": 23,
    "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Afr.allafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": true,
@@ -74,12 +74,12 @@
   {
    "id": "allafrica-en",
    "name": "allAfrica (EN)",
-   "ok": true,
-   "items": 17,
-   "fetched": 57,
-   "feed": "https://news.google.com/rss/search?q=site%3Aallafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "fetched": 0,
+   "feed": null,
+   "fallback": false,
+   "error": "aucun flux trouvé (site sans RSS ou qui bloque GitHub) ; relais Google News : HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site%3Aallafrica.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3"
   },
   {
    "id": "financialafrik",
@@ -175,8 +175,8 @@
    "id": "citinewsroom",
    "name": "Citi Newsroom",
    "ok": true,
-   "items": 5,
-   "fetched": 62,
+   "items": 6,
+   "fetched": 63,
    "feed": "https://news.google.com/rss/search?q=site%3Acitinewsroom.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -255,8 +255,8 @@
    "id": "rfi-afrique",
    "name": "RFI Afrique",
    "ok": true,
-   "items": 2,
-   "fetched": 23,
+   "items": 0,
+   "fetched": 28,
    "feed": "https://www.rfi.fr/fr/afrique/rss",
    "fallback": false,
    "error": null
@@ -285,7 +285,7 @@
    "id": "ghanaweb",
    "name": "GhanaWeb",
    "ok": true,
-   "items": 16,
+   "items": 17,
    "fetched": 100,
    "feed": "https://news.google.com/rss/search?q=site%3Aghanaweb.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
@@ -305,7 +305,7 @@
    "id": "senego",
    "name": "Senego",
    "ok": true,
-   "items": 6,
+   "items": 4,
    "fetched": 40,
    "feed": "https://senego.com/feed",
    "fallback": false,
@@ -386,7 +386,7 @@
    "name": "PwC Africa Entertainment & Media Outlook",
    "ok": true,
    "items": 0,
-   "fetched": 19,
+   "fetched": 31,
    "feed": "https://news.google.com/rss/search?q=site%3Apwc.com+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -436,7 +436,7 @@
    "name": "Mdundo (communiqués investisseurs)",
    "ok": true,
    "items": 0,
-   "fetched": 12,
+   "fetched": 11,
    "feed": "https://news.google.com/rss/search?q=site%3Amfn.se+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -556,7 +556,7 @@
    "name": "Ver Angola",
    "ok": true,
    "items": 4,
-   "fetched": 41,
+   "fetched": 44,
    "feed": "https://news.google.com/rss/search?q=site%3Averangola.net+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=pt&gl=PT&ceid=PT%3Apt",
    "fallback": true,
    "error": null
@@ -575,10 +575,10 @@
    "id": "daily-news-tz",
    "name": "Daily News Tanzania",
    "ok": true,
-   "items": 7,
-   "fetched": 100,
-   "feed": "https://news.google.com/rss/search?q=site%3Adailynews.co.tz+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
-   "fallback": true,
+   "items": 0,
+   "fetched": 10,
+   "feed": "https://dailynews.co.tz/comments/feed/",
+   "fallback": false,
    "error": null
   },
   {
@@ -645,8 +645,8 @@
    "id": "newtimes-rw",
    "name": "The New Times Rwanda",
    "ok": true,
-   "items": 18,
-   "fetched": 49,
+   "items": 17,
+   "fetched": 52,
    "feed": "https://news.google.com/rss/search?q=site%3Anewtimes.co.rw+%28music+OR+musique+OR+concert+OR+festival+OR+streaming+OR+artiste+OR+artist%29+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": true,
    "error": null
@@ -686,7 +686,7 @@
    "name": "Yabiladi",
    "ok": true,
    "items": 0,
-   "fetched": 5,
+   "fetched": 2,
    "feed": "https://en.yabiladi.com/rss",
    "fallback": false,
    "error": null
@@ -845,8 +845,8 @@
    "id": "gn-afrique-business-fr",
    "name": "Google Actualités: musique africaine (streaming OR business OR \"droits d'auteur\")",
    "ok": true,
-   "items": 7,
-   "fetched": 17,
+   "items": 6,
+   "fetched": 16,
    "feed": "https://news.google.com/rss/search?q=musique+africaine+%28streaming+OR+business+OR+%22droits+d%27auteur%22%29+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": false,
    "error": null
@@ -895,8 +895,8 @@
    "id": "gn-diaspora-fr",
    "name": "Google Actualités: (afrobeats OR amapiano) (concert OR festival)",
    "ok": true,
-   "items": 5,
-   "fetched": 9,
+   "items": 6,
+   "fetched": 10,
    "feed": "https://news.google.com/rss/search?q=%28afrobeats+OR+amapiano%29+%28concert+OR+festival%29+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
    "fallback": false,
    "error": null
@@ -906,7 +906,7 @@
    "name": "Google Actualités: Afrobeats music industry business",
    "ok": true,
    "items": 5,
-   "fetched": 12,
+   "fetched": 15,
    "feed": "https://news.google.com/rss/search?q=Afrobeats+music+industry+business+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
    "fallback": false,
    "error": null
@@ -915,7 +915,7 @@
    "id": "gn-nigeria-en",
    "name": "Google Actualités: Nigeria music royalties streaming label",
    "ok": true,
-   "items": 4,
+   "items": 5,
    "fetched": 10,
    "feed": "https://news.google.com/rss/search?q=Nigeria+music+royalties+streaming+label+when%3A7d&hl=en&gl=NG&ceid=NG%3Aen",
    "fallback": false,
@@ -925,8 +925,8 @@
    "id": "gn-za-en",
    "name": "Google Actualités: amapiano South Africa music industry",
    "ok": true,
-   "items": 13,
-   "fetched": 27,
+   "items": 12,
+   "fetched": 26,
    "feed": "https://news.google.com/rss/search?q=amapiano+South+Africa+music+industry+when%3A7d&hl=en&gl=ZA&ceid=ZA%3Aen",
    "fallback": false,
    "error": null
@@ -946,7 +946,7 @@
    "name": "Google Actualités: Ghana music industry afrobeats highlife",
    "ok": true,
    "items": 5,
-   "fetched": 9,
+   "fetched": 8,
    "feed": "https://news.google.com/rss/search?q=Ghana+music+industry+afrobeats+highlife+when%3A7d&hl=en&gl=GH&ceid=GH%3Aen",
    "fallback": false,
    "error": null
@@ -955,7 +955,7 @@
    "id": "gn-sponsoring-en",
    "name": "Google Actualités: African music (sponsorship OR partnership)",
    "ok": true,
-   "items": 14,
+   "items": 15,
    "fetched": 31,
    "feed": "https://news.google.com/rss/search?q=African+music+%28sponsorship+OR+partnership%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
@@ -966,7 +966,7 @@
    "name": "Google Actualités: Audiomack (announces OR launches OR partnership OR Africa)",
    "ok": true,
    "items": 5,
-   "fetched": 17,
+   "fetched": 16,
    "feed": "https://news.google.com/rss/search?q=Audiomack+%28announces+OR+launches+OR+partnership+OR+Africa%29+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
    "fallback": false,
    "error": null
@@ -996,7 +996,7 @@
    "name": "Google Actualités: (Orange OR Sonatel OR \"Max it\") (musique OR sponsoring OR concert)",
    "ok": true,
    "items": 0,
-   "fetched": 62,
+   "fetched": 28,
    "feed": "https://news.google.com/rss/search?q=%28Orange+OR+Sonatel+OR+%22Max+it%22%29+%28musique+OR+sponsoring+OR+concert%29+when%3A7d&hl=fr&gl=SN&ceid=SN%3Afr",
    "fallback": false,
    "error": null
