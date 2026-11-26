@@ -1,19 +1,31 @@
 name: Newsletter du jeudi
 
-# GitHub Actions travaille en UTC. 18h à Paris = 16h UTC en été, 17h UTC en hiver.
-# Les deux horaires sont déclarés. Le script ne s'exécute qu'à partir de 18h heure de Paris
-# et ne régénère jamais une édition déjà publiée.
+# GitHub Actions travaille en UTC et retarde ou saute parfois les tâches planifiées
+# (aucun lancement le jeudi 26/11/2026). On déclare donc plusieurs lancements :
+# le script produit l'édition du jeudi à partir de 18h (heure de Paris), rattrape jusqu'au
+# vendredi 14h si besoin, et ne régénère jamais une édition déjà publiée.
+# Minutes décalées pour éviter les heures pleines, où GitHub est le plus saturé.
 on:
   schedule:
-    - cron: "0 16 * * 4"
-    - cron: "0 17 * * 4"
+    - cron: "7 16 * * 4"    # 18h07 Paris en été
+    - cron: "7 17 * * 4"    # 18h07 Paris en hiver
+    - cron: "37 18 * * 4"   # secours du soir
+    - cron: "23 20 * * 4"   # secours du soir
+    - cron: "41 5 * * 5"    # rattrapage vendredi matin
+    - cron: "13 9 * * 5"    # dernier rattrapage vendredi
   workflow_dispatch:   # lancement manuel : génère tout de suite
+    inputs:
+      date:
+        description: "Date de l'édition (AAAA-MM-JJ), vide = aujourd'hui"
+        required: false
+        default: ""
 
 permissions:
   contents: write
 
+# File d'attente propre à la newsletter : un lancement des actus ne peut plus l'annuler.
 concurrency:
-  group: repo-write
+  group: newsletter
   cancel-in-progress: false
 
 jobs:
@@ -33,7 +45,13 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/newsletter.py ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
+          EDITION_DATE: ${{ github.event.inputs.date }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python scripts/newsletter.py --force ${EDITION_DATE:+--date "$EDITION_DATE"}
+          else
+            python scripts/newsletter.py
+          fi
 
       - name: Publication
         run: |
@@ -44,6 +62,10 @@ jobs:
             echo "Rien à publier."
           else
             git commit -m "chore: newsletter $(date -u +'%Y-%m-%d')"
-            git pull --rebase
-            git push
+            # les actus peuvent pousser en même temps : on réessaie
+            for i in 1 2 3 4 5; do
+              git pull --rebase && git push && exit 0
+              sleep $((i * 10))
+            done
+            exit 1
           fi

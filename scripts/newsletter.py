@@ -2,8 +2,10 @@
 """Génère la newsletter hebdomadaire (français et anglais) avec l'API Claude.
 
 Usage :
-  python scripts/newsletter.py            ne s'exécute que le jeudi à partir de 18h (heure de Paris)
+  python scripts/newsletter.py            édition du jeudi : à partir du jeudi 18h, rattrapage possible
+                                          jusqu'au vendredi 14h (heure de Paris) si elle n'existe pas encore
   python scripts/newsletter.py --force    génère tout de suite
+  python scripts/newsletter.py --force --date 2026-11-26   régénère une édition datée
   python scripts/newsletter.py --dry-run  affiche le prompt sans appeler l'API
   python scripts/newsletter.py --no-fetch ne va pas lire le texte des articles (tests hors ligne)
 """
@@ -473,20 +475,43 @@ def render_html(md_text, lang, site_note):
     return title, HTML_TEMPLATE.format(lang=lang, title=title, brand=brand, body=body, footer=site_note)
 
 
+def edition_date(now_paris, args):
+    """Date de l'édition à produire, ou None si on est hors créneau.
+
+    Créneau normal : le jeudi à partir de 18h (heure de Paris). GitHub retarde ou saute parfois
+    les tâches planifiées (aucun lancement le 26/11/2026) : on rattrape donc jusqu'au vendredi 14h,
+    en gardant la date du jeudi. Plusieurs lancements dans le créneau ne produisent qu'une édition.
+    """
+    if args.date:
+        return datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=PARIS)
+    wd, h = now_paris.weekday(), now_paris.hour
+    if wd == 3 and h >= 18:
+        return now_paris
+    if wd == 4 and h < 14:
+        return now_paris - timedelta(days=1)
+    if args.force or args.dry_run:
+        return now_paris
+    return None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-fetch", action="store_true", help="ne lit pas le texte des articles (tests hors ligne)")
+    ap.add_argument("--date", help="date de l'édition (AAAA-MM-JJ), par défaut celle du jeudi en cours")
     args = ap.parse_args()
 
     now_paris = datetime.now(PARIS)
-    date_str = now_paris.strftime("%Y-%m-%d")
-    # Deux crons UTC (16h et 17h) couvrent l'heure d'été et d'hiver : on n'agit qu'à partir de 18h
-    # heure de Paris le jeudi, et jamais deux fois grâce au contrôle d'existence plus bas.
-    if not (args.force or args.dry_run) and not (now_paris.weekday() == 3 and now_paris.hour >= 18):
-        print(f"Pas l'heure (Paris : {now_paris:%a %H:%M}), rien à faire.")
+    edition = edition_date(now_paris, args)
+    if edition is None:
+        print(f"Pas l'heure (Paris : {now_paris:%a %d/%m %H:%M}), rien à faire.")
         return
+    date_str = edition.strftime("%Y-%m-%d")
+    if not args.force and all((OUT_DIR / f"{date_str}-{lang}.html").exists() for lang in LANGS):
+        print(f"Édition du {date_str} déjà publiée, rien à faire.")
+        return
+    print(f"Édition du {date_str} (Paris : {now_paris:%a %d/%m %H:%M})")
 
     data = load_json(DATA_DIR / "articles.json", {"articles": []})
     candidates = pick_articles(data["articles"], datetime.now(timezone.utc))
@@ -494,8 +519,8 @@ def main():
         sys.exit("Aucun article sur les 7 derniers jours, newsletter non générée.")
     items = finalize(enrich(candidates, fetch=not args.no_fetch))
 
-    week_start = (now_paris - timedelta(days=7)).strftime("%d/%m/%Y")
-    week_label = f"du {week_start} au {now_paris:%d/%m/%Y}"
+    week_start = (edition - timedelta(days=7)).strftime("%d/%m/%Y")
+    week_label = f"du {week_start} au {edition:%d/%m/%Y}"
     brief = BRIEF_PATH.read_text(encoding="utf-8")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     index_path = DATA_DIR / "newsletters.json"
@@ -510,7 +535,7 @@ def main():
         if args.dry_run:
             print(f"===== {lang} : système =====\n{system}\n===== utilisateur ({len(items)} articles) =====\n{user[:1500]}...")
             continue
-        text = polish(write_with_fallbacks(system, user, items, lang, now_paris.strftime("%d/%m/%Y")))
+        text = polish(write_with_fallbacks(system, user, items, lang, edition.strftime("%d/%m/%Y")))
         footer = "Radar Musique Afrique" if lang == "fr" else "Africa Music Radar"
         title, html_doc = render_html(text, lang, footer)
         (OUT_DIR / f"{date_str}-{lang}.md").write_text(text, encoding="utf-8")
